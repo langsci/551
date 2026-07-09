@@ -1,0 +1,773 @@
+\documentclass[output=paper,colorlinks,citecolor=brown]{langscibook}
+\ChapterDOI{10.5281/zenodo.21237003}
+
+\author{Stefan Höfler%\orcid{0000-0003-3085-2047}
+\affiliation{University of Vienna} and David Stifter%\orcid{0000-0001-5634-9912}
+\affiliation{Maynooth University}}
+\title{Caland verbs in Celtic} 
+\abstract{This study offers a comprehensive examination of Caland verbs in the Celtic languages, an area that has previously received little attention within the broader investigation of the Caland system across Indo-European languages. By identifying and analyzing twenty Celtic verbs associated with the Caland system, we determine that eleven likely represent inherited forms, while the remaining verbs appear to be inner-Celtic innovations. Through detailed philological, phonological, and morphological analysis, we assess the productivity of root-derived deadjectival verb formations in Proto-Celtic. Despite the relatively limited number of verbs and their distribution across various verbal stem types, the findings suggest that the Caland system retained a marginal but discernible degree of productivity in the verbal domain of the Celtic languages. This conclusion is further supported by the existence of at least two neo-roots in the nominal domain, demonstrating parallel processes of morphological innovation.}
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[3]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+\label{sec:Celticintro}
+
+When it comes to the systematic study of the Caland system \is{Caland!system (CS)} and Caland morphology in the Indo-European languages, most of the relevant research so far has been conducted on the basis of Indo-Iranian, Greek, Hittite, and Latin (e.g., \citealt{Nussbaum1976}; \citealt{Rau2009}; \citealt{Rau2013}; \citealt{Lowe2016}, etc.), Balto-Slavic (e.g., \citealt{Majer2017}), or has been focused on the reconstruction of the system in the proto-language (e.g., \citealt{Bozzone2016}; on the history of scholarship see \citealt{DellOro2015}).  
+
+The Celtic languages have played a subordinate role in establishing the dynamics of the system. When Celtic material has been mentioned at all, its function has been ancillary rather than constitutional, serving as a means to provide evidence for an already established framework rather than being exploited to gain new insights into the Caland complex \is{Caland!system (CS)}  as a whole. And while a couple of book chapters and conference talks on Celtic such as De Bernardo Stempel (\citeyear[529--537]{Stempel1999}, \citeyear{Stempel2003}), \citet{Höfler2016}, and \citet{Kahl2018} (on Gaulish) have in recent years been devoted to the investigation of the nominal domain, the Caland-associated verbs \is{Caland!system (CS)}  still lack a comprehensive treatment.\footnote{A comprehensive study of Caland formations \is{Caland!system (CS)}  in all lexical domains of Celtic will be published in \citet{HöflerStifterforth}.}
+
+Very broadly speaking, Caland verbs are verbs that belong to Caland roots,\is{Caland!root} or roots with a “Caland profile” \is{Caland!system (CS)}  (see \citealt{Nussbaum2022}). These roots possess an adjectival meaning \is{root!adjectival} that typically falls into one of the categories known as ‘property concepts’\is{property concept (PC)} (i.e., dimensions, physical properties, colours, speed, age, value, human propensities, etc.), such as, for instance, ‘big’, ‘small’, ‘red’, ‘fast’, ‘slow’, ‘old’, ‘new’, ‘good’, ‘bad’, etc. (see \citealt[78--79]{Rau2009}; \citealt[18--20]{Balles2003}; \citealt[269--287]{Balles2006}; see also the introduction to this volume, Sections 1.2 and 3.1). Despite their adjectival meaning \is{root!adjectival} (‘X’), these roots do not (or at least not normally) surface as root adjectives. If a root noun\is{root!noun} is attested, it typically has the meaning of an adjectival abstract (‘X-ness’) or a concrete noun (‘thing/person that is X’). Compare the root \iwi{PIE}{*\textit{bʰerg̑ʰ}-} ‘high’ with the adjective \iwi{PIE}{*\textit{bʰr̥g̑ʰ-(é)nt}-} ‘high’ (Gaulish, Old British ethnonym sg.\ \iwi{Gaulish}{\textit{Brigans}}\iw{OBrit}{\textit{Brigans}}, pl.\ \textit{Brigantes}, Βρίγαντες, fem. \textit{Brigantiae} (dat.), OIr.\ \iwi{OIr}{\textit{Brigit}} < \iwi{PIE}{*\textit{bʰr̥g̑ʰ-n̥t-ih\textsubscript{2}}-} (see also \citealt{Stifterforth}); cf.\ Vedic \iwi{Sanskrit}{\textit{br̥hánt}-}, \textit{br̥hatī́}- ‘big, high, noble’, Young Avestan \iwi{Avestan}{\textit{bərəzant}-} ‘high’) and the root noun\is{root!noun} \iwi{PIE}{*\textit{bʰr̥g̑ʰ}-} ‘height, high spot’ (Old Irish \iwi{OIr}{\textit{brí}}, gen.sg.\ \textit{breg} f.\ ‘hill’; cf.\ Young Avestan \iwi{Avestan}{\textit{bərəz}-}, nom.sg.\ \textit{barš} ‘height, mountain; high’, Proto-Germanic \iwi{PGmc}{*\textit{burg}-} ‘castle’ > Gothic \iwi{Goth}{\textit{baurgs}} f.\ ‘city, tower’, Old High German \iwi{OHG}{\textit{burg}} etc. ‘castle’), or the root *\textit{(h\textsubscript{1})reu̯dʰ}- \iw{PIE}{*\textit{h\textsubscript{1}reu̯dʰ}-}  ‘red’ with the adjective *\textit{(h\textsubscript{1})re/ou̯dʰ-o}- \iw{PIE}{*\textit{h\textsubscript{1}re/ou̯dʰ-o}-} ‘red’ (Old Irish \iwi{OIr}{\textit{ród}}, \iwi{OIr}{\textit{rúad}}, Welsh \iwi{Welsh}{\textit{rhudd}}; cf.\ Latin \iwi{Latin}{\textit{rūfus}}, \iwi{Latin}{\textit{rōbus}}, Proto-Germanic \iwi{PGmc}{*\textit{rauda}-}, Lithuanian \iwi{Lith}{\textit{raũdas}}, Old Church Slavonic \iwi{OCS}{\textit{rudъ}}) and the root noun\is{root!noun} *\textit{(h\textsubscript{1})rudʰ}- \iw{PIE}{*\textit{h\textsubscript{1}rudʰ}-}  ‘redness’ (Old Irish \iwi{OIr}{\textit{rú}}, dat.sg.\ \textit{roid} f.\ ‘redness, red dye plant’). As with \iwi{PIE}{*\textit{bʰr̥g̑ʰ-(é)nt}-} ‘high’ and *\textit{(h\textsubscript{1})rou̯dʰ-o}- ‘red’, the corresponding base adjective \textit{X} usually exhibits derivational suffixes such as \mbox{\iwi{PIE}{*-\textit{ro}-},} \mbox{\iwi{PIE}{*-\textit{u}-}}, \mbox{\iwi{PIE}{*-\textit{o}-}}, \mbox{*-\textit{nt}-},\iw{PIE}{*-\textit{(e/o)nt}-} \mbox{\iwi{PIE}{*-\textit{mo}-}}, \mbox{\iwi{PIE}{*-\textit{no}-}}, a fact that in and of itself would not be overly surprising. However, all (seemingly) deadjectival \is{deadjectival!adjective} derivatives are consistently root-derived,\is{derivation!deradical} not stem-derived. This is true for typical deadjectival formations such as the comparative and superlative (e.g., \iwi{PIE}{*\textit{tép-n̥t}-} ‘hot’ > Old Irish \iwi{OIr}{\textit{tee}, \textit{té}}, nom.pl.\ \textit{téit}, but comparative \iwi{PIE}{*\textit{tep-i̯ōs}} > Old Irish \iwi{OIr}{\textit{téo}, \textit{teo}, \textit{teou}}), deadjectival abstracts \is{deadjectival!noun} (e.g., \iwi{PIE}{*\textit{treks-no}-} ‘strong’ > Old Irish \iwi{OIr}{\textit{trén}}, but \iwi{PIE}{*\textit{treks-i̯ā}-} ‘strength’ > Old Irish \iwi{OIr}{\textit{treise} \textit{i̯ā}}, f.\ ‘strength, vigour’; cf.\ \citealt{Jasanoff1991}), as well as for deadjectival verbs.\is{deadjectival!verb} This synchronic rule of suffix deletion is what characterises the Caland system.\is{Caland!system (CS)} 
+
+There are numerous verbal formations with deadjectival \is{deadjectival!verb} semantics that are associated with the Caland system,\is{Caland!system (CS)}  mostly characterised present stems involving the suffixes \iw{PIE}{*-\textit{eh\textsubscript{1}-i̯e/o}-} *-\textit{eh\textsubscript{1}i̯e/o}-, \iw{PIE}{*-\textit{eh\textsubscript{1}-s\kinvbreve e/o}-}  *-\textit{(eh\textsubscript{1})s\kinvbreve e/o}-, \iwi{PIE}{*-\textit{i̯e/o}-},\is{*-\textit{i̯e/o}-present} \iwi{PIE}{*-\textit{éi̯e/o}-}, nasal infix presents, \is{nasal present} and regular thematic presents \is{thematic!present} (cf.\ \citealt[136--160]{Rau2009}). Unlike \citet{Bozzone2016}, we see no convincing evidence for Caland-associated \is{Caland!system (CS)}  primary\is{derivation!deradical}  root aorists\is{root!aorist} (see also Section 3.1 of the introduction to this volume), but, with \citet{Rau2013}, there seems to have been an association with the \isi{perfect}. The present stems are attested in all three meanings expected for a deadjectival verb:\is{deadjectival!verb} \isi{stative}, \isi{fientive}, and \isi{factitive}. While some of the involved suffixes are predominantly associated with one of the three meanings (e.g., *-\textit{eh\textsubscript{1}i̯e/o}- \iw{PIE}{*-\textit{eh\textsubscript{1}-i̯e/o}-}  and \isi{stative} semantics), this specialization might reflect a later development. In Celtic, some types are attested in more than one meaning.
+
+Celtic preserves only a small, yet exquisite number of Caland verbs.\is{Caland!system (CS)}  Four of the present stem types listed in the previous paragraph are attested, as well as one Caland-associated \isi{perfect}. There are two roots for which more than one present stem is found. While there is evidence for a certain amount of \isi{productivity} (see below), none of these types becomes (or remains) the go-to template for deadjectival verb\is{deadjectival!verb} formation in Celtic. 
+
+When collecting the verbal stems, we applied the label “Caland root”\is{Caland!root} relatively generously. As is clear from the introduction to this volume (see especially Section 3.1), it is often not easy to define such a root based on morphological or semantic criteria alone. On the one hand, the typical Caland suffixes \is{Caland!system (CS)}  in the adjectival and nominal domains also appear with verbal roots (e.g., \iwi{PIE}{*\textit{g̑neh\textsubscript{3}}-} ‘recognise, know’ and \iwi{PIE}{*\textit{g̑n̥h\textsubscript{3}-ró}-} ‘knowing, known’ > Latin \iwi{Latin}{\textit{gnārus}} ‘knowing, skilled’, Greek \iwi{AG}{γνωρίζω} ‘make known’), and on the other hand, some roots allow both a verbal and an adjectival \is{root!adjectival} interpretation, such as \iwi{PIE}{*\textit{seg̑ʰ}-} meaning either ‘overpower, overcome, subdue’ (e.g., in the thematic present\is{thematic!present} \iw{PIE}{*\textit{ség̑ʰ-e/o}-} *\textit{ség̑ʰ-e-t(o)i} > Vedic \iwi{Sanskrit}{\textit{sáhate}} ‘overcomes’, Greek \iwi{AG}{ἔχει} ‘has’, or the agent noun  \iwi{PIE}{*\textit{ség̑ʰ-tor}-} > Vedic \iwi{Sanskrit}{\textit{sā́ḍhar}-} m.\ ‘victor’, Greek \iwi{AG}{Ἕκτωρ}) or ‘(be/make/become) strong, victorious’ (e.g., in the \isi{perfect} *\textit{se-sóg̑ʰ-e} with an \isi{intransitive} meaning in Vedic \iwi{Sanskrit}{\textit{sāsā́ha}} ‘is victorious’, or the comparative \iwi{PIE}{*\textit{seg̑ʰ-i̯os}-} > Ved. \iwi{Sanskrit}{\textit{sáhyas}-} ‘stronger’). In such a case, it is conceivable that adjectival ‘(be/make/become) strong, victorious’ was the original meaning and that a verb *\textit{ség̑ʰ-e-toi̯} ‘is strong, victorious’ (cf.\ Greek ἐρεύθεται \iw{AG}{ἐρεύθομαι} ‘is red’) was construed with an object accusative, from which the meaning ‘is strong, victorious (sc. in relation to somebody or something)’ > ‘over\-powers (somebody or something)’ could then have developed. The same pathway can essentially be observed for \iwi{PIE}{*\textit{dʰers}-} ‘(be/make/become) bold, courageous’ in the case of Greek \iwi{AG}{θαρσέω}, \isi{intransitive} ‘be confident’ (\textit{Il}.+) and \isi{transitive} ‘dare’ (\textit{Od}.+) < ‘be bold/confident in regard to something’ (cf.\ θάρσει τόνδε γ᾽ ἄεθλον \iw{AG}{θαρσέω}‘take on this contest with courage’ \textit{Od}. 8.197) and similarly for Vedic pres.\ \iwi{Sanskrit}{\textit{dhr̥ṣṇóti}}, perf.\ \iwi{Sanskrit}{\textit{dadhárṣa}} \isi{intransitive} ‘be courageous’ and \isi{transitive} ‘dare’. 
+
+This is why we include some roots in our collection that are usually seen as verbal roots (e.g., \iwi{PIE}{*\textit{h\textsubscript{2}ei̯dʰ}-} or \iwi{PIE}{*\textit{h\textsubscript{1}ai̯dʰ}-} ‘burn, ignite’) if typical Caland morphology \is{Caland!system (CS)}  is attested in Celtic or elsewhere (e.g., \iwi{PIE}{*\textit{h\textsubscript{1}ái̯dʰ-u}-} > Old Irish \iwi{OIr}{\textit{aed}} ‘fire’, \iwi{PIE}{*\textit{h\textsubscript{1}(a)i̯dʰ-ró}-} in Greek \iwi{AG}{αἴθρη} f.\ ‘the clear sky’, \iwi{AG}{ἰθαρός} ‘serene, clear’, \iwi{AG}{αἰθί-οψ} ‘burnt-face’) and if an originally adjectival \is{root!adjectival} meaning may therefore be postulated (e.g., ‘(be/make/ become) burning, bright’).\footnote{For \iwi{PIE}{*\textit{h\textsubscript{2}ei̯dʰ}-} (\iwi{PIE}{*\textit{h\textsubscript{1}ai̯dʰ}-}) as a Caland root,\is{Caland!root} see \citet[35]{Nussbaum1976}: “\iwi{PIE}{*\textit{h\textsubscript{2}ei̯dʰ}-} ‘burn, shine’ […] makes a well-attested Caland system”.\is{Caland!system (CS)}} We are aware of the potential risk in applying such a broad definition of what a Caland root\is{Caland!root} (and, thus, a Caland verb) \is{Caland!system (CS)}  is, but we believe that for the sake of completeness and a more comprehensive understanding of the system, it is justified to be more inclusive. In any event, we will address the potential verbal meaning of these ambiguous roots individually in the commentary section of the respective roots and make sure they do not unduly influence our overall conclusions.
+
+In total, Celtic exhibits twenty Caland-associated verbal stems.\is{Caland!system (CS)}  Eleven of these have cognates in other languages, which means that they are probably inherited. The remaining nine do not have cognates elsewhere and are therefore perhaps inner-Celtic creations. In these cases, it is an interesting question to explore whether there is evidence for a corresponding adjective that could serve as the basis for the verb. Since the verb is nonetheless root-derived,\is{derivation!deradical} not stem-derived (i.e., lacks the adjectival suffix), this would point to at least some \isi{productivity} of the Caland system \is{Caland!system (CS)} in the verbal domain in Celtic (see Section   \ref{sec:CelticDiscussion}).
+
+\section{The ‘stative’ type} 
+\label{sec:Celticstative}
+
+\subsection{Background}
+
+The suffix of the so-called ‘\isi{stative}’ type (as per \citealt{Jasanoff1978}, \citealt{Jasanoff2004}; see also \citealt{Peters2007}, \citealt{Kummel2012}, \citealt{Malzahn2014}, \citealt{Peters2016}, \citealt{Jasanoff2021}) is reconstructed as *-\textit{eh\textsubscript{1}i̯e/o}-\iw{PIE}{*-\textit{eh\textsubscript{1}-i̯e/o}-} (> *-\textit{ei̯h\textsubscript{1}e/o}- ?) and usually takes a zero-grade root. Structurally, the statives\is{stative} are interpretable as \isi{decasuative} present stems in \iwi{PIE}{*-\textit{i̯e/o}-} \is{*-\textit{i̯e/o}-present} derived from adnominally \is{adnominal} used instrumental singular forms in *-\textit{eh\textsubscript{1}}\iw{PIE}{*-\textit{eh\textsubscript{1}} (instr.)} of root nouns,\is{root!noun} for example *\textit{h\textsubscript{1}rúdʰ}-\iw{PIE}{*\textit{h\textsubscript{1}rudʰ}-} ‘redness’ (OIr.\  \iwi{OIr}{\textit{rú}} f.\ ‘redness, red dye plant’) $\rightarrow$ *\textit{h\textsubscript{1}rudʰ-eh\textsubscript{1}}\iw{PIE}{*\textit{h\textsubscript{1}rudʰ-éh\textsubscript{1}}} ‘with redness; red’ $\rightarrow$ \iwi{PIE}{*\textit{h\textsubscript{1}rudʰ-eh\textsubscript{1}-i̯e/o}-} (Latin \iwi{Latin}{\textit{rubeō}} ‘I am, become red’, Old High German \iwi{OHG}{\textit{rotēn}} ‘flush’).\footnote{\citetalias[ 508--509]{Rix2001} sets up an “Essiv” \iwi{PIE}{*\textit{rudʰ-h\textsubscript{1}i̯é}-} here. For the “Essiv” type see further \citetalias[ 25]{Rix2001}. \citet[41--42]{Schumacher2004}, who otherwise follows \citetalias{Rix2001} closely, remarks that both Celtic and Latin require \iwi{PIE}{*-\textit{eh\textsubscript{1}-i̯e/o}-}, which may be secondarily introduced.} If this analysis is correct, the ‘\isi{stative}’ type would be expected to have typical deadjectival \is{deadjectival!verb} semantics, which means that the \isi{stative} meaning (‘be red’) is only one of three predictable meanings of such a present stem, viz. besides \isi{fientive} (‘become red’) and \isi{factitive} (‘make red’; cf.\ \citealt[94, n. 43]{Malzahn2014}).
+
+In Celtic, the suffix(oid) \iwi{PIE}{*-\textit{eh\textsubscript{1}-i̯e/o}-} develops to Proto-Celtic *-\textit{ī}- and is one of the sources of Old Irish W2 verbs with a palatal root final consonant and a 3sg.\ conjunct ending \iwi{OIr}{\textit{-i}} (e.g., \iwi{OIr}{\textit{ruidid}, ·\textit{ruidi}} ‘flush, blush’). In Middle Welsh, the \isi{stative} type results in verbs with raising in the root vowel of the 3sg.\ and an ending absolute \iwi{MWelsh}{\textit{-it}} (archaic), conjunct -{\O}. This type is attested for four Caland roots\is{Caland!root} in Celtic (cf.\ \citealt[41--42]{Schumacher2004}), a \isi{transitive}-\isi{factitive} meaning is well-represented beside the \isi{stative} or \isi{fientive}, though it is not clear whether this is an archaism or an innovation. Three of those four verbs have cognates in other branches of Indo-European.
+
+\subsection{*\textit{(h\textsubscript{1})reu̯dʰ}- ‘red’}
+\label{sec:stativered}
+
+*\textit{(h\textsubscript{1})rudʰ-eh\textsubscript{1}-i̯e/o}-  \iw{PIE}{*\textit{h\textsubscript{1}rudʰ-eh\textsubscript{1}-i̯e/o}-} ‘be/make/become red’ > PCelt.\ \iwi{PCelt}{*\textit{rud-ī}-} > OIr.\  \iwi{OIr}{\textit{ruidid}, ·\textit{ruidi}} ‘flush, blush; make red’ (cf.\ \citealt[552--553]{Schumacher2004}). \iw{OIr}{\textit{ruidid}, ·\textit{ruidi}}
+
+
+\begin{exe}
+    \ex Old Irish (\textit{Críth Gablach} 548) \label{ex:stativered1}\\
+        \gll \textit{ataat} \textit{trí} \textit{toichnedai} \textit{frisná} \textit{\textbf{ruide}} \textit{tocrád} \textit{ríg} \\
+        are three fastings at.which.not \textbf{blush}.\textsc{3sg}.\textsc{prs.ind} vexation king.\textsc{gen.sg}\\
+        \glt ‘There are three fastings at which the offended majesty of a king does not blush.’\\ 
+
+    \ex Old Irish (\textit{Anecd}. I 12.26) \label{ex:stativered2}\\
+        \gll \textit{a} \textit{rí} \textit{\textbf{ruides}}  \textit{gréin} \\
+        oh king \textbf{redden}.\textsc{3sg}.\textsc{prs.ind.rel} sun\\
+        \glt ‘oh king who reddens the sun’ (var.\ lect.\ \textit{reithes} ‘moves’)\\
+\end{exe}
+
+
+
+\paragraph*{Cognates} 
+
+Latin \iwi{Latin}{\textit{rubēre}} ‘be/become red’, Old High German \iwi{OHG}{\textit{rotēn}} ‘be/turn red’, Latvian \iwi{Latv}{\textit{rudêt}} ‘rust’, Russian Church Slavonic \iwi{RCS}{\textit{rъděti sja}} ‘become red’ (\citetalias[ 508--509]{Rix2001}).
+
+\paragraph*{Adjective} 
+
+Old Irish  \iwi{OIr}{\textit{rúad}}, archaic and poetic \iwi{OIr}{\textit{ród}} ‘red’ < \mbox{*\textit{(h\textsubscript{1})re/ou̯dʰ-o}-}  \iw{PIE}{*\textit{h\textsubscript{1}re/ou̯dʰ-o}-}(cf.\ Gaul.\ \iwi{Gaulish}{\textit{roudo}-}, OW, OCorn., OBret.\ \iwi{OBret}{\textit{rud}}\iw{OWelsh}{\textit{rud}}\iw{OCorn}{\textit{rud}}, ModW \iwi{Welsh}{\textit{rhudd}}, MCorn.\ \iwi{MCorn}{\textit{ruth}}, \iwi{MCorn}{\textit{ruyth}}, NBret.\ \iwi{Breton}{\textit{ruz}} ‘red’; also Latin \iwi{Latin}{\textit{rūfus}}, \iwi{Latin}{\textit{rōbus}}, Proto-Germanic \iwi{PGmc}{*\textit{rauda}-}, Lithuanian \iwi{Lith}{\textit{raũdas}}, Old Church Slavonic \iwi{OCS}{\textit{rudъ}}).
+
+\paragraph*{Commentary}
+
+The preponderant, and probably primary, meaning of the verb in Early Irish is \isi{fientive} ‘turn red’ (namely in the face, i.e., ‘to flush, blush’, usually as a consequence of being shamed), or \isi{stative} ‘be red’. Possible examples of \isi{factitive} ‘make red’, as a verb or as a verbal noun, are very rare. They are only found in poetry, unfortunately often in philologically difficult contexts. The form \textit{ruides} \iw{OIr}{\textit{ruidid}, ·\textit{ruidi}} in the example cited from the tale \textit{Scéla Cano meic Gartnáin} is attested in the single manuscript copy of the tale. Its varia lectio \textit{reithes} \iw{OIr}{\textit{reithid}} ‘who moves, makes run’ occurs only in the philo\-logi\-cally less reliable \textit{Nebenüberlieferung} of the \textit{Mittelirische Verslehren}; the \isi{causative} meaning ‘move, make run’ of \iwi{OIr}{\textit{reithid}} is in itself unusual.
+
+\subsection{*\textit{k\textsuperscript{(u̯)}su̯ei̯bʰ}- ‘swift (?)’}
+\label{sec:stativeswift}
+
+\iwi{PIE}{*\textit{k\textsuperscript{(u̯)}su̯ibʰ-eh\textsubscript{1}-i̯e/o}-} ‘be/make/become swift' > PCelt.\ \iwi{PCelt}{*\textit{ksu̯ib-ī}-} >{>} MIr.\ \iwi{MIr}{\textit{scibid}, ·\textit{scibi}} (with sporadic metathesis of the initial cluster?) ‘flow, swim (of a vessel); move; move sth.\ jerkily’, MW \iwi{MWelsh}{\textit{chwyfu}} (3sg.\ \textit{chwyf}) ‘move to and fro, budge’, MBret.\ \iwi{MBret}{\textit{fifual}} ‘move’ (cf.\ \citealt{Schrijver2003}; \citealt[422--424]{Schumacher2004}). \iw{MWelsh}{\textit{chwyfu}}
+
+\begin{exe}
+    \ex Middle Welsh (\textit{WM 455\textsubscript{36--8}} = \textit{CO 80}; 14\textsuperscript{th} c.)\label{ex:stativeswift}\\
+        \gll \textit{Ni} \textit{\textbf{chwy[u]ei}}  \textit{ulaen} \textit{blewyn} \textit{arnaw}\\
+        not \textbf{move}.3\textsc{sg.impf} tip hair on.him\\
+        \glt ‘Not a tip of a hair would stir on him.’\\
+\end{exe}
+
+\paragraph*{Cognates} 
+Old High German \iwi{OHG}{\textit{swebēn}} (amongst other meanings) ‘be agitated (of the sea), be in high and low tide’.
+
+\paragraph*{Adjective} 
+
+W \iwi{Welsh}{\textit{chwith}} ‘left, awkward, sinister, wrong’< \iwi{PIE}{*\textit{k\textsuperscript{(u̯)}su̯ibʰ-tó}-} (compare English \textit{swift}).
+
+\paragraph*{Commentary} 
+
+The basic meaning of the root is not quite clear. It seems to refer to some sort of motion, not a single jerky movement, but rather a state or property or an \isi{iterative} kind of motion. Based on Caland morphology,\is{Caland!system (CS)}  especially in Iranian (cf.\ Young Avestan \iwi{Avestan}{\textit{xšuuiβra}-} ‘quick, vibrant’, \iwi{Avestan}{\textit{xšuuiβi.išu}-} ‘with vibrant arrows’, \iwi{Avestan}{\textit{xšuuaēβa}-} ‘moving quickly’, on which see \citealt{Schrijver2003}), we assume an adjectival \is{root!adjectival} rather than a verbal basic meaning. 
+
+A potential Caland \is{Caland!system (CS)} adjective \iwi{PIE}{*\textit{k\textsuperscript{(u̯)}su̯ibʰ-tó}-} (compare English \textit{swift}) is attested in W \iwi{Welsh}{\textit{chwith}} ‘left, awkward, sinister, wrong’, though the meaning is quite removed from the purported meaning of the root. \citet{Schrijver2003} has argued that ModIr. \iwi{ModIr}{\textit{ciotach}} (the unattested OIr.\ form would be \iwi{OIr}{*\textit{cittach}}) ‘left-handed, awkward, clumsy’, which could be compared with \iwi{Welsh}{\textit{chwith}} under the assumption of a sporadic, irregular loss of initial \textit{s}-, is unrelated. The Irish verb is found both with forms that point to lenited and unlenited \textit{b}; forms with the latter preponderate in the later period. Besides, in ModIr. the verb \iwi{ModIr}{\textit{sciobaidh}} ‘snatch, sweep away’ is found (\citetalias[ s.v. \textit{scipaid}]{eDIL}). The reason for the variation in the status of lenition and palatalisation in these forms is obscure. Contamination with Old Norse \iwi{ON}{\textit{skip}} ‘ship’ may have been a factor or sound-symbolism may be at play (unlenited \iwi{OIr}{*\textit{scipaid}} presupposes a geminate *-\textit{bb}-, for the sound-symbolic character of which see \citealt{Stifter2024}, especially Section 11).
+
+
+\subsection{*\textit{temk}- ‘hard’}
+\label{sec:stativehard}
+\iwi{PIE}{*\textit{tm̥k-eh\textsubscript{1}-i̯e/o}-} ‘be/make/become hard’ > PCelt.\ \iwi{PCelt}{*\textit{tank-ī}-} > OIr.\  \iwi{OIr}{·\textit{téici}} ‘congeal, become solid; make solid’.
+
+
+\begin{exe}
+    \ex Old Irish (ZCP 7, 1910. 484.33 = \textit{Enchiridion Sancti Augustini})\label{ex:stativehard}\\
+        \gll \textit{\textbf{con}-<ro>}·\textit{\textbf{théced}} \iw{OIr}{·\textit{téici}} (gl. \textit{adiunctus} \textit{atque} \textit{concretus})  \\
+    <\textsc{augm}>·\textbf{thicken}.\textsc{3sg.}\textsc{pret.pass}\\
+        \glt ‘was solidified’\\
+\end{exe}
+
+
+\paragraph*{Cognates}  -- 
+
+\paragraph*{Adjective}
+
+OIr.\  \iwi{OIr}{\textit{técht}} ‘(of liquids) thick, frozen; calm, peaceful’ < \iwi{PIE}{*\textit{tm̥k-to}-} (cf.\ Pashto \iwi{Pashto}{\textit{tat}} ‘close, thick’).
+
+\paragraph*{Commentary} 
+
+\citet[469--470 and 474--475]{McCone1998} and \citetalias[ 625--626]{Rix2001} see OIr.\  \iwi{OIr}{·\textit{téici}} as the remodeling of a nasal infix present \is{nasal present} \iwi{PIE}{*\textit{tm̥-né/n-k}-}. \citet[615--616]{Schumacher2004}, on the other hand, argues that the continuant of a nasal infix present \is{nasal present} ought to be OIr.\  \iwi{OIr}{*·\textit{tic}} and reconstructs a thematic present\is{thematic!present} \iwi{PIE}{*\textit{tm̥k-e/o}-} instead. The weak inflection would then be secondary. However, nothing speaks against a regular \isi{stative} \iwi{PIE}{*\textit{tm̥k-eh\textsubscript{1}-i̯e/o}-} > PCelt.\ \iwi{PCelt}{*\textit{tank-ī}-} > OIr.\  \iwi{OIr}{\textit{con}·\textit{téici}} (now also Schumacher, p.c.). 
+
+The meaning ‘calm, peaceful’ of the adjective OIr.\  \iwi{OIr}{\textit{técht}} could be metaphorical and thus secondary within Irish. On the other hand, the connotation ‘established \textit{status quo} < lack of fluidity’ is supported by OW \iwi{OWelsh}{\textit{tagc}}, MW \iwi{MWelsh}{\textit{tanc}} ‘peace’, Gaul.\ PN \iwi{Gaulish}{\textit{Tanco-rix}} (if ‘peace-ruler’\footnote{This provisional translation is agnostic as to what precisely is meant by ‘peace’, a concept that is historically and culturally very ambivalent, and whose interpretation in the context of Gaulish society may differ significantly from 21\textsuperscript{st} century ideas of peace.}) < \iwi{PIE}{*\textit{tm̥k-o}-}.
+
+\subsection{*\textit{tu̯em}- ‘thick’}
+\label{sec:stativethick}
+
+\iwi{PIE}{*\textit{tum-eh\textsubscript{1}-i̯e/o}-} ‘be/make/become thick’ > PCelt.\ \iwi{PCelt}{*\textit{tum-ī}-} > MW \iwi{MWelsh}{\textit{tyfu}} (3sg.\ \textit{tyf}) ‘grow; make grow; heal’, MBret.\ \iwi{MBret}{\textit{teñvañ}, \textit{tiñvañ}} ‘grow together, develop sap, heal’ (OBret.\ 3sg.\ \iwi{MBret}{\textit{ni-tum}}), MCorn.\ \iwi{MCorn}{\textit{tevi}} ‘grow’ (cf.\ \citealt[646--648]{Schumacher2004}).
+
+
+\begin{exe}
+    \ex Middle Welsh (\textit{J 1} 1082; c. 1400)\label{ex:stativethick}\\
+        \gll \textit{\textbf{Tyuit}} \textit{maban}, \textit{ny} {\textit{\textbf{thyf}} \iw{MWelsh}{\textit{tyfu}}} \textit{y} \textit{gadachan} \\
+        \textbf{grow}.\textsc{3sg.prs.ind} infant not \textbf{grow}.\textsc{3sg.prs.ind} his swaddling-clothes\\
+        \glt ‘An infant grows, his swaddling-clothes grow not.’\\
+\end{exe}
+
+
+\paragraph*{Cognates} 
+
+Latin \iwi{Latin}{\textit{tumēre}} ‘be/become swollen’, Lithuanian \iwi{Lith}{\textit{tum\dotacute{e}ti}} ‘become thick, coagulate’ (\citetalias[ 654 s.v. \textit{*tu̯em}-]{Rix2001}).
+
+\paragraph*{Adjective} 
+
+There is no corresponding simplex adjective, but we find a compound\is{compounding} MW \iwi{MWelsh}{\textit{hydwf}} ‘full-grown, thriving’, OBret. PN \iwi{OBret}{\textit{Hutum}} < *\textit{su-tum-V}-. It is formally possible to equate these with Ir. \iwi{ModIr}{\textit{sothaim}} ‘amusing, agreeable’, \iwi{ModIr}{\textit{dothaim}} ‘morose, grim, surely’ < \iwi{PCelt}{*\textit{su-/du-tum-i}-}, perhaps in the sense ‘has grown/become good/bad’.
+
+\paragraph*{Commentary}
+
+Based on the cognates in Latin and Lithuanian, PCelt.\ *\textit{tum-ī}- can be considered an inherited Caland verb.\is{Caland!system (CS)}  A *-\textit{ró}-adjective \iw{PIE}{*-\textit{ro}-} is attested in Vedic (\iwi{Sanskrit}{\textit{túmra}-} ‘strong, stout’).
+
+\section{Nasal infix presents}
+\label{sec:CelticNIP}
+
+\subsection{Background}
+Nasal infix presents \is{nasal present} are a well-attested class in Celtic (cf.\ \citealt{McCone1991}; \citealt[42--45]{Schumacher2004}). Five such present stems are attested from Caland roots,\is{Caland!root} three of which have \isi{factitive} (and only factitive) meaning. This seems to support the widely held notion that the original function of this present stem class was to create \isi{factitive}s (see, e.g., \citealt[143--146]{Rau2009}; this volume). Yet, the evidence of the individual languages is ambiguous and might indicate that this need not necessarily have been true in the proto-language. Fientive\is{fientive} meaning is attested, for example, in Old Russian \textit{svьnuti}\iw{ORuss}{\textit{svĭ(t)nuti}} ‘become bright, day’, Lithuanian \textit{švintù}\iw{Lith}{\textit{švìsti, šviñta, švìto}, 1sg. prs. \textit{švintù}} ‘become bright’ (\iwi{PIE}{*\textit{\kinvbreve u̯ei̯t}-} ‘bright’; cf.\ the `\isi{stative}' Lithuanian \iwi{Lith}{\textit{švit\dotacute{e}ti}} ‘shine brightly’), in Lithuanian \iwi{Lith}{\textit{senkù}} ‘drop (of water level)’, Old Church Slavonic \textit{i-sęčetъ}\iw{OCS}{\textit{isęčetъ}} ‘will dry out’ (\iwi{PIE}{*\textit{sek}-} ‘dry’), and \isi{stative} meaning in Latin \iwi{Latin}{\textit{langueō}} ‘be slack, languid’, Ancient Greek \iwi{AG}{λαγγών} ‘coward’ (\iwi{PIE}{*\textit{sleg̑/g}-} ‘slack’), or in Ancient Greek \iwi{AG}{ἁνδάνω} (+\textsc{dat}) ‘please, delight’ < ‘be tasty’ (\iwi{PIE}{*\textit{su̯eh\textsubscript{2}d}-} ‘tasty’; cf.\ the \isi{factitive} meaning of Vedic \iw{Sanskrit}{\textit{s\textsubscript{(u)}vádati/te}}  \textit{s\textsubscript{(u)}vádati} ‘make tasty’ from \iwi{PIE}{*\textit{suh\textsubscript{2}-n̥-d}-} as per \citetalias[ 606, n.\ 2b]{Rix2001}).\footnote{On this phenomenon, see \citet{Gorbachov2007} (for Balto-Slavic and Germanic); \citet[146, n.\ 68]{Rau2009}; this volume.} The remaining two nasal infix presents \is{nasal present} from Celtic might corroborate this.
+
+\subsection{*\textit{(h\textsubscript{1})reu̯dʰ}- ‘red’}
+\label{sec:NIPred}
+
+*\textit{(h\textsubscript{1})ru-n(e)-dʰ}- \iw{PIE}{*\textit{h\textsubscript{1}ru-n(e)-dʰ}-}  ‘make red’ {>}{>} PCelt.\ \iwi{PCelt}{*\textit{rund-e}/\textit{o}-} > Old Irish  \iwi{OIr}{\textit{rondaid}, ·\textit{roind}} ‘dye red’, \iwi{OIr}{\textit{fo}·\textit{roind}} ‘stain’ (cf.\ \citealt[553--554]{Schumacher2004}, \citetalias[ 508--509]{Rix2001}).
+
+
+\begin{exe}
+    \ex Old Irish (\textit{Ält. Ir. Dicht}. i 39 § 3 = Rawl. 115a25) \label{ex:NIPred}\\
+        \gll \textit{gáeth} \textit{rúad} {\textit{\textbf{rondad}} \iw{OIr}{\textit{rondaid}, ·\textit{roind}}} \textit{for} \textit{fáebur} \textit{fuilchiaid} \\
+        wind red \textbf{redden}.\textsc{3sg.impf} on edge blood.mist \\
+        \glt ‘A red wind which coloured sword-edges with a mist of blood.’\\
+\end{exe}
+ 
+\paragraph*{Cognates}  -- 
+
+\paragraph*{Adjective} 
+
+OIr.\ \iwi{OIr}{\textit{rúad}} ‘red’ < \iwi{PIE}{*\textit{h\textsubscript{1}rou̯dʰ-o}-} (see Section \ref{sec:stativered} above).
+
+\paragraph*{Commentary}  
+
+For the vocalism \textit{o} < *\textit{u}, see \citet[87]{Stueber1998}. \textit{Rondaid} \iw{OIr}{\textit{rondaid}, ·\textit{roind}} and its compound\is{compounding} \iwi{OIr}{\textit{fo}·\textit{roind}} occur mostly in contexts of fighting and battles with respect to things that get coloured by blood.
+
+\subsection{*\textit{h\textsubscript{2}ei̯dʰ-} {or} {*\textit{h\textsubscript{1}ai̯dʰ}-} {‘burning, light’} }
+\label{sec:NIPburning}
+
+\iwi{PIE}{*\textit{h\textsubscript{2/1}i-n(e)-dʰ}-} ‘make burning’ >{>} PCelt.\ \iwi{PCelt}{*\textit{ind-e}/\textit{o}-} > MW \iwi{MWelsh}{\textit{enn-ynnu}} (3sg.\ \textit{enn-ynn}) ‘kindle, light a fire’ (cf.\ \citealt[374--375]{Schumacher2004}; \citetalias[ s.v.\ *\textit{h\textsubscript{2}ei̯dʰ}-]{LIVaddenda}).
+
+\begin{exe}
+    \ex Middle Welsh (WML 26; 14\textsuperscript{th} c.)\label{ex:NIPburning}\\
+        \gll \textit{Ef} \textit{a} {\textit{\textbf{enyn}} \iw{MWelsh}{\textit{enn-ynnu}}} \textit{y} \textit{ganhwyll} \textit{gyntaf} \textit{rac} \textit{bron} \textit{y} \textit{brenhin}  \\
+        he \textsc{rel} \textbf{light}.\textsc{3sg.prs.ind} the candle first before breast the king \\
+        \glt ‘He lights the first candle before the king.’\\
+\end{exe}
+ 
+\paragraph*{Cognates}  
+
+Vedic \iwi{Sanskrit}{\textit{indhé}} ‘lights a fire’ (\citetalias[ 259 s.v.\ *\textit{h\textsubscript{2}ei̯dʰ}-]{Rix2001})
+
+\paragraph*{Adjective}  -- 
+
+\paragraph*{Commentary} 
+
+This root may be a verbal root (see Section \ref{sec:Celticintro} for a discussion). Other Celtic material from this root includes OIr.\  \iwi{OIr}{\textit{áed u}, n.} ‘fire’, Bret.\ \iwi{Breton}{\textit{oaz}} m.\ ‘rivalry, jealousy’ (sceptical \citetalias[ A-19]{LEIA}) and the Gaul.\ ethnonym \iwi{Gaulish}{\textit{Aeduī}} (in Latin transmission). An etymological connection with the root \iwi{PCelt}{*\textit{and}-} represented in OIr.\  \iwi{OIr}{\textit{andud}} ‘act of kindling, lighting’ and \iwi{OIr}{\textit{ad·andai}} ‘kindle, light’ (suggested, for example, in \citetalias[ A--75]{LEIA}) is formally excluded (\citealt[375]{Schumacher2004}).
+
+\subsection{*\textit{pleh\textsubscript{1}}- ‘full’}
+\label{sec:NIPfull}
+
+\iwi{PIE}{*\textit{pl̥-n(e)-h\textsubscript{1}}-} ‘be/become full’ > ? PCelt.\ \iwi{PCelt}{*\textit{φli-ni}-} > OIr.\ \iwi{OIr}{\textit{do}·\textit{lin}} ‘flow, abound’ (cf.\ \citealt[18, 21, 34--35]{McCone1991}; \citealt[374--375]{Schumacher2004}).
+
+\begin{exe}
+    \ex Old Irish (Sg. 158a1) \label{ex:NIPfull1}\\
+        \gll \textbf{\textit{do}·\textit{linim}} \iw{OIr}{\textit{do}·\textit{lin}} (gl. \textit{māno}) \\
+        \textbf{flow}.\textsc{1sg.prs.ind}\\
+        \glt ‘I flow.’\\
+    \ex Old Irish (Ml. 56a14; 83c7) \label{ex:NIPfull2}\\
+        \gll \textbf{\textit{du·linat}} \iw{OIr}{\textit{do}·\textit{lin}} (gl. \textit{mānantium} and \textit{pollentes})\\
+        \textbf{flow}.\textsc{3pl.prs.ind}\\
+        \glt ‘which flow’\\
+\end{exe}
+
+\paragraph*{Cognates} 
+
+Vedic \iwi{Sanskrit}{\textit{pr̥ṇā́ti}} ‘fills’, Old Avestan \iwi{Avestan}{\textit{pǝrǝnā}} ‘fill!’, Latin \iwi{Latin}{\textit{polleō}} ‘be strong, able’, Armenian \iwi{Armenian}{\textit{lnwom}} ‘I fill’, Albanian \iwi{Albanian}{\textit{m-blon}} ‘fills’ (\citetalias[ 482--483 s.v.\ \textit{*pleh\textsubscript{1}}-]{Rix2001}).
+
+\paragraph*{Adjective} OIr.\  \iwi{OIr}{\textit{lán}} ‘full’ < *\textit{pl̥h\textsubscript{1}-no}- \iw{PIE}{*\textit{pl̥h\textsubscript{1}-nó}-} (cf.\ W \iwi{Welsh}{\textit{llawn}}, B \iwi{Breton}{\textit{leun}} ‘full’).
+
+\paragraph*{Commentary}
+
+The root features prominently in Caland-associated\is{Caland!system (CS)}  nominal formations: \iw{PIE}{*\textit{pl̥h\textsubscript{1}-nó}-} *\textit{pl̥h\textsubscript{1}-no}- > OIr.\  \iwi{OIr}{\textit{lán}}, W \iwi{Welsh}{\textit{llawn}} B \iwi{Breton}{\textit{leun}} ‘full’, \iwi{PIE}{*\textit{pelh\textsubscript{1}-u}-} > Gaul.\ \iwi{Gaulish}{\textit{elu}-}, OIr.\  \iwi{OIr}{\textit{il}-} ‘many, much’, W \iwi{Welsh}{\textit{el}-}, comp. OIr.\  \iwi{OIr}{\textit{lia}} ‘more’, equative \textit{lir} ‘as much as’, or W \iwi{Welsh}{\textit{llanw}} ‘tide, flow, flood, influx’, OBret.\  \iwi{OBret}{\textit{lanu}}, NBret.\ \iwi{Breton}{\textit{lanv}} ‘flood’ < \iwi{PCelt}{*\textit{φlanu̯o}-} < \iwi{PIE}{*\textit{pl̥h\textsubscript{1}-n-u̯o}-}. On its status as a verbal or adjectival root,\is{root!adjectival} see \citet[208, n.\ 7]{Nussbaum2022} and Section 3.1 of the introduction to this volume. 
+
+Determining the precise inflectional class of \iwi{OIr}{\textit{do}·\textit{lin}} ‘flow, abound’ (thus the headword in \citetalias[ \href{https://dil.ie/18026}{dil.ie/18026}]{eDIL}; later continued as the simple verb \iwi{MIr}{\textit{tuilid}}) is difficult, as is the demarcation against the verb that is set up in \citetalias{eDIL} as \iwi{OIr}{\textit{do·lína}} ‘increase, add to’ (\href{https://dil.ie/18026}{dil.ie/18028}). The 3pl.\ \textit{do·linat} displays a non-palatalised present-stem-final \textit{n}, which is \textit{a priori} not compatible with the reconstructed stem \iwi{PCelt}{*\textit{φli-ni}-}. It rather points to \iwi{PCelt}{*\textit{φli-nu}-}, perhaps with a transfer to the class of \textit{nu}-verbs; unless the alternation in the palatalisation of the stem-final consonant is analogical to the S1 verbal class, the old \textit{e}/\textit{o}-thematic verbs\is{thematic!present}. The augmented 3sg.\ preterite \iwi{OIr}{\textit{do}·\textit{rulin}} gl. \textit{manasse} (Ml. 64c18) shows that the nasal was synchronically felt to be part of the root, as if it were a weak verb. To complicate matters, the root of OIr.\  \iwi{OIr}{\textit{do}·\textit{lin}} may alternatively be from or be influenced by \iwi{PIE}{*\textit{lei̯h\textsubscript{x}}-} ‘pour’ (MW 3sg \iwi{MWelsh}{\textit{dillyð}} ‘flows’; see below \ref{sec:STPliquid}), or a merger of both roots may have occurred (\citealt[176--177]{Stifter2023}). If this is the case, and if any credence can be given to the synchronic behaviour of the verb in Old Irish, the laryngeal of that root may be specified as *\textit{h\textsubscript{3}}, i.e., PCelt.\ \iwi{PCelt}{*\textit{linū́}-} < *\textit{linō}- < \iwi{PIE}{*\textit{li-n-e-h\textsubscript{3}}-}.
+
+\subsection{*\textit{seh\textsubscript{1}(i̯)}- ‘long’}
+\label{sec:NIPlong}
+
+\iwi{PIE}{*\textit{seh\textsubscript{1}-n(e)-i}-} ‘make long’ > PCelt.\ \iwi{PCelt}{*\textit{sī-ni}-} >{>} *\textit{sīnī}- > OIr.\ \iwi{OIr}{\textit{sínid}, ·\textit{sín}(\textit{i})} ‘stretch (oneself), extend’.
+
+\begin{exe}
+    \ex Old Irish (LU 4927) \label{ex:NIPlong}\\
+        \gll {\textit{\textbf{sínithi}} \iw{OIr}{\textit{sínid}, ·\textit{sín}(\textit{i})}} \textit{iarom} \textit{co} \textit{memdatar} \textit{in} \textit{da} \textit{liic} \textit{ro} \textit{batár} \textit{immi}\\
+        \textbf{stretch}.\textsc{3sg.prs.ind}.himself then so.that break.\textsc{3pl.pret} the two stones \textsc{augm} were around.him \\
+        \glt ‘He stretches himself so that the two stones around him broke.’\\
+\end{exe}
+
+\paragraph*{Cognates}  -- 
+
+\paragraph*{Adjective} 
+
+OIr.\ \iwi{OIr}{\textit{sír}} ‘long’ < \iwi{PIE}{*\textit{seh\textsubscript{1}-ro}-} (cf.\ W, Corn., Bret. \iwi{Breton}{\textit{hir}} \iw{Welsh}{\textit{hir}} \iw{Cornish}{\textit{hir}} ‘long, tall, lengthy’).
+
+\paragraph*{Commentary}
+
+The verb is only attested in sources from the Middle Irish period onwards. All attestations are compatible with the analysis as a weak W2a verb. This implies that the inherited strong nasal-infix verb was re-interpreted as a weak \textit{ī}-verb at some point in the prehistory of Irish. The root features prominently in Caland-associated\is{Caland!system (CS)}  nominal formations: comparative OIr.\ \iwi{OIr}{\textit{sia}, \textit{sía}}, MW \iwi{MWelsh}{\textit{hwy}} ‘longer’, superlative OIr.\ \textit{síam}, MW \textit{hwyaf}, OBret. \iwi{OBret}{\textit{huiam}} ‘longer’, all of which demonstrate the absence of the adjectival suffix \iwi{PIE}{*-\textit{ro}-} vis-à-vis the underlying adjective \iwi{PIE}{*\textit{seh\textsubscript{1}-ro}-} > OIr.\  \iwi{OIr}{\textit{sír}} ‘long’, W, Corn., Bret. \iwi{Breton}{\textit{hir}} \iw {Welsh}{\textit{hir}} \iw{Cornish}{\textit{hir}} ‘long, tall, lengthy’.
+
+\subsection{*\textit{u̯elh\textsubscript{x}-} ‘powerful, in power’}
+\label{sec:NIPpowerful}
+
+\iwi{PIE}{*\textit{u̯l̥-n(e)-h\textsubscript{x}}-} ‘be powerful’ >{>} PCelt.\ \iwi{PCelt}{*\textit{u̯al-na}-} >{>} *\textit{u̯all-nā}- > OIr.\ \iwi{OIr}{\textit{follnaithir}} ‘rule’ (cf.\ \citealt[655--656]{Schumacher2004}).
+
+
+\begin{exe}
+    \ex Old Irish (Tec. Corm. §2)\label{ex:NIPpowerful}\\
+        \gll \textit{recht} {\textit{\textbf{fallnathar}} \iw{OIr}{\textit{follnaithir}}} \textit{for} \textit{talman} \textit{tuind} \\
+        right \textbf{rule}.\textsc{3sg.prs.ind.rel} over earth.\textsc{gen.sg} surface.\textsc{dat.sg}\\
+        \glt ‘The right that rules on the surface of the earth.’\\
+\end{exe}
+
+\paragraph*{Cognates}  -- 
+
+\paragraph*{Adjective} 
+
+\iwi{PIE}{*\textit{u̯l̥h\textsubscript{x}-o}-} ‘powerful, in power’ as second compound member\is{compounding} *-\textit{u̯alo}- \iw{PCelt}{*(-)\textit{u̯alo}-} in Gaul.\ \iwi{Gaulish}{\textit{Katouualos}}, OW \iwi{OWelsh}{\textit{Catgual}}, OIr.\  \iwi{OIr}{\textit{Cathal}} (\iwi{PCelt}{*\textit{katu-u̯alo}-} ‘battle king’ \textit{vel sim}.) or PrimIr.\ \textit{Cunouali},\iw{OgIr}{\textit{CUNAVA[LI]} (\textit{Cunouali})} Ogam \textit{CUNAVA[LI]}, archaic OIr.\  \iwi{OIr}{\textit{Conual}}, OIr.\ \iwi{OIr}{\textit{Conall}} < \iwi{PCelt}{*\textit{kuno-u̯alo}-} ‘hound king’.
+
+\paragraph*{Commentary}
+
+Other Caland material \is{Caland!system (CS)} belonging to this root: Latin \iwi{Latin}{\textit{ualeō}} ‘am strong, have power’, \iwi{Latin}{\textit{ualidus}} ‘strong, healthy’, Toch. B \iwi{TB}{\textit{walo}}, A \iwi{TA}{\textit{wäl}} ‘king’ (< \iwi{PIE}{*\textit{u̯l̥h\textsubscript{x}-ont}-}). The majority of verbal stems attested in the Indo-European languages point to a verbal meaning ‘to rule’, however (see \citetalias[ 676--677 s.v.\ 1.\ *\textit{u̯elH}-\iw{PIE}{*\textit{u̯elh\textsubscript{x}}-} ‘stark sein, Gewalt haben’]{Rix2001}). According to \citet[16]{McCone1991}, the OIr.\  inflection speaks in favour of setting up the root-final laryngeal as *\textit{h\textsubscript{2}} (see also \citetalias[ 676 s.v.\ 1.\ \mbox{*\textit{u̯elH}-,} n.\ 1]{Rix2001}).
+
+It is doubtful if the rare glossatorial and poetic word OIr.\  \iwi{OIr}{²\textit{fál}} ‘king’ (\citetalias[ \href{https://dil.ie/21232}{dil.ie/21232}]{eDIL}) continues the uncompounded\is{compounding} substan\-tivised adjective \iwi{PIE}{*\textit{u̯l̥h\textsubscript{x}-o}-} ‘powerful, in power’. Its long vowel, which is secured by rhyme, is incom\-patible with the proposed etymology. Perhaps \iwi{OIr}{²\textit{fál}} ‘king’ is only a figurative use of \iwi{OIr}{¹\textit{fál}} ‘wall’.
+
+A number of sound developments in the OIr.\  verb are unexpected. The preponderant \textit{o} of the initial syllable of \iwi{OIr}{\textit{follnaithir}} in Old Irish, beside occasional \iwi{OIr}{\textit{fallnaithir}}, is probably due to sporadic rounding of *\textit{a} caused by the preceding labial consonants. The vocalisation PCelt.\ \iwi{PCelt}{*\textit{u̯aln}-} instead of \iwi{PCelt}{*\textit{u̯lin}-} < \iwi{PIE}{*\textit{u̯l̥n}-} is probably based on the influence of *\textit{u̯alo}- \iw{PCelt}{*(-)\textit{u̯alo}-} < \iwi{PIE}{*\textit{u̯l̥h\textsubscript{x}-o}-}. The \textit{-lln}- of \iwi{OIr}{\textit{follnaithir}} could either be the result of contamination with \iwi{OIr}{\textit{follán}} ‘sound, full’, or due to the regular change of *\textit{-ln}- > *\textit{-ll}- (\citealt[Section 2.1]{Stifter2024}; cf.\ 3pl.\ pass. \textit{follatar} \iw{OIr}{\textit{follnaithir}} Ml. 77b4), with subsequent reintroduction of the present-tense morpheme \textit{-n}-. 
+
+If the interpretation as a \is{Caland!system (CS)} Caland nasal infix present \is{nasal present} is correct, the \isi{stative} meaning ‘be powerful’ (instead of \isi{factitive} ‘make powerful’) is noteworthy.
+
+\section{Plain thematic presents} 
+\label{sec:CelticSTP}
+
+\subsection{Background}
+
+Plain thematic presents \is{thematic!present} typically have a full grade in the root and are attested in \isi{stative} and \isi{fientive} (active or middle) and, less frequently, in \isi{factitive} meaning (active) (see \citealt[146--157]{Rau2009}; \citealt[258--265]{Rau2013}; \citealt{VillanuevaSvensson2021}). Compare Vedic \iwi{Sanskrit}{\textit{rócate}} ‘shines’, Young Avestan act. ptcpl.\ \is{participle} \iwi{Avestan}{\textit{raociṇt}-} ‘shining’, Tocharian B \iwi{TB}{\textit{lyuśtär}} ‘illuminates’ (: \iwi{PIE}{*\textit{leu̯k}-} ‘bright’), Vedic \iw{Sanskrit}{\textit{tápati/te}}  \textit{tápati}/\textit{tápate} ‘be hot, burn’, \textit{tápati} ‘make hot, burn (sth.)’, Khotanese mid. \iwi{Khot}{\textit{ttavāre}} ‘are hot’ (: \iwi{PIE}{*\textit{tep}-} ‘hot’), or Greek \iwi{AG}{ἄγχω} ‘squeeze, throttle’, Latin \iwi{Latin}{\textit{angō}}, -\textit{ere} ‘bind, throttle’ (: \iwi{PIE}{*\textit{h\textsubscript{2}emg̑ʰ}-} ‘narrow’).
+
+In Celtic (cf.\ \citealt[36--37]{Schumacher2004}), there are two verbs with a full-grade root and two verbs with zero-grade root (one of which is uncertain). Rather than being continuants of \iwi{Sanskrit}{\textit{tudáti}} presents, the latter owe their root vocalism to analogical influence from nominal formations that (in both cases) have a zero grade throughout. Two of these verbs are \isi{factitive}, one is \isi{stative}/\isi{fientive}, and one is \isi{stative}; only one has cognates in other Indo-European branches.
+
+\subsection{*\textit{g\textsuperscript{u̯h}er}- ‘hot’}
+\label{sec:STPhot}
+
+\iwi{PIE}{*\textit{g\textsuperscript{u̯h}ér-e/o}-} ‘make hot’ > PCelt.\ \iwi{PCelt}{*\textit{g\textsuperscript{u̯}er-e/o}-} > OIr.\  \iwi{OIr}{\textit{geirid*}, \textit{fo}·\textit{geir}} ‘heat, inflame; irritate’ (cf.\ \citealt[372--373]{Schumacher2004}).
+
+\begin{exe}
+    \ex Old Irish (Metr. Dinds. iv 334)\label{ex:STPhot}\\
+        \gll \textit{aní} {\textbf{\textit{fo}}·\textbf{\textit{geir}} \iw{OIr}{\textit{geirid*}, \textit{fo}·\textit{geir}}} \textit{mo} \textit{menma} \textit{dom}·\textit{beir} \textit{fri} \textit{degra} \textit{duibe.} \\
+        the.\textsc{deictic} \textbf{heat}.\textsc{3sg.prs.ind} my spirit brings.me to \textit{degra} darkness.\textsc{gen.sg} \\
+        \glt ‘The thing that frets my spirit brings me to the \textit{degra} (fire?) of darkness.’ \\
+\end{exe}
+
+\paragraph*{Cognates} 
+
+Ancient Greek θέρομαι ‘become warm/hot’, θέρω \iw{AG}{θέρω, θέρομαι}  ‘heat’,\footnote{\label{fn:theromai}In this type of Greek verbs, the middle inflection with \isi{intransitive} meaning is often attested earlier than the active inflection with \isi{transitive} meaning (cf.\ {θέρομαι} ‘become warm/hot’ \mbox{Hom.+ :} {θέρω} \iw{AG}{θέρω, θέρομαι} ‘heat’ A.R.+); see \citet[155]{Rau2009}.} Alb.\ \iwi{Albanian}{\textit{zien}} ‘cook (tr.)’ (\citetalias[ 219--220]{Rix2001}).
+
+\paragraph*{Adjective}
+
+OIr.\  \iwi{OIr}{\textit{gor} ‘pious’} < \iwi{PIE}{*\textit{g\textsuperscript{u̯h}or-o}-} (cf.\ Bret. \iwi{Breton}{\textit{gor}} ‘warm’, W \iwi{Welsh}{\textit{gwâr}} ‘civilised, gentle, kind’).
+
+\paragraph*{Commentary}
+
+The simple verb \iwi{MIr}{\textit{geirid}} is only attested in a single Middle Irish text, in the form \textit{gerthiut} ‘it warms thee’ (BDD² 317). This is most probably an analogically created form.
+
+\subsection{*\textit{th\textsubscript{2}eu̯s}- ‘silent’}
+\label{sec:STPsilent}
+
+\iwi{PIE}{*\textit{th\textsubscript{2}eu̯s-e/o}-} > ‘be/become silent’ > PCelt.\ \iwi{PCelt}{*\textit{taus-e}/\textit{o}-} > OIr.\ \iwi{OIr}{\textit{tóaid}} ‘be silent’, remodeled as Late Proto-British \iwi{PBrit}{*\textit{tau-i}-} > MW \iwi{MWelsh}{\textit{tewi}} (1sg.\ \textit{tawaf}, 3sg.\ \textit{teu}) ‘be/become quiet, silent’, MBret.\ \iwi{MBret}{\textit{teuell}} ‘be/become quiet, silent’, MCorn. \iwi{MCorn}{\textit{tewel}} ‘be quiet, silent’ (cf.\ \citealt[621--623]{Schumacher2004} without \iwi{OIr}{\textit{tóaid}}).
+
+\begin{exe}
+    \ex Old Irish (\textit{Ériu} iv 30.22)\label{ex:STPsilent1}\\
+        \gll \textit{no} {\textit{\textbf{thoad}} \iw{OIr}{\textit{tóaid}}} \textit{in} \textit{sluag}  \\
+        \textsc{ptcl} \textbf{be.silent}.\textsc{3sg.impf} the host \\
+        \glt ‘The host was/became silent.’\\
+    \ex Middle Welsh (GMB 76; 12\textsuperscript{th} c.)\label{ex:STPsilent2}\\
+        \gll \textit{Py} {\textit{\textbf{dawant}} \iw{MWelsh}{\textit{tewi}}} \textit{anant}, \textit{na} \textit{phrydant} \textit{wawd?} \\
+        why \textbf{be.silent}.\textsc{3pl.prs.ind} musicians that.not compose.\textsc{3pl.prs.ind} praise \\
+        \glt ‘Why are the musicians silent that they do not sing praise?’\\
+\end{exe}
+
+\paragraph*{Cognates}  -- 
+
+\paragraph*{Adjective}
+
+OIr.\ \iwi{OIr}{\textit{tó}} < \iwi{PIE}{*\textit{th\textsubscript{2}e/ou̯s-o}-} and \iwi{OIr}{\textit{tóe, túae}} < \iwi{PIE}{*\textit{th\textsubscript{2}e/ou̯s-i̯o}-}, both `silent'. 
+
+\paragraph*{Commentary}
+
+OIr.\ \iwi{OIr}{\textit{tóaid}} may continue the primary verb\is{derivation!deradical}  or be a secondary,\is{derivation!stem-based} denominal formation \is{denominal!verb} from OIr.\  \iwi{OIr}{\textit{tó}} ‘silent’. The interjection OIr.\  \iwi{OIr}{\textit{tá}} ‘quiet! hush!’ has been tentatively explained as the outcome of the imperative \iwi{PIE}{*\textit{th\textsubscript{2}eu̯s-e!}} (cf.\ \citetalias[ T1--2]{LEIA}), but this is phonologically implausible.
+
+\subsection{*\textit{meh\textsubscript{2}k}- ‘big’}
+\label{sec:STPbig}
+
+\iwi{PIE}{*\textit{mh\textsubscript{2}k-e/o}-} ‘make big’ > PCelt.\ \iwi{PCelt}{*\textit{mak-e/o}-} > OIr.\  \iwi{OIr}{(\textit{do}·\textit{for})\textit{maig}} ‘increase, add’, MW \iwi{MWelsh}{\textit{magu}} (3sg.\ \textit{mac}) ‘rear, breed, nourish, foster’, MBret.\ \iwi{MBret}{\textit{maguaff}} ‘feed, nourish, rear, suckle’, MCorn.\ \iwi{MCorn}{\textit{maga}} ‘rear, nourish’ (cf.\ \citealt[466--470]{Schumacher2004}).
+
+\begin{exe}
+    \ex Old Irish (Fél. Ep. 195)\label{ex:STPbig1}\\
+        \gll {\textbf{\textit{do}}·\textbf{\textit{formaig}} \iw{OIr}{(\textit{do}·\textit{for})\textit{maig}}} \textit{a} \textit{ánae}  \\
+        \textbf{increase}.\textsc{3sg.prs.ind} his wealth\\
+        \glt ‘It increases his wealth.’\\
+    \ex Middle Welsh (MA² 241\textsubscript{a47--8}; 12\textsuperscript{th}--13\textsuperscript{th} c.) \label{ex:STPbig2}\\
+        \gll \textit{or} \textit{a} {\textbf{\textit{fag}} \textbf{\textit{magu}}}\iw{MWelsh}{\textit{magu}} \textit{daear} \textit{hi} \\
+        if \textsc{rel} \textbf{feed}.\textsc{3sg.prs.ind} earth her \\
+        \glt ‘if the earth nourishes her’\\
+\end{exe}
+
+\paragraph*{Cognates}  -- 
+
+\paragraph*{Adjective}
+
+Old Irish  \iwi{OIr}{\textit{machtae}} ‘great’, MW \iwi{MWelsh}{\textit{meith}} ‘long, large’ < \mbox{\iwi{PIE}{*\textit{mh\textsubscript{2}kt(i)i̯o}-}}; MW \iwi{MWelsh}{\textit{maeth}} m.\ ‘sustenance, nourishment, fosterage’ < \iwi{PIE}{*\textit{mh\textsubscript{2}k-to}-} (a substantivised adjective?).
+
+\paragraph*{Commentary}
+
+OIr.\  \iwi{OIr}{\textit{machtae}} ‘great’, MW \iwi{MWelsh}{\textit{meith}} ‘long, large’ may originally have been the participle (\iwi{PIE}{*\textit{mh\textsubscript{2}kt(i)i̯o}-}) of the verb PCelt.\ \iwi{PCelt}{*\textit{mak-e/o}-} ‘raise, increase’, but both phonologically as well as semantically these forms and MW \iwi{MWelsh}{\textit{maeth}} could also belong with the root \iwi{PIE}{*\textit{meg̑}-} ‘big, great’ qua \iwi{PIE}{*\textit{m\textsubscript{ə}g̑t(i)i̯o}-} and \iwi{PIE}{*\textit{m\textsubscript{ə}g̑-to}-}, respectively. 
+
+\subsection{*\textit{lei̯h\textsubscript{x}}- ‘liquid (?)’}
+\label{sec:STPliquid}
+
+\iwi{PIE}{*\textit{lih\textsubscript{x}-e/o}-} ‘be liquid (?)’ > PCelt.\ \iwi{PCelt}{*\textit{°lii̯-e/o}-} > MW 3sg.\ \iwi{MWelsh}{\textit{dillyð}} ‘flow, abound’ (cf.\ \citealt[372--373]{Schumacher2004}).
+
+\begin{exe}
+    \ex Middle Welsh (T 21\textsubscript{24}; 14th c.)\label{ex:STPliquid}\\
+        \gll \textit{Gogwn} \textit{pan} {\textbf{\textit{dillyd}}, \iw{MWelsh}{\textit{dillyð}}} \textit{gogwn} \textit{pan} \textit{wescryd.} \\
+        I.know when \textbf{flow}.\textsc{3sg.prs.ind} I.know when ebb.\textsc{3sg.prs.ind} \\
+        \glt ‘I know when it flows, I know when it ebbs away.’\\
+\end{exe}
+
+\paragraph*{Cognates}  -- 
+
+\paragraph*{Adjective}
+
+Not attested directly, but the following nouns may be substantivisations of Caland adjectives:\is{Caland!system (CS)}  W \iwi{Welsh}{\textit{llin}} ‘flow of blood, pus, discharge’ < \iwi{PIE}{*\textit{lih\textsubscript{x}-nó}-}, OIr.\  \iwi{OIr}{\textit{lië}} ‘flood, spate’, W \iwi{Welsh}{\textit{lli}}, pl.\ \textit{lliant} ‘flood(s)’ < \iwi{PIE}{*\textit{lih\textsubscript{x}-n̥t}-}, OIr.\  \iwi{OIr}{\textit{ler}}, W \iwi{Welsh}{\textit{llŷr}} ‘sea, ocean’ < \iwi{PIE}{*\textit{lih\textsubscript{x}-ró}-}.
+
+\paragraph*{Commentary}
+
+Despite the evidence for a set of typical Caland-derivatives (see above),\is{Caland!system (CS)}  the root \iwi{PIE}{*\textit{lei̯h\textsubscript{x}}-} may be a non-Caland verbal root with a meaning ‘to pour’ (cf.\ \citetalias[ 405--406]{Rix2001}). See also Section \ref{sec:NIPfull} on the question of the merger of this root with \iwi{PIE}{*\textit{pleh\textsubscript{1}}-} ‘fill’. 
+
+\section{Causatives/iteratives}
+\label{sec:CelticCaus}
+\subsection{Background}
+\largerpage
+
+The \isi{causative}s/iteratives\is{iterative} are characterised by an \textit{o}-grade in the root and the suffix \iwi{PIE}{*-\textit{éi̯e/o}-}, and also feature among the typical Caland present stems \is{Caland!system (CS)} (cf.\ \citealt[141--143]{Rau2009}). It is disputed whether they constitute a veritable root-derived\is{derivation!deradical} verbal stem type in the proto-language or if they are rather denominal verbs\is{denominal!verb} derived from *\textit{R(ó)-o}- verbal nouns or adjectival abstracts (e.g., *\textit{g\textsuperscript{u̯h}óro}- \iw{PIE}{*\textit{g\textsuperscript{u̯h}or-o}-} ‘heat’ $\rightarrow$ \iw{PIE}{*\textit{g\textsuperscript{u̯h}or-ei̯e/o}-} *\textit{g\textsuperscript{u̯h}or-e-i̯e/o}- ‘apply heat’\footnote{It is also thinkable that the basis was the instr. sg.\ of the underlying noun: *\textit{g\textsuperscript{u̯h}óreh\textsubscript{1}} ‘with heat’ $\rightarrow$ \iwi{PIE}{*\textit{g\textsuperscript{u̯h}or-eh\textsubscript{1}-i̯e/o}-} (> *\textit{g\textsuperscript{u̯h}or-ei̯h\textsubscript{1}e/o}-?) ‘be/become/make with heat’.}).\footnote{On this question, see \citet{Peters2016}; noncommittal \citet{Bozzone2020}.} These two viewpoints are not necessarily mutually exclusive. A set of frequent denominal verbs\is{denominal!verb} could be seen as the diachronic source of a subsequently abstracted verb-formation type, which then encouraged the creation of new root-derived\is{derivation!deradical} verbal stems by formal analogy.
+
+As root-derived,\is{derivation!deradical} true \isi{causative}s, we would expect \isi{factitive} semantics to be predominant. If they were originally denominal verbs\is{denominal!verb} based on an adjectival abstract \is{deadjectival!noun} ‘X-ness’, however, all three possibilities (\isi{stative}, \isi{fientive}, \isi{factitive}) may be expected, although a secondary specialization of one of them would not be surprising. Within the Indo-European languages, the \isi{factitive} type prevails, with some notable exceptions. Compare the polysemy of Latin \iwi{Latin}{\textit{lūcet}} (if *\textit{lou̯kei̯eti})\iw{PIE}{*\textit{lou̯k-ei̯e-ti}} ‘is light, is clear, shines’ and ‘lights (sth.)’, which, however, might be due to a conflation with the zero-grade \isi{stative}.
+
+In Celtic, this type is attested for six roots, four of which have extra-Celtic cognates. Originally, the meaning of all of them was likely \isi{factitive}, though some of the attested verbs have undergone substantial semantic change. An \textit{o}-grade thematic stem is attested for three of them (one is uncertain), and could be the derivational basis in a not-so-distant past for at least two of them.
+
+\subsection{*\textit{bʰerg̑ʰ}- ‘high’}
+\label{sec:Caushigh}
+
+\iwi{PIE}{*\textit{bʰorg̑ʰ-ei̯e/o}-} ‘make high’ > PCelt.\ \iwi{PCelt}{*\textit{borg-ī}-} > OIr.\  \iwi{OIr}{·\textit{díbairg}} (suppletive prototonic stem of \iwi{OIr}{\textit{do·bidci}}) ‘throw, shoot, hurl’, MW \iwi{MWelsh}{\textit{bwrw}} ‘throw, cast, strike’ (cf.\ \citealt[55--56]{Schrijver1995}; \citealt[120--121]{Schulze-Thulin2001}).
+
+
+\begin{exe}
+    \ex Old Irish (RC iii 178 (LL))\label{ex:Caushigh1}\\
+        \gll {\textit{ro·}\textbf{\textit{díbairg}} \iw{OIr}{·\textit{díbairg}}} \textit{inn} \textit{gai} \textit{dó}  \\
+        \textsc{augm}\textit{·}\textbf{throw}.\textsc{3sg.pret} the spear at.him\\
+        \glt ‘He hurled the spear at him.’\\
+    \ex Middle Welsh (LIDW 63\textsubscript{10}; 13\textsuperscript{th} c.)\label{ex:Caushigh2}\\
+        \gll \textit{o} {\textbf{\textit{buru}} \iw{MWelsh}{\textit{bwrw}}} \textit{y} \textit{mor} \textit{betheu} \textit{yr} \textit{tyr} \textit{neu} \textit{yr} \textit{traeth} \textit{hunnv} \textit{byeuyt} \textit{y} \textit{brenhyn} \\
+        if \textbf{throw}.\textsc{3sg.prs.ind} the sea things to.the land or to.the beach that owns the king\\
+        \glt ‘But if the sea throws anything on the land or on that beach, they belong to the king.’\\
+\end{exe}
+
+\paragraph*{Cognates}
+
+Vedic (\textit{sám}) \iwi{Sanskrit}{\textit{barháya}-} ‘strengthen’, YAv. (\textit{us}) \iwi{Avestan}{\textit{barəzaiia}-} ‘rear’ (\citetalias[ 78--79]{Rix2001}).
+
+\paragraph*{Adjective}
+
+\iwi{PIE}{*\textit{bʰr̥g̑ʰ-(é)nt}-} ‘high’ (see Section \ref{sec:Celticintro}), but semantically distant from the synchronic meaning of the verbs.
+
+\paragraph*{Corresponding \textit{o}-grade thematic stem}  -- 
+
+\paragraph*{Commentary}
+
+The semantic development underlying the Celtic verbs can be imagined as ‘make high’ > ‘raise’ > ‘throw’ and must predate the diversification of the Insular Celtic languages.
+
+\subsection{*\textit{g\textsuperscript{u̯h}er-} ‘warm, hot’}
+\label{sec:Caushot}
+
+\iwi{PIE}{*\textit{g\textsuperscript{u̯h}or-ei̯e/o}-} ‘make warm, heat’ > PCelt.\ \iwi{PCelt}{*\textit{g\textsuperscript{u̯}or-ī}-} > OIr.\  \iwi{OIr}{\textit{guirid}} ‘warm, hatch’, MW \iwi{MWelsh}{\textit{gori}} ‘brood, hatch, fester’ (cf.\ \citealt[146--147]{Schulze-Thulin2001}; \citetalias[ 219--220]{Rix2001}).
+
+
+\begin{exe}
+    \ex Old Irish (Ml. 39c24)\label{ex:Caushot1}\\
+        \gll {\textbf{\textit{guirit}} \iw{OIr}{\textit{guirid}}} \textit{són} (gl. \textit{fouent}) \\
+        \textbf{warm}.\textsc{3pl.prs.ind} this\\
+        \glt ‘they warm’\\
+    \ex Middle Welsh (AL i. 734; 13\textsuperscript{th} c.)\label{ex:Caushot2}\\
+        \gll \textit{teithi} \textit{iar} \textit{yw} \textit{dodwi} \textit{a} \textbf{\textit{gori}} \iw{MWelsh}{\textit{gori}} \\
+        traits hen is lay.eggs.\textsc{vn} and \textbf{brood}.\textsc{vn}\\
+        \glt ‘The nature of a hen is it to lay eggs and to brood.’\\
+\end{exe}
+
+\paragraph*{Cognates}
+
+Alb.\ \iwi{Albanian}{\textit{n-xeh}} ‘warms’ (?) (\citetalias[ 219--220]{Rix2001}).
+
+\paragraph*{Adjective} 
+
+See Section \ref{sec:STPhot} above.
+
+\paragraph*{Corresponding \textit{o}-grade thematic stem} 
+
+OIr.\  \iwi{OIr}{\textit{gor} \textit{o} m. ‘inflammation, pus; the brooding of hens’}, W \iwi{Welsh}{\textit{gôr}} ‘pus; hatching’, MBret.\ \textit{gor} ‘pus, furuncle’ (\iwi{PIE}{*\textit{g\textsuperscript{u̯h}or-o}-}).
+
+\paragraph*{Commentary}
+
+The evidence is somewhat ambiguous: Since the continuants of the thematic noun do not mean ‘warmth, heat’ any longer, the meaning ‘to warm’ of OIr.\  \iwi{OIr}{\textit{guirid}} points to an inherited formation (cf.\ Alb.\ \iwi{Albanian}{\textit{n-xeh}} ‘warms’). On the other hand, the ‘brood, hatch’ semantics that are attested for the verbs and the thematic verbal nouns in both Irish and Welsh may suggest an origin as a denominal verb.\is{denominal!verb}
+
+\subsection{*\textit{h\textsubscript{2}e\kinvbreve }- ‘sharp, pointed’}
+\label{sec:Caussharp}
+
+\iwi{PIE}{*\textit{h\textsubscript{2}o\kinvbreve -ei̯e/o}-} ‘make sharp, pointed’ > PCelt.\ \iwi{PCelt}{*\textit{ok-ī}-} > MW \iwi{MWelsh}{\textit{hogi}} (3sg.\ \textit{hyc}) ‘sharpen, whet’, NBret.\ \iwi{Breton}{\textit{koñvog}, \textit{kougañ}} ‘sharpen, roughen’ (cf.\ \citealt[158]{Schumacher2000} and \citealt[171--173]{Schulze-Thulin2001}).
+
+
+\begin{exe}
+    \ex Middle Welsh (B XXII 121; 15\textsuperscript{th} c.)\label{ex:Caussharp}\\
+        \gll \textit{ef} \textit{a} \textit{ddaw} \textit{baedd} \textit{ac} \textit{a} {\textbf{\textit{hyc}} \iw{MWelsh}{\textit{hogi}}} \textit{y} \textit{ddannedd} \\
+        \textsc{ptcl} \textsc{rel} come.\textsc{3sg.fut} boar and \textsc{rel} \textbf{sharpen}.\textsc{3sg.prs.ind} its teeth\\
+        \glt ‘There comes a wild boar and sharpens its teeth.’\\
+\end{exe}
+
+\paragraph*{Cognates}
+
+Old High German \iwi{OHG}{\textit{eggen}} ‘harrow’ (cf.\ \citetalias[ 261]{Rix2001}).
+
+\paragraph*{Adjective}
+
+OIr.\  \iwi{OIr}{\textit{ér}} ‘noble, great’ < \iwi{PIE}{*\textit{h\textsubscript{2}e\kinvbreve -ro}-} (cf.\ Ancient Greek \iwi{AG}{ἄκρος} ‘utter, highest’, Old Lithuanian \iwi{OLith}{\textit{ašras}} ‘sharp’), but semantically distant.
+
+\paragraph*{Corresponding \textit{o}-grade thematic stem}
+
+W \iwi{Welsh}{\textit{og}} ‘harrow’ < \iwi{PIE}{*\textit{h\textsubscript{2}o\kinvbreve o}-} or \iwi{PIE}{*\textit{h\textsubscript{2}o\kinvbreve eh\textsubscript{2}}-} (but semantically distant).
+
+\paragraph*{Commentary}
+
+The meaning of the verbs in Welsh and Breton is clearly \isi{factitive}. NBret. \iwi{Breton}{\textit{koñvog}, \textit{kougañ}} ‘sharpen, roughen’ corresponds to W \iwi{Welsh}{\textit{cyfogaf}, \textit{cyfogi}} ‘make keen or pointed, roughen’. The word-initial \textit{h}- in Welsh is unetymological \citep[158]{Schumacher2000}.
+
+\subsection{*\textit{temk}- ‘hard’}
+\label{sec:Caushard}
+
+\iwi{PIE}{*\textit{tomk-ei̯e/o}-} ‘make hard’ > PCelt.\ \iwi{PCelt}{*\textit{tonk-ī}-} > OIr.\  \iwi{OIr}{\textit{tocaid}} ‘destine’ (via Proto-Goidelic \iwi{PGoid}{*\textit{toggī}-}), MW \iwi{MWelsh}{\textit{tynghu}} ‘destine, affirm’, MBret.\ \iwi{MBret}{\textit{tonquaff}} ‘destine’ (cf.\ \citealt{Schumacher1995}; \citealt[158]{Schulze-Thulin2001}).
+
+
+\begin{exe}
+    \ex Old Irish (Thes.\ ii 293.6--7) \label{ex:Caushard1}\\
+        \gll \textit{ma} {\textit{rom·}\textbf{\textit{thoicther}}\textit{-sa} \iw{OIr}{\textit{tocaid}}} \textit{in} {\textit{so} ...} \textit{manim·}\textbf{\textit{rotchaither}} \\
+        if \textsc{augm}.me\textit{·}\textbf{destine}.\textsc{3sg.prs.subj.pass}-me the this if.not.me·\textsc{augm}.\textbf{destine}.\textsc{3sg.prs.subj.pass}\\
+        \glt ‘if this be destined for me … if it not be destined for me’\\
+    \ex Middle Welsh (R 1036.43, CL1H II 21.a; c. 1400)\label{ex:Caushard2}\\
+        \gll \textit{truan} \textit{a} \textit{dynghet} \textit{a} {\textbf{\textit{dynghwyt}} \iw{MWelsh}{\textit{tynghu}}} \textit{y} \textit{lywarch} \\
+        miserable of destiny \textsc{rel} \textbf{destine}.\textsc{impers.pret} to Llywarch \\
+        \glt ‘It was a wretched destiny that was destined to Llywarch.’ (\citealt[53]{Schumacher1995})\\
+\end{exe}
+
+\paragraph*{Cognates}
+
+Old Saxon \iwi{OS}{\textit{ā-thengian}, \textit{an-thengian}} ‘carry out, complete’ (cf.\ \citetalias[ 625--626]{Rix2001}).
+
+\paragraph*{Adjective} 
+
+OIr.\  \iwi{OIr}{\textit{técht}} ‘(of liquids) thick, frozen; calm, peaceful’ < \iwi{PIE}{*\textit{tm̥k-to}-} (but semantically distant). See Section \ref{sec:stativehard} above.
+
+\paragraph*{Corresponding \textit{o}-grade thematic stem}  -- 
+
+
+\paragraph*{Commentary}
+
+The expected OIr.\  outcome of Proto-Goidelic \iwi{PGoid}{*\textit{toggī}-} is \iwi{OIr}{*\textit{tucaid}} (thus also \citealt{Schumacher1995}). The actually attested forms \iwi{OIr}{\textit{tocaid}} etc.\ owe their vocalism probably to influence from the verbal abstract \iwi{OIr}{\textit{tocad}} ‘fortune’ < *\textit{tomk\nobreakdash-eto}-.\iw{PIE}{*\textit{tomk-eto}-} The Brythonic verbs have often been treated as belonging to PCelt.\ \iwi{PCelt}{*\textit{tung-e/o}-} ‘swear’ (OIr.\  \iwi{OIr}{\textit{tongaid}}, W \iwi{Welsh}{\textit{tyngaf}, \textit{tyngu}}, MBret.\ \iwi{MBret}{\textit{toeaff}}). However, \citet{Schumacher1995} has shown that they have to be kept separate.
+
+\subsection{*\textit{u̯elk}- ‘wet’}
+\label{sec:Causwet}
+
+\iwi{PIE}{*\textit{u̯olk-ei̯e/o}-} ‘make wet’ > PCelt.\ \iwi{PCelt}{*\textit{u̯olk-ī}-} > OIr.\  \textit{folcaid} \iw{OIr}{\textit{folcaid}, \textit{·folcai}} ‘wash the head’, MW \iwi{MWelsh}{\textit{golchi}} (3sg.\ \textit{gwylch}) ‘wash’, MCorn. \iwi{MCorn}{\textit{gol(g)hy}}, MBret.\ \iwi{MBret}{\textit{guelchiff}}, NBret.\ \iwi{Breton}{\textit{gwalc}’\textit{hañ}} (see \citealt[141; 159--160]{Schulze-Thulin2001}; \citetalias[ 679]{Rix2001}).
+
+\begin{exe}
+    \ex Old Irish (Sg. 146b3)\label{ex:Causwet1}\\
+        \gll \textbf{\textit{folcaimm}} \iw{OIr}{\textit{folcaid}, \textit{·folcai}} (gl.\ \textit{lavo}) \\
+        \textbf{wash}.\textsc{1sg.prs.ind} \\
+        \glt ‘I wash’\\
+    \ex Middle Welsh (T 41, 6--7; 14\textsuperscript{th} c.) \label{ex:Causwet2}\\
+        \gll {\textbf{\textit{golchettawr}} \iw{MWelsh}{\textit{golchi}}} \textit{ei} \textit{lestri}, \textit{bid} \textit{groyw} \textit{ei} \textit{vrecci} \\
+        \textbf{wash}.\textsc{impers.impv} his vessels be.\textsc{3sg.impv} clear his wort \\
+        \glt ‘Let his vessels be washed, his wort be clear.’\\
+\end{exe}
+
+\paragraph*{Cognates}  -- 
+
+\paragraph*{Adjective}
+
+PIE \iwi{PIE}{*\textit{u̯l̥k-u}-} > PCelt.\ \iwi{PCelt}{*\textit{u̯liku}-}. This may be continued directly in OIr.\  \iwi{OIr}{\textit{fliuch}} ‘wet’. OW \iwi{OWelsh}{\textit{gulip}}, ModW \iwi{Welsh}{\textit{gwlyb}}, fem. \textit{gwleb} ‘wet’, Corn.\ \iwi{Cornish}{\textit{gleb}}, OBret.\ \iwi{OBret}{\textit{gulip}}, NBret.\ \iwi{Breton}{\textit{gleb}} looks like a thematisation\is{thematization} \iwi{PIE}{*\textit{u̯liku̯o}-} > *\textit{u̯lik\textsuperscript{u̯}o}- from this (cf.\ \citealt{Kummel2022}).
+
+\paragraph*{Corresponding \textit{o}-grade thematic stem}
+
+The corresponding noun is \iwi{PIE}{*\textit{u̯ólk-o}-} > OIr.\  \iwi{OIr}{\textit{folc}} \textit{o}, m.\ ‘heavy rain, wet weather’, perhaps W \iwi{Welsh}{\textit{golch}} ‘a washing, cleansing’ (cf.\ Latvian \iwi{Latv}{\textit{val̂ks}} m.\ ‘creek, brook, small stream of water’). Since W \iwi{Welsh}{\textit{golch}} is attested rather late, it is probably a \isi{backformation} and not a descendant of *\textit{u̯ólk\nobreakdash-o}-.\iw{PIE}{*\textit{u̯ólk-o}-}
+
+\paragraph*{Commentary} 
+
+The root \iwi{PIE}{*\textit{u̯elk}-} (cf.\ ?*\textit{u̯elk}- in \citetalias[ 679]{Rix2001} ‘feucht sein/werden’) is a \isi{doublet} of \iwi{PIE}{*\textit{u̯elg}-} ‘wet’ (cf.\ 2.*\textit{u̯elg}- in \citetalias[ 676]{Rix2001} ‘feucht werden’). For the latter, a \isi{causative} \iwi{PIE}{*\textit{u̯olg-ei̯e/o}-} ‘make wet’ is attested in Serbo-Croatian \iwi{SCr}{\textit{vlȁžiti}} ‘moisten’, Russian \iwi{Russ}{\textit{volóžit’}} ‘id.’, Lithuanian \iwi{Lith}{\textit{válgyti}} ‘eat’. It is formally conceivable that \iwi{PCelt}{*\textit{u̯elk}-} is a regular Celtic development of \iwi{PIE}{*\textit{u̯elg-s\kinvbreve }-}. In this case the Caland behaviour \is{Caland!system (CS)} of this neo-root\is{root!secondary} \iwi{PCelt}{*\textit{u̯elk}-} would have to be an inner-Celtic development. However, a root-final voiceless *\textit{k} is also necessary to explain Lith.\ \iwi{Lith}{\textit{valkà}} f.\ ‘puddle’, Latv.\ \iwi{Latv}{\textit{val̂ka}} ‘creek, brook, wet meadow’.
+
+
+\subsection{*\textit{meg̑}- ‘big’}
+\label{sec:Causbig}
+
+\iwi{PIE}{*\textit{mog̑-ei̯e/o}-} ‘make big’ > PCelt.\ \iwi{PCelt}{*\textit{mog-ī}-} > OIr.\ *\textit{mogaid}/\textit{moigid}, ·\textit{mogai}/·\textit{moigi}* (?) \iw{OIr}{\textit{móaigid}, *\textit{mogaid}, ·\textit{mogai}/\textit{moigid}, ·\textit{moigi}*} ‘make great, increase, magnify’ (>{>} \textit{móaigid}), MW \iwi{MWelsh}{\textit{moi}} ‘to foal’ (cf.\ \citealt[136]{Joseph1987}; \citealt[469]{Schumacher2004}).
+
+\begin{exe}
+    \ex Old Irish (\textit{Ériu} xvi 65.47, \textit{Celtica} v 136) \label{ex:Causbig1}\\
+        \gll \textit{rod-bet} \textit{o} \textit{gallaib} \textit{bann[ach]aib}(?) \textit{barca} … \textit{maínib} \textbf{\textit{mogatar}} \iw{OIr}{\textit{móaigid}, *\textit{mogaid}, ·\textit{mogai}/\textit{moigid}, ·\textit{moigi}*} ({ms.} \textit{mogetair})  \\
+        \textsc{augm}.you-be.\textsc{3pl.prs.subj} from foreigners zealous ships {} treasures \textbf{magnify}.\textsc{3pl.prs.ind.pass.rel}\\
+        \glt ‘From industrious (?) foreigners may you have (receive) … boats that are magnified (enriched) with treasures.’\\
+    \ex Middle Welsh (\textit{WM} 31\textsubscript{1--4}; 14\textsuperscript{th} c.) \label{ex:Causbig2}\\
+        \gll \textit{a} \textit{phob} \textit{nos} \textit{Calanmei} \textit{y} {\textbf{\textit{moei}}, \iw{MWelsh}{\textit{moi}}} \textit{ac} \textit{ny} \textit{wybydei} \textit{neb} \textit{un} \textit{geir} \textit{e wrth} \textit{y} \textit{hebawl.} \\
+        and every night 1\textsuperscript{st}.of.May \textsc{ptcl} \textbf{foal}.\textsc{3sg.impf} and not knew anyone one word about her colt \\
+        \glt ‘And every May-eve [the mare] foaled, but no one knew a word about her colt.’\\
+\end{exe}
+
+\paragraph*{Cognates}  -- 
+
+
+
+\paragraph*{Adjective}
+
+OIr.\  \iwi{OIr}{\textit{maige}} ‘great’, Gaul.\ \iwi{Gaulish}{\textit{Magio-rix}}, \iwi{Gaulish}{\textit{Magius}} < \iwi{PIE}{*\textit{m\textsubscript{ə}g̑-i̯o}-}.
+
+\paragraph*{Corresponding \textit{o}-grade thematic stem}  -- 
+
+\paragraph*{Commentary} 
+
+Most attestations of this verb in OIr.\  are philologically difficult. Variants in \textit{mog}-, \textit{moig}- and \textit{moaig}- or \textit{móaig}- occur seemingly in free variation in the manuscript tradition of texts. \iw{OIr}{\textit{móaigid}, *\textit{mogaid}, ·\textit{mogai}/\textit{moigid}, ·\textit{moigi}*}  \textit{Moaig}-/\textit{móaig}- could be a \isi{reanalysis} or even a recent secondary formation\is{derivation!stem-based} based on the comparative \textit{mó} (of \iwi{OIr}{\textit{már}, \textit{mór}}) ‘bigger, greater’ + the productive\is{productivity} verbal suffix \iwi{OIr}{-\textit{aig}-}. Furthermore, a grave shadow of doubt is cast on the inherited character of this verb by the fact that the regular outcome of PCelt.\ \iwi{PCelt}{*\textit{mog-ī}-} ought to be **\textit{mugaid} in Old Irish (cf.\ PCelt.\ \iwi{PCelt}{*\textit{logī}-} ‘lay’ > \iwi{OIr}{\textit{do·lugai}} ‘forgive < *‘lay down’). This is perhaps an indication that the vowel of the first syllable is long in the first place.
+
+The meaning of MW \iwi{MWelsh}{\textit{moi}} ‘to foal’, on the other hand, is difficult to reconcile with ‘to make big’. In short, the cognacy between the two verbs is just as uncertain as their derivation from \iwi{PIE}{*\textit{mog̑-ei̯e/o}-} ‘make big’.
+
+\section{Perfects: *\textit{temh\textsubscript{x}}- ‘faint, dark’}
+\label{sec:CelticPerf}
+
+
+\iwi{PIE}{*\textit{te-tomh\textsubscript{x}}-} ‘has become faint’ > PCelt.\ \iw{PCelt}{*\textit{tetom-}, *\textit{tetam}-} *\textit{tetom-} >{>} *\textit{tetam}- > OIr.\  \iwi{OIr}{\textit{tathaim}, \textit{tathamair}} ‘died’ (cf.\ \citealt[68--79; 634--635]{Schumacher2004}).
+
+
+\begin{exe}
+    \ex Middle Irish (Metr. Dinds. iv 34.52) \label{ex:Perfdark}\\
+        \gll \textit{conid} \textit{’sin} \textit{tsléib} \textbf{\textit{tathamair}} \iw{OIr}{\textit{tathaim}, \textit{tathamair}} \\
+        so.that.it.is on.that mountain \textbf{die}.\textsc{3sg.pret} \\
+        \glt ‘So that it is on that mountain that he died.’\\
+\end{exe}
+
+\paragraph*{Cognates}
+
+Vedic \iwi{Sanskrit}{\textit{tatāma}} ‘fainted’ (cf.\ \citetalias[ 624]{Rix2001}; \citetalias[ s.v.\ *\textit{temH}-]{LIVaddenda}).
+
+\paragraph*{Adjective}
+
+OIr.\  \iwi{OIr}{\textit{tem}, \textit{teim}} ‘dark’ < \iwi{PIE}{\textit{*temh\textsubscript{x}-o}-}.
+
+\paragraph*{Commentary}
+
+On perfects\is{perfect} and the Caland system,\is{Caland!system (CS)}  see \citet{Rau2013}. Besides ‘dark’ (cf.\ OIr.\  \iwi{OIr}{\textit{tem}, \textit{teim}} ‘dark’), the root also had a meaning ‘(physically) faint’ (cf.\ \citetalias[ 1063--1064]{IEW} “geistig benommen, betäubt” and “dunkel”; \citetalias[ 624]{Rix2001} “ermatten, ohnmächtig werden”); compare English \textit{to black out} ‘to faint’.
+
+According to \citet[634--635]{Schumacher2004}, the irregular vocalism in the reduplication syllable can be explained as based on an unattested present \iwi{OIr}{*\textit{taimid}, *\textit{·taim}} ‘dies’ (cf.\ pres.\ \iwi{OIr}{\textit{cainid}} ‘sings’ and pret.\ \textit{cachain}); alternatively, it can have been generalised from the weak stem *\textit{tetm̥h\textsubscript{x}}-, which regularly yielded PCelt.\ *\textit{tetam}-.\iw{PCelt}{*\textit{tetom-}, *\textit{tetam}-} The earliest, albeit Middle Irish, attestations of the verb have deponent endings, perhaps influenced by other suffixless preterites of roots in -\textit{m} such as \iwi{OIr}{\textit{lámair}} \iw{MIr}{\textit{lámair}} (\iwi{OIr}{\textit{ro·laimethar}} ‘dare’) and \iwi{OIr}{\textit{dámair}} \iw{MIr}{\textit{dámair}} (\iwi{OIr}{\textit{daimid}} ‘endure, suffer’).
+
+\section{Discussion}
+\label{sec:CelticDiscussion}
+
+To find out whether the derivation of root-based\is{derivation!deradical} deadjectival verbal\is{deadjectival!verb} stems remained at least to some extent productive\is{productivity} in the prehistory of the Celtic languages, it will first be necessary to divide the total number of twenty verbal stems into those with extra-Celtic cognates (A) and those without extra-Celtic cognates (B). Group (A) consists of eleven verbs.
+
+\begin{itemize}
+    \item[(A)] 
+
+\begin{enumerate}
+    \item {*\textit{(h\textsubscript{1})rudʰ-eh\textsubscript{1}-i̯e/o}-} \iw{PIE}{*\textit{h\textsubscript{1}rudʰ-eh\textsubscript{1}-i̯e/o}-} ‘be/make/become red’ > PCelt.\ \iwi{PCelt}{*\textit{rud-ī}-} > OIr.\  \iwi{OIr}{\textit{ruidid}, ·\textit{ruidi}} ‘flush, blush; make red’
+        (cf.\ Latin \iwi{Latin}{\textit{rubēre}} ‘be/become red’, Old High German \iwi{OHG}{\textit{rotēn}} ‘be/turn red’, Latvian \iwi{Latv}{\textit{rudêt}} ‘rust’, Russian Church Slavonic \iwi{RCS}{\textit{rъděti sja}} ‘become red’)
+        
+    \item \iwi{PIE}{*\textit{k\textsuperscript{(u̯)}su̯ibʰ-eh\textsubscript{1}-i̯e/o}-} ‘be/make/become swift’ > PCelt.\ \iwi{PCelt}{*\textit{ksu̯ib-ī}-} > MIr.\ \iwi{MIr}{\textit{scibid}, ·\textit{scibi}} ‘flow, swim (of a vessel); move; move sth. jerkily’, MW \iwi{MWelsh}{\textit{chwyfu}} (3sg.\ \textit{chwyf}) ‘move to and fro, budge’, MBret.\ \iwi{MBret}{\textit{fifual}} ‘move’
+        (cf.\ Old High German \iwi{OHG}{\textit{swebēn}} ‘be agitated (of the sea), be in high and low tide’)
+        
+    \item \iwi{PIE}{*\textit{tum-eh\textsubscript{1}-i̯e/o}-} ‘be/make/become thick’ > PCelt.\ \iwi{PCelt}{*\textit{tum-ī}-} > MW \iwi{MWelsh}{\textit{tyfu}} (3sg.\ \textit{tyf}) ‘grow; make grow; heal’, NBret. \iwi{Breton}{\textit{teñviñ}} ‘grow, increase’ (OBret.\ 3sg.\ \iwi{OBret}{\textit{ni-tum}}), MCorn. \iwi{MCorn}{\textit{tevi}} ‘grow’
+        (cf.\ Latin \iwi{Latin}{\textit{tumēre}} ‘be(come) swollen’, Lithuanian \iwi{Lith}{\textit{tum\dotacute{e}ti}} ‘become thick, coagulate’)
+        
+    \item \label{ref:itemburn} \iwi{PIE}{*\textit{h\textsubscript{2/1}i-n(e)-dʰ}-} ‘make burn’ >{>} PCelt.\ \iwi{PCelt}{*\textit{ind-e}/\textit{o}-} > MW \iwi{MWelsh}{\textit{enn-ynnu}} (3sg.\ \textit{enn-ynn}) ‘kindle, light a fire’
+        (cf.\ Vedic \iwi{Sanskrit}{\textit{indhé}} ‘lights a fire’)
+        
+    \item \label{ref:itemfull}
+    \iwi{PIE}{*\textit{pl̥-n(e)-h\textsubscript{1}}-} ‘make full’ > ? PCelt.\ \iwi{PCelt}{*\textit{φli-ni}-} > OIr.\  \iwi{OIr}{\textit{do}·\textit{lin}} ‘flow, abound’ (or \isi{stative}/\isi{fientive} ‘be/become full’?)
+        (cf.\ Vedic \iwi{Sanskrit}{\textit{pr̥ṇā́ti}} ‘fills’, Old Avestan \iwi{Avestan}{\textit{pǝrǝnā}} ‘fill!’, Latin \iwi{Latin}{\textit{polleō}} ‘be strong, able’, Armenian \iwi{Armenian}{\textit{lnwom}} ‘I fill’, Albanian \iwi{Albanian}{\textit{m-blon}} ‘fills’)
+        
+    \item \iwi{PIE}{*\textit{g\textsuperscript{u̯h}ér-e/o}-} ‘make hot’ > PCelt.\ \iwi{PCelt}{*\textit{g\textsuperscript{u̯}er-e/o}-} > OIr.\  \iwi{OIr}{\textit{geirid*}, \textit{fo}·\textit{geir}} ‘heat, inflame; irritate’
+        (cf.\ Ancient Greek {θέρομαι} ‘become warm/hot’, {θέρω} \iw{AG}{θέρω, θέρομαι}  ‘heat’, Alb.\ \iwi{Albanian}{\textit{zien}} ‘cook (tr.)’)
+        
+    \item \iwi{PIE}{*\textit{bʰorg̑ʰ-ei̯e/o}-} ‘make high’ > PCelt.\ \iwi{PCelt}{*\textit{borg-ī}-} > OIr.\  \iwi{OIr}{·\textit{díbairg}} (suppletive prototonic stem of \iwi{OIr}{\textit{do·bidci}}) ‘throw, shoot, hurl’, MW \iwi{MWelsh}{\textit{bwrw}} ‘throw, cast, strike’ 
+        (cf.\ Vedic (\textit{sám}) \iwi{Sanskrit}{\textit{barháya}-} ‘strengthen’, YAv. (\textit{us}) \iwi{Avestan}{\textit{barəzaiia}-} ‘rear’)
+        
+    \item \iwi{PIE}{*\textit{g\textsuperscript{u̯h}or-ei̯e/o}-} ‘make warm, heat’ > PCelt.\ \iwi{PCelt}{*\textit{g\textsuperscript{u̯h}or-ī}-} > OIr.\  \iwi{OIr}{\textit{guirid}} ‘warm, hatch’, MW \iwi{MWelsh}{\textit{gori}} ‘brood, hatch, fester’ 
+        (cf.\ Alb.\ \iwi{Albanian}{\textit{n-xeh}} ‘warms’ ?)
+        
+    \item \iwi{PIE}{*\textit{h\textsubscript{2}o\kinvbreve -ei̯e/o}-} ‘make sharp, pointed’ > PCelt.\ \iwi{PCelt}{*\textit{ok-ī}-} > MW \iwi{MWelsh}{\textit{hogi}} (3g.\ \textit{hyc}) ‘sharpen, whet’, NBret.\  \iwi{Breton}{\textit{koñvog}, \textit{kougañ}} ‘sharpen, roughen’
+        (cf.\ Old High German \iwi{OHG}{\textit{eggen}} ‘harrow’)
+        
+    \item \iwi{PIE}{*\textit{tomk-ei̯e/o}-} ‘make hard’ > PCelt.\ \iwi{PCelt}{*\textit{tonk-ī}-} > OIr.\  \iwi{OIr}{\textit{tocaid}} ‘destine’ (via Proto-Goidelic \iwi{PGoid}{*\textit{toggī}-}), MW \iwi{MWelsh}{\textit{tynghu}} ‘destine, affirm’, MBret.\ \iwi{MWelsh}{\textit{tonquaff}} ‘destine’ 
+        (cf.\ Old Saxon \iwi{OS}{\textit{ā-thengian}, \textit{an-thengian}} ‘carry out, complete’)
+        
+    \item \iwi{PIE}{*\textit{te-tomh\textsubscript{x}}-} ‘has become faint’ > PCelt.\ *\textit{tetom}- >{>} *\textit{tetam}-\iw{PCelt}{*\textit{tetom-}, *\textit{tetam}-} > OIr.\  \iwi{OIr}{\textit{tathaim}, \textit{tathamair}} ‘died’
+        (cf.\ Vedic \iwi{Sanskrit}{\textit{tatāma}} ‘fainted’)
+\end{enumerate}
+\end{itemize}
+
+The existence of corresponding verbal stems in the other branches suggests an inherited status of the eleven verbs of group (A). Note that items \ref{ref:itemburn}. and \ref{ref:itemfull}. might belong to verbal roots ‘to ignite’ and ‘to fill’, respectively.
+
+Group (B) contains nine verbs, none of which has exact correspondences in the other Indo-European branches. This may suggest that these verbs were created within Celtic. Interestingly, all of them have adjectives (or potential substantivisations of such adjectives) beside them.
+
+\begin{itemize}
+    \item[(B)] 
+\begin{enumerate}
+    \item \label{ref:itemhard}
+    \iwi{PIE}{*\textit{tm̥k-eh\textsubscript{1}-i̯e/o}-} ‘be/make/become hard’ > PCelt.\ \iwi{PCelt}{*\textit{tank-ī}-} > OIr.\  \iwi{OIr}{\textit{con}·\textit{téici}} ‘congeal, become solid; make solid’         (cf.\ OIr.\  \iwi{OIr}{\textit{técht}} ‘(of liquids) thick, frozen; calm, peaceful’ < \iwi{PIE}{\textit{*tm̥k-to}-})
+    
+    \item \label{ref:itemred} {*\textit{(h\textsubscript{1})ru-n(e)-dʰ}-}  \iw{PIE}{*\textit{h\textsubscript{1}ru-n(e)-dʰ}-} ‘make red’ >{>} PCelt.\ \iwi{PCelt}{*\textit{rund-e}/\textit{o}-} > OIr.\  \iwi{OIr}{\textit{rondaid}, ·\textit{roind}} ‘dye red’, \iwi{OIr}{\textit{fo}·\textit{roind}} ‘stain’         (cf.\ OIr.\  \iwi{OIr}{\textit{rúad}}, archaic and poetic \iwi{OIr}{\textit{ród}} ‘red’ < *\textit{(h\textsubscript{1})re/ou̯dʰ-o}-) \iw{PIE}{*\textit{h\textsubscript{1}re/ou̯dʰ-o}-}
+
+    \item \label{ref:itemlong} \iwi{PIE}{*\textit{seh\textsubscript{1}-n(e)-i}-} ‘make long’ > PCelt.\ \iwi{PCelt}{*\textit{sī-ni}-} >{>} *\textit{sīnī}- > OIr.\  \iwi{OIr}{\textit{sínid}, ·\textit{sín}(\textit{i})} ‘extend, stretch (oneself)’ 
+        (cf.\ OIr.\  \iwi{OIr}{\textit{sír}} ‘long’ < \iwi{PIE}{*\textit{seh\textsubscript{1}-ro}-})
+
+    \item \label{ref:itempowerful}
+    \iwi{PIE}{*\textit{u̯l̥-n(e)-h\textsubscript{x}}-} ‘be powerful’ > PCelt.\ \iwi{PCelt}{*\textit{u̯al-na}-} >{>} *\textit{u̯all-nā-} > OIr.\  \mbox{\iwi{OIr}{\textit{follnaithir}}} ‘rule’ 
+        (cf.\ \iwi{PIE}{*\textit{u̯l̥h\textsubscript{x}-o}-} ‘powerful, in power’ as the \is{compounding}second compound member *-\textit{u̯alo}-\iw{PCelt}{*(-)\textit{u̯alo}-} in Gaul.\ \iwi{Gaulish}{\textit{Katouualos}}, OW \iwi{OWelsh}{\textit{Catgual}}, OIr.\  \iwi{OIr}{\textit{Cathal}}, etc.)
+    
+    \item \label{ref:itemsilent}
+    \iwi{PIE}{*\textit{th\textsubscript{2}eu̯s-e/o}-} > ‘be(come) silent’ > PCelt.\ \iwi{PCelt}{*\textit{taus-e}/\textit{o}-} > OIr.\  \iwi{OIr}{\textit{tóaid}} ‘be silent’, >{>} Late Proto-Brit.\ \iwi{PBrit}{*\textit{tau-i}-} > MW \iwi{MWelsh}{\textit{tewi}} (1sg.\ \textit{tawaf}, 3sg.\ \textit{teu}) ‘be(come) quiet, silent’, MBret.\ \iwi{MBret}{\textit{teuell}} ‘be(come) quiet, silent’, MCorn.\ \iwi{MCorn}{\textit{tewel}} ‘be quiet, silent’ 
+        (cf.\ OIr.\  \iwi{OIr}{\textit{tó}} ‘silent’ < \iwi{PIE}{*\textit{th\textsubscript{2}e/ou̯s-o}-}; OIr.\  \textit{túae} \iw{OIr}{\textit{tóe, túae}} ‘silent’ < \iwi{PIE}{*\textit{th\textsubscript{2}e/ou̯s-i̯o}-})
+
+    \item \label{ref:itembig}\iwi{PIE}{*\textit{mh\textsubscript{2}k-e/o}-} ‘make, become big’ > PCelt.\ \iwi{PCelt}{*\textit{mak-e/o}-} > OIr.\  \iwi{OIr}{(\textit{do}·\textit{for})\textit{maig}} ‘increase, add’, MW \iwi{MWelsh}{\textit{magu}} (3sg.\ \textit{mac}) ‘rear, breed, nourish, foster’, MBret.\ \iwi{MBret}{\textit{maguaff}} ‘feed, nourish, rear, suckle’, MCorn. \iwi{MCorn}{\textit{maga}} ‘rear, nourish’ 
+        (cf.\ OIr.\  \iwi{OIr}{\textit{machtae}} ‘great’, MW \iwi{MWelsh}{\textit{meith}} ‘long, large’ < \iwi{PIE}{*\textit{mh\textsubscript{2}kt(i)i̯o}-}; MW \iwi{MWelsh}{\textit{maeth}} m.\ ‘sustenance, nourishment, fosterage’ < \iwi{PIE}{*\textit{mh\textsubscript{2}k-to}-}, a substantivised adjective?)
+
+    \item \label{ref:itemliquid}\iwi{PIE}{*\textit{lih\textsubscript{x}-e/o}-} ‘be liquid (?)’ > PCelt.\ \iwi{PCelt}{*\textit{°lii̯-e/o}-} > MW 3sg.\ \iwi{MWelsh}{\textit{dillyð}} ‘flow, abound’ 
+        (cf.\ the potential substantivisations of Caland adjectives:\is{Caland!system (CS)}  W \iwi{Welsh}{\textit{llin}} ‘flow of blood, pus, dis\-charge’ < \iwi{PIE}{*\textit{lih\textsubscript{x}-nó}-}, OIr.\  \iwi{OIr}{\textit{lië}} ‘flood, spate’, W \iwi{Welsh}{\textit{lli}}, pl.\ \textit{lliant} ‘flood(s)’ < \iwi{PIE}{*\textit{lih\textsubscript{x}-n̥t}-}, OIr.\  \iwi{OIr}{\textit{ler}}, W \iwi{Welsh}{\textit{llŷr}} ‘sea, ocean’ < \iwi{PIE}{*\textit{lih\textsubscript{x}-ró}-})
+
+    \item \label{ref:itemwet}\iwi{PIE}{*\textit{u̯olk-ei̯e/o}-} ‘make wet’ > PCelt.\ \iwi{PCelt}{*\textit{u̯olk-ī}-} > Old Irish  \iwi{OIr}{\textit{folcaid}, \textit{·folcai}} ‘wash the head’, MW \iwi{MWelsh}{\textit{golchi}} (3sg.\ \textit{gwylch}) ‘wash’, MCorn. \iwi{MCorn}{\textit{gol(g)hy}}, MBret.\ \iwi{MBret}{\textit{guelchiff}} 
+        (cf.\ OIr.\  \iwi{OIr}{\textit{fliuch}} ‘wet’ < PCelt.\ \iwi{PCelt}{*\textit{u̯liku}-} < \iwi{PIE}{*\textit{u̯l̥k-u}-}; OW \iwi{OWelsh}{\textit{gulip}}, ModW \iwi{Welsh}{\textit{gwlyb}}, fem. \textit{gwleb} ‘wet’, Corn.\ \iwi{Cornish}{\textit{gleb}}, OBret.\ \iwi{OBret}{\textit{gulip}}, NBret.\ \iwi{Breton}{\textit{gleb}} < *\textit{u̯lik\textsuperscript{u̯}o}- < \iwi{PIE}{*\textit{u̯liku̯o}-})
+
+    \item \label{ref:itemmog}\iwi{PIE}{*\textit{mog̑-ei̯e/o}-} ‘make big’ > PCelt.\ \iwi{PCelt}{*\textit{mog-ī}-} > OIr.\  \iw{OIr}{\textit{móaigid}, *\textit{mogaid}, ·\textit{mogai}/\textit{moigid}, ·\textit{moigi}*} *\textit{mogaid}/\textit{moigid}, \mbox{·\textit{mogai}/}·\textit{moigi}* ‘make great, increase, magnify’ (>{>} \textit{móaigid}), MW \iwi{MWelsh}{\textit{moi}} ‘to foal’ 
+        (cf.\ OIr.\  \iwi{OIr}{\textit{maige}} ‘great’, Gaul.\ \iwi{Gaulish}{\textit{Magio-rix}}, \iwi{Gaulish}{\textit{Magius}} < \iwi{PIE}{\textit{*m\textsubscript{ə}}\textit{g̑-i̯o}-})
+
+\end{enumerate}
+\end{itemize}
+
+Caution is advised regarding items \ref{ref:itempowerful}., \ref{ref:itemliquid}., \ref{ref:itemmog}. as they are beset with philological, phonological, and morphological difficulties. In addition, \ref{ref:itempowerful}. and \ref{ref:itemliquid}. may have a verbal root at their core. Item \ref{ref:itemwet}., the \isi{causative}/\isi{iterative} \iwi{PIE}{*\textit{u̯olk-ei̯e/o}-} ‘make wet’ > ‘wash’, not only has an adjective (\iwi{PIE}{*\textit{u̯l̥k-u}-} ‘wet’) but also an \textit{o}-grade thematic stem \iwi{PIE}{*\textit{u̯ólk-o}-} (> OIr.\  \iwi{OIr}{\textit{folc}} \textit{o}, m.\ ‘heavy rain, wet weather’) beside it, which may have served as the derivational base for a denominal \is{denominal!verb} (rather than a deadjectival) verb\is{deadjectival!verb} at some point in the common prehistory of the Insular Celtic languages. 
+
+While it cannot be excluded that each of the verbs in group (B) stems from a distant past and once had extra-Celtic cognates that happen to have been lost in the non-Celtic branches of Indo-European, it is also possible to assume that these verbs were created within Celtic based on the corresponding adjective. The five secure examples, items \ref{ref:itemhard}., \ref{ref:itemred}., \ref{ref:itemlong}., \ref{ref:itemsilent}., \ref{ref:itembig}., consist of one \isi{stative}, \is{nasal present} two nasal-infix presents, and two plain thematic presents.\is{thematic!present} The \isi{causative}/\isi{iterative} \ref{ref:itemwet}. is ambiguous (see the paragraph above).
+
+Under such an interpretation, it is necessary to conclude that at this point in time, the language could still derive deadjectival verbs\is{deadjectival!verb} from roots and not from adjectival stems, as the respective adjectival suffixes (e.g., \iwi{PIE}{*-\textit{to}-}, \iwi{PIE}{*-\textit{o}-}, \iw{PIE}{*-\textit{ro}-}*-\textit{ro}\nobreakdash-) are seemingly deleted and the generated verbs follow the primary formation patterns of deradical verbs.\is{derivation!deradical} In other words, these examples give the impression that Caland morphology\is{Caland!system (CS)} continued to be productive\is{productivity} to a limited extent in Celtic. Note that this analysis is possible even for the problematic items \ref{ref:itemliquid}. and \ref{ref:itemmog}.; for the third one, \ref{ref:itempowerful}. OIr.\  \iwi{OIr}{\textit{follnaithir}} ‘rule’, it is necessary anyway to assume that the root vocalism was secondarily adjusted to its potential derivational base \iwi{PIE}{*\textit{u̯l̥h\textsubscript{x}\nobreakdash-o}-} ‘powerful, in power’ > *-\textit{u̯alo}- \iw{PCelt}{*(-)\textit{u̯alo}-} (attested as a second compound member),\is{compounding} as discussed in Section \ref{sec:NIPpowerful}.
+
+Support for the assumption of such a limited vitality of Caland morphology\is{Caland!system (CS)}  in Celtic in general, and a suffix deletion rule in deadjectival derivation \is{deadjectival!noun} in particular comes from the nominal domain. Here, there is evidence for at least two inner-Celtic neo-Caland roots.\is{root!secondary}\is{Caland!root} The first example is the adjective OIr.\   \iwi{OIr}{\textit{trén}} ‘strong’ < \iwi{PCelt}{\textit{*treksno}-} (cf.\ also the personal names Gaul.\ \iwi{Gaulish}{\textit{Trenus}}, Ogam \iwi{OgIr}{\textit{TRENA-GUSU}}), which probably continues a denominal \is{denominal!adjective} *-\textit{nó}-adjective of the type \iwi{PIE}{*\textit{leu̯k-s-no}-} ‘having light’ (YAv.\ \iwi{Avestan}{\textit{raoxšna}-} ‘bright’, OHG \iwi{OHG}{\textit{liehsen}} ‘bright’) based on an *-\textit{s}-stem \iwi{PCelt}{*\textit{trég-os}} ‘strength’ (cf.\ Old Norse \iwi{ON}{\textit{þrek}} n.\ ‘id.’). From this \iwi{PCelt}{*\textit{treksno}-} a secondary\is{root!secondary} Caland root\is{Caland!root} \iwi{PCelt}{*\textit{treks}-} ‘strong’ was derived by suffix deletion, which is at the core of formations such as \iwi{PCelt}{*\textit{treks-i̯ā}-} ‘strength’ > Old Irish \iwi{OIr}{\textit{treise} \textit{i̯ā}}, f.\ ‘strength, vigour’, \iwi{PCelt}{*\textit{treks-n̥t}-} ‘id.’ > MIr.\ \iwi{MIr}{\textit{treisset}} ‘strength, might’, the comparative OIr.\  \iw{OIr}{\textit{tressa}, \textit{tressam}} \textit{tressa}, MW \iwi{MWelsh}{\textit{trech}}, MBret.\ \iwi{MBret}{\textit{trech}}, NBret.\ \iwi{Breton}{\textit{trec’h}} ‘stronger’, and the superlative \iwi{PCelt}{*\textit{treks-(is)m̥mo}-} > OIr.\  \textit{tressam}, W \iwi{Welsh}{\textit{trechaf}} ‘strongest’ (the British forms have no positive beside them). 
+
+An even clearer example is the Celtic neo-root\is{root!secondary} for ‘young’. Like a couple of other branches of Indo-European, Celtic inherited a morphologically complex adjective meaning ‘young’, \iwi{PIE}{*\textit{h\textsubscript{2}i̯uh\textsubscript{x}n̥\kinvbreve o}-} (cf.\ Ved. \iwi{Sanskrit}{\textit{yuvaśá}-}, Lat.\ \iwi{Latin}{\textit{iuuencus}}, Proto-Germanic \iwi{PGmc}{*\textit{jungaz}}). This formation is not derived from a Caland root,\is{Caland!root} but rather from the noun \iwi{PIE}{*\textit{h\textsubscript{2}ói̯-u}-} n.\ ‘vital force’ (Ved. \iwi{Sanskrit}{\textit{ā́yu}-}, OAv.\ \iwi{Avestan}{\textit{āiiū}-}). Its Proto-Celtic descendant \iwi{PCelt}{*\textit{i̯ou̯anko}-} is continued  by OIr.\ \iw{OIr}{\textit{óac}/\textit{óc}, \textit{óa},  \textit{óam}} \textit{óac}, \textit{óc}, MW \iwi{MWelsh}{\textit{ieuanc}}, W \iwi{Welsh}{\textit{ifanc}}, OCorn. \iwi{OCorn}{\textit{iouenc}}, and MBret.\ \iwi{MBret}{\textit{yaouanc}} ‘young’.\footnote{Besides PCelt.\ \iwi{PCelt}{*\textit{i̯ou̯anko}-}, the Gaulish personal names in \textit{Io(u)inc}- \iw{Gaulish}{\textit{Io(u)inc}-, \textit{Iouinca}, \textit{Iouincillus}} such as \textit{Iouinca}, \textit{Iouincillus}, etc. (cf.\ \citealt[191--192]{Delamarre2003}) suggest the existence of a variant \iwi{PCelt}{*\textit{i̯ou̯enko}-} (i.e., with full grade of the suffix, perhaps in analogy to a stem \iwi{PCelt}{*\textit{i̯ou̯en}-} < \iwi{PIE}{*\textit{h\textsubscript{2}i̯uh\textsubscript{x}en}-}, inferable from Latin \iwi{Latin}{\textit{iuuenis}} ‘young (man)’?).} Based on its status as an essential property concept,\is{property concept (PC)} this adjective became the basis of its own inner-Celtic Caland system \is{Caland!system (CS)}  consisting of a comparative and a superlative. In order to generate them, the *-\textit{anko}- part of \iwi{PCelt}{*\textit{i̯ou̯anko}-} (despite not being a Caland suffix)\is{Caland!system (CS)}  was deleted and a neo-root\is{root!secondary} \iwi{PCelt}{*\textit{i̯ou̯}-} ‘young’ was extracted serving as the basis for a root-derived\is{derivation!deradical} comparative OIr.\  \iw{OIr}{\textit{óac}/\textit{óc}, \textit{óa},  \textit{óam}} \textit{óa}, MW \iwi{MWelsh}{\textit{ieu}}, W \iwi{Welsh}{\textit{iau}}, Bret.\ \iwi{Breton}{\textit{iaou}} ‘younger’ and superlative PCelt.\ \iwi{PCelt}{*\textit{i̯ou̯-isamo}-} > OIr.\  \textit{óam}, MW \iwi{MWelsh}{\textit{ieuhaf}}, W \iwi{Welsh}{\textit{ieuaf}, \textit{iefaf}, \textit{ifaf}} ‘youngest’. 
+
+Taken together, the secure examples of inner-Celtic deradical\is{derivation!deradical} Caland verbs \is{Caland!system (CS)} of group (B) on the one hand, and the nominal neo-roots\is{root!secondary} \iwi{PCelt}{*\textit{treks}-} ‘strong’ and \iwi{PCelt}{*\textit{i̯ou̯}-} on the other seem to corroborate the view that Caland morphology \is{Caland!system (CS)}  remained mildly productive\is{productivity} in Celtic.
+
+\section{Conclusion} 
+\label{sec:CelticConclusion}
+This study is the first of its kind to provide an exhaustive overview, discussion, and analysis of both inherited and potentially innovative deadjectival verbs\is{deadjectival!verb} in the Celtic languages. The preceding sections reveal that many of these verbs present philological, phonological, and morphological issues, to which one can add the synchronically full or partially weak behaviour of the OIr.\  verbs \iwi{OIr}{\textit{do}·\textit{lin}} (Section \ref{sec:NIPfull}), \textit{sínid} \iw{OIr}{\textit{sínid}, ·\textit{sín}(\textit{i})} (Section \ref{sec:NIPlong}) and \iwi{OIr}{\textit{tóaid}} (Section \ref{sec:STPsilent}). In addition, the total number of potential Caland verbs \is{Caland!system (CS)}  is rather low so that any conclusions drawn from them need to be taken with caution, particularly when attempting to make broad generalisations.
+
+Nevertheless, the investigation has yielded significant findings. Of the twenty Caland-associated verbs,\is{Caland!system (CS)}  eleven appear to belong to an inherited stock of formations with formal cognates in other Indo-European languages. The remaining nine formations lack exact correspondences in other Indo-European branches, and therefore likely represent innovations within the Celtic languages themselves. Each of these verbs is associated with an adjective (or a substantivisation of such an adjective), suggesting that they were derived within Celtic based on these adjectives. Since the formation of these verbal stems follows root-based primary patterns,\is{derivation!deradical} the suffix of the adjective (e.g., \iwi{PIE}{*-\textit{to}-}, \iwi{PIE}{*-\textit{o}-}, \iwi{PIE}{*-\textit{ro}-}) appears to have been systematically deleted in the formation of these deadjectival verbs.\is{deadjectival!verb}
+
+The deletion of adjectival suffixes and the emergence of primary deradical verbs\is{derivation!deradical} in these cases further support the hypothesis that Caland morphology \is{Caland!system (CS)}  maintained a degree of vitality in Celtic. This process of suffix deletion in verbal formations is mirrored in the nominal domain, where adjectives like \iwi{PCelt}{*\textit{treksno}-} ‘strong’ and \iwi{PCelt}{*\textit{i̯ou̯anko}-} ‘young’ similarly give rise to neo-Caland\is{Caland!root} roots\is{root!secondary} \iwi{PCelt}{*\textit{treks}-} and \iwi{PCelt}{*\textit{i̯ou̯}-}, which in turn serve as the basis for further deadjectival derivation.\is{derivation!deadjectival} 
+
+These patterns, found in both the verbal and nominal domains, suggest the persistence and a certain degree of flexibility of the Caland system \is{Caland!system (CS)}  within the Celtic languages. Further research could explore whether similar processes of suffix deletion and root creation occurred in other Indo-European branches as well, providing a more comprehensive understanding of the Caland phenomenon \is{Caland!system (CS)}  across the language family.
+
+\section*{Abbreviations}
+
+
+For quotations from Irish and Welsh, we follow the conventions and abbreviations in \citetalias{eDIL} (version 2019) and \citetalias{GPC}.\\
+
+\begin{tabularx}{.48\textwidth}{lQ}
+Act. & Active\\
+Bret. & Breton \\
+Corn. & Cornish \\
+Dat. & Dative\\
+Gaul.\ & Gaulish \\
+Gen. & Genitive\\
+Lat. & Latin\\
+Latv. & Latvian\\
+Lith. & Lithuanian\\
+MBret.\ & Middle Breton \\
+MCorn. & Middle Cornish \\
+MIr. & Middle Irish \\
+ModW & Modern Welsh \\
+MW & Middle Welsh \\
+NBret. & Modern Breton \\
+Nom. & Nominative\\
+\end{tabularx}
+\begin{tabularx}{.48\textwidth}{lQ}
+OAv. & Old Avestan\\
+OBret. & Old Breton\\
+OCorn. & Old Cornish \\
+OIr.  & Old Irish \\
+OW & Old Welsh \\
+PCelt.\ & Proto-Celtic \\
+Perf. & Perfect\\
+Pl. & Plural\\
+PrimIr. & Primitive Irish \\
+Ptcpl. & Participle\\
+Pres. & Present\\
+Pret. & Preterite\\
+Sg. & Singular\\
+Tr. & Transitive\\
+Ved. & Vedic \\
+W & Welsh \\
+\end{tabularx}
+
+
+
+{\sloppy\printbibliography[heading=subbibliography,notkeyword=this]}
+\end{document}

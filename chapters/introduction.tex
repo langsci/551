@@ -1,0 +1,864 @@
+\documentclass[output=paper,colorlinks,citecolor=brown]{langscibook}
+\ChapterDOI{10.5281/zenodo.21236999}
+%
+\author{Laura Grestenberger%\orcid{0000-0002-6830-9579}
+\affiliation{University of Vienna} and
+        Viktoria Reiter%\orcid{0000-0002-7903-7353}
+        \affiliation{University of Vienna} and
+        Melanie Malzahn%\orcid{0000-0003-2407-9094}
+        \affiliation{University of Vienna}}
+\title{Introduction: Deadjectival verb formation in Indo-European and beyond}
+\abstract{This volume presents a collection of papers discussing the morphological, syntactic and semantic properties of deadjectival verbs, defined here as verbs formed from property concept roots or from adjectival stems. Although the focus is on older Indo-European (IE) languages, the volume also includes insights from a theoretical perspective using data from modern IE as well as non-IE languages. This chapter serves as an introduction to the volume and provides a precise definition of deadjectival verb formation and an overview over the current state of the art both from the perspective of general and of historical linguistics. We begin with a discussion of different strategies for lexicalizing property concepts, which cross-linguistically constitute the core of the morphosyntactic class ``adjective'' and various diachronic developments this class can undergo, moving on to describing two types of deadjectival verb formation (root- vs. stem-derivation) and their differentiation from non-deadjectival change-of-state verbs. Subsequently, we introduce the ``Caland system'' and its implications for the reconstruction of property concept adjectives and the verbal system of the Indo-European proto-language, followed by an outline of recent advances and open questions in the reconstruction of verbal derivational morphology. We conclude with a short summary of each of the respective chapters collected in this volume, a general conclusion, and an outline of open issues. 
+}
+
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[1]%%chapternumber
+}{}
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+\label{sec:intro}
+
+\subsection{Background: Adjective classes}
+\label{sec:adjclass}
+
+The papers collected in this volume discuss the morphology, syntax, and semantics of deadjectival verbs\is{deadjectival!verb} and related formations, with a focus on the older Indo-European (IE)  languages. The goal of this chapter is to provide a definition  and overview of the current research on deadjectival verbs\is{deadjectival!verb} and the expression of property concepts\is{property concept (PC)} in general, with a focus on  theoretical morphosemantic\is{morphosemantics} studies on the one hand and recent advances in the reconstruction of property concept-associated\is{property concept (PC)} lexical classes in Indo-European on the other. Ultimately, our goal is to show that while these two strands of literature are often blissfully ignorant of one another, each could profit from a serious engagement with the evidence discussed in the other and the conclusions drawn from this evidence -- especially since these conclusions converge more often than not. We also point out some promising avenues for future research in the domain of Indo-European derivational morphology and morphological reconstruction more generally. 
+
+Before discussing deadjectival verbs,\is{deadjectival!verb} we need to give a definition of what we mean, which in turn hinges on the definition of ``adjective''. The literature on this enigmatic lexical category is vast and we cannot do it justice here (see \citealt{FabregasMarin2017}; \citealt{PanagiotidisMitrovic}; \citealt{Beck2023}  for recent overviews). For our purposes, we focus on the adjectival classes  in ex.\ (\ref{ex:adj}), which pick out a syntactically and morphologically clearly defined class in the older Indo-European languages: syntactically, members of this class are prototypical noun modifiers (\citealt{Croft1991}; \citealt{Alfieri2014}) and morphologically, they are formed with specifically class-defining (adjectival) stem-forming morphology and agree with their head noun.\footnote{We cannot discuss other adjectival categories such as participles\is{participle} here for reasons of space; on participles\is{participle} in Indo-European see, e.g., \citealt{Lowe2015};  \citealt{FellnerGrestenberger2018}; \citealt{Grestenberger2020}.} We illustrate these with examples from English and selected older IE languages; note that most of the adjectival suffixes in these examples can be used in more than one class. 
+
+\begin{exe}
+    \ex Three types of adjectives in Indo-European \label{ex:adj}
+    \begin{xlist}
+        \ex Property concept\is{property concept (PC)} adjectives\footnote{Also called qualitative (or qualifying) adjectives in the literature.} (e.g., Engl.\  \textit{tall}, \textit{smart}, \textit{red}, \textit{soft}): \label{ex:adj1}
+        \begin{xlist}
+            \ex Vedic Sanskrit: \iwi{Sanskrit}{\textit{náva}-} `new', \iwi{Sanskrit}{\textit{gurú}-} `heavy', \iwi{Sanskrit}{\textit{br̥hánt}-} `high, great', \newline \iwi{Sanskrit}{\textit{pr̥thú}-} `broad', etc.
+            \ex Ancient Greek: \textit{kratús}\iw{AG}{κρατύς} `strong', \textit{néos}\iw{AG}{νέος} `young, new', \textit{eruthrós}\iw{AG}{ἐρυθρός} `red', etc.
+            \ex Latin: \iwi{Latin}{\textit{gravis}} `heavy', \iwi{Latin}{\textit{clārus}} `clear, bright', \iwi{Latin}{\textit{ruber}} `red', etc.
+        \end{xlist}
+        \item Relational (\isi{possessive}, \isi{genitival}, etc.) adjectives  (e.g., Engl.\ \textit{wood-en}, \textit{water-y}, \textit{father-ly}):  \label{ex:adj2}
+        \begin{xlist}
+             \ex Vedic Sanskrit: \textit{aśv-ín}- \iw{Sanskrit}{\textit{aśvín}-} `having horses', \textit{āyas-á}- \iw{Sanskrit}{\textit{āyasá}-} `(made) of metal', \textit{paśu-mát}- \iw{Sanskrit}{\textit{paśumát}-} `consisting of cattle', etc.
+            \ex Ancient Greek: \textit{khrús-eos}\iw{AG}{χρύσεος} `golden',  \textit{odunē-rós}\iw{AG}{ὀδυνηρός} `painful', \textit{rhodó-eis} \iw{AG}{ῥοδόεις}  `rosy; of roses', etc.
+            \ex Latin: \textit{barbā-tus} \iw{Latin}{\textit{barbātus}} `bearded', \textit{patr-ius}  \iw{Latin}{\textit{patrius}} `of the father, fatherly', \textit{argent-eus} \iw{Latin}{\textit{argenteus}} `silvery, of silver', \textit{mar-īnus} \iw{Latin}{\textit{marīnus}} `of the sea, marine', etc.
+        \end{xlist}
+        \item (De)verbal adjectives\is{verbal adjective} (e.g., Engl.\  \textit{wash-able}, \textit{break-able}): \label{ex:adj3}
+              \begin{xlist}
+             \ex Vedic Sanskrit: \textit{kām-ín}-  \iw{Sanskrit}{\textit{kāmín}-} `desiring', \textit{cá-kr-i}- \iw{Sanskrit}{\textit{cákri}-} `making', \textit{krīḍ-ú}- \iw{Sanskrit}{\textit{krīḍú}-} `playing', etc.
+            \ex Ancient Greek: \textit{tom-ós}\iw{AG}{τομός} `cutting; sharp', \textit{do-tós} \iw{AG}{δοτός} `granted, given', \textit{main-ás} \iw{AG}{μαινάς} `raving', etc.
+            \ex Latin: \textit{trem-ulus} \iw{Latin}{\textit{tremulus}} `trembling', \textit{fīd-us}  \iw{Latin}{\textit{fīdus}} `trusting', \textit{aud-āx} \iw{Latin}{\textit{audāx}}  `daring', \textit{amā-bilis} \iw{Latin}{\textit{amābilis}} `lovable', etc.
+        \end{xlist}
+    \end{xlist}
+\end{exe}
+
+The classes in (\ref{ex:adj2}--\ref{ex:adj3}) do not usually serve as the input to deadjectival verb\is{deadjectival!verb} formation (though see Sections \ref{sec:CoS} and \ref{sec:iter} for some circumscribed exceptions to this generalization), so we focus on (\ref{ex:adj}) in the following. 
+
+
+
+
+
+\subsection{The semantics \& lexicalization of property concepts}
+\label{sec:lexicalization}
+
+The core problem of the definition of ``adjective'' (and hence ``deadjectival'')  centers on the nature of property concepts (PCs)\is{property concept (PC)} as defined by \citet{Dixon1982} and illustrated in \tabref{tab:PCs}.  
+
+
+\begin{table}
+\caption{Dixon's property concepts (\citealt[16]{Dixon1982}; \citealt[79]{Rau2009})}
+\label{tab:PCs}
+ \begin{tabularx}{.95\textwidth}{ll}
+  \lsptoprule
+   \textsc{dimension} & big, small, long, tall, short, etc.\\
+      \textsc{physical property} & hard, soft, heavy, wet, rough, strong, etc.\\
+       \textsc{colors} & black, white, red, etc.\\ 
+        \textsc{speed} & fast, quick, slow, etc.\\
+    \textsc{age} & new, young, old, etc.\\
+   \textsc{value} & good, bad, lovely, atrocious, perfect, proper, etc.\\
+  \textsc{human propensity} & jealous, happy, kind, clever, generous, cruel, etc.\\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+
+As is well known from the typological literature (\citealt{Dixon1982}, \citeyear{Dixon2004}; \citealt{Thompson1989}, \citealt{Alfieri2014}, a.m.o.), the lexicalization of PCs\is{property concept (PC)} differs cross-linguistically in terms of category: Some languages express these concepts as ``primary'' (root-derived\is{derivation!deradical} or monomorphemic) adjectives, as illustrated in (\ref{ex:PCadj}),  while others use a ``verbal'' strategy, that is, they lexicalize these roots in the same way as eventive ones, namely with verbal (including subject agreement) morphology, cf.\ (\ref{ex:PCvb}). A third strategy that has received less attention but which is highly relevant for the problem of PCs\is{property concept (PC)} in Indo-European is the lexicalization of PCs\is{property concept (PC)} as nouns, illustrated in (\ref{ex:PCnoun}). That ``quiet'' in (\ref{ex:PCnoun}) is a noun is suggested by the fact that it takes its own nominal class marker (class 5) rather than agreeing with the nominal class of the subject (class 19). 
+
+\begin{exe}
+    \ex  Cross-linguistic variation in the lexicalization of PCs\is{property concept (PC)} (\citealt[1]{HaninkKoontz})
+   \begin{xlist}
+       \ex \label{ex:PCadj} I'm \textbf{happy}.
+       \ex \label{ex:PCvb} \gll  ma:-č m-\textbf{ahan}-kəm\\
+       \textsc{2-sbj} \textsc{2}-\textbf{be.good}-\textsc{incmpl}\\
+       \glt `You're good.' \hfill Yavapai (Yuman), \citealt[90]{Kendall1975}
+       \ex \label{ex:PCnoun} \gll hí-nuní híí hí yé li-\textbf{mugɛ̂}\\
+\textsc{19}-bird \textsc{19}.that \textsc{19.sub} be
+ \textsc{5}-\textbf{quiet}\\
+ \glt `That bird is quiet.' \hfill Basaá (Bantu), \citealt[650]{Jenks2018}
+   \end{xlist} 
+\end{exe}
+
+
+
+Cross-cutting the distinction in terms of lexical category is the difference between what \citet{FrancezKoontz2015, FrancezKoontz2017} term the ``predicative'' and the ``\isi{possessive}'' strategy: While the predicative strategy makes use of canonical predication devices available in a given language (such as the copula), (\ref{ex:Engl}), the possessive strategy uses \isi{possessive} morphology to express property concepts,\is{property concept (PC)} (\ref{ex:Fr}). 
+
+\begin{exe}
+\ex Predicative vs. possessive lexicalization of property concepts\is{property concept (PC)} (\citealt[22]{FrancezKoontz2017})
+\begin{xlist}
+    \ex         Pierre is hungry.	\hfill (English) \label{ex:Engl}
+    \ex     	Pierre 	a 	faim.	\hfill  (French) \label{ex:Fr}	\\
+Pierre 	has 	hunger \\
+\end{xlist}
+\end{exe}
+
+Based on this observation, Francez and Koontz-Garboden formulate the generalization that property concept\is{property concept (PC)} lexemes that use \isi{possessive} predication denote qualities while property concept\is{property concept (PC)} lexemes that use non-possessive predication characterize individuals, as in (\ref{ex:Engl}) -- The Lexical Semantic Variation Hypothesis (\citealt[77]{FrancezKoontz2017}; but see below for an important diachronic qualification of this generalization). They derive this generalization from the differing denotation of property concepts\is{property concept (PC)} depending on whether they are lexicalized as nouns or as adjectives: While nouns can denote either qualities or characterize individuals, adjectives can only characterize individuals, but cannot denote qualities. Concretely, this means that (\ref{ex:strength}) can never have the same meaning as (\ref{ex:strong}), namely that of expressing the modification of the denotation of the noun.\footnote{It \emph{can} mean ``Indra represents strength'' or something similar, of course.} In the same vein, the hypothetical deadjectival verb\is{deadjectival!verb} in (\ref{ex:strongs}) can be individual-characterizing like (\ref{ex:strong}) meaning ``Indra is/becomes strong'', but not quality-denoting (\citealt[83--84]{FrancezKoontz2017}). We discuss some  equivalents of (\ref{ex:strongs}) in Section \ref{sec:factinch}. 
+
+
+\begin{exe}
+    \ex \begin{xlist}
+        \ex Indra is strength \label{ex:strength}
+        \ex Indra is strong \label{ex:strong}
+        \ex Indra strong-s \label{ex:strongs}
+    \end{xlist}
+\end{exe}
+
+
+
+
+While (\ref{ex:Fr}) as such is not used in the older IE languages (though see the discussion of (\ref{ex:posspred}) below), (\ref{ex:Engl} = \ref{ex:strong})   is amply attested, and  with morphology that is actually called ``\isi{possessive}'' because it is also used to form denominal relational  adjectives \is{denominal!adjective} from substantives in the older IE languages (though not all languages preserve both functions), e.g., (\isi{proterokinetic}) \iwi{PIE}{*-\textit{u}-}, \iwi{PIE}{*-\textit{(e/o)nt}-}, \iwi{PIE}{*-\textit{u̯ont}-}, \iwi{PIE}{*-\textit{ro}-}, \mbox{\iwi{PIE}{*-\textit{mo}-},} \iwi{PIE}{*-\textit{no}-}, etc.\ (cf.\ \citealt[77--78]{Rau2009}). Examples for the denominal-\isi{possessive} \is{denominal!adjective} vs.\ the property concept\is{property concept (PC)} root-derived\is{derivation!deradical} use of these are given in \tabref{tab:poss}.
+
+\begin{table}
+\caption{Possessive and PC adjectives in Indo-European}
+\label{tab:poss}
+ \begin{tabularx}{.95\textwidth}{lllll}
+  \lsptoprule
+  Suffix & \multicolumn{2}{l}{a.  Possessive adj.}\is{possessive} & \multicolumn{2}{l}{b. PC\is{property concept (PC)} adjective} \\
+  \midrule
+\iwi{PIE}{*-\textit{(e/o)nt}-} & Hitt.\ & \textit{perun-\textbf{ant}}- \iw{Hitt}{\textit{perunant}-} `rocky' &   Ved.\ & \textit{br̥h-\textbf{ánt}}- \iw{Sanskrit}{\textit{br̥hánt}-} `high'  \\
+  base: & & \iwi{Hitt}{\textit{peruna}-} `rock' & & √\textit{br̥h}\iw{Sanskrit}{\textit{br̥h}-} `high'\\
+  \iwi{PIE}{*-\textit{ro}-} & Ved.\ & \textit{aṃhu-\textbf{rá}}- \iw{Sanskrit}{\textit{aṃhurá}-} `constricted' &  AG & \textit{eruth-\textbf{ró}-s}\iw{AG}{ἐρυθρός} `red' \\
+ base: & & \iwi{Sanskrit}{\textit{aṃhu}-} `constriction' & &√\textit{ereuth}-/\textit{eruth}- `red'\\
+ \iwi{PIE}{*-\textit{u}-} & Ved.\ & \textit{āy-\textbf{ú}}- \iw{Sanskrit}{\textit{āyú}-} `lively' & OAv.\ & \textit{pərəθ-\textbf{u}}- \iw{Avestan}{\textit{pərəθu}-} `broad' \\
+   base: & & \textit{ā́y-u}- \iw{Sanskrit}{\textit{ā́yu}-} n.\ `life (force)'& & {√\textit{pərəθ}}\iw{Avestan}{\textit{pərəθ}-} `broad'\\
+  \iwi{PIE}{*-\textit{o}-} & Ved.\ & \textit{pīvas-\textbf{á}}- \iw{Sanskrit}{\textit{pīvasá}-} `(having) fat' & Ved. &  \textit{śvet-\textbf{á}}- \iw{Sanskrit}{\textit{śvetá}-} `bright'\\
+  base: & & \iwi{Sanskrit}{\textit{pī́vas}-} `fat' n.\ & & √\textit{śvit}\iw{Sanskrit}{\textit{śvit}-} `bright'\\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+In terms of diachrony, this functional overlap could be taken to suggest that the PC\is{property concept (PC)} adjectives in column b.\ were originally \emph{denominal} adjectives \is{denominal!adjective} derived from quality-denoting nouns. Hence one way of creating individual-characterizing adjectives like (\ref{ex:strong}) is by adding \isi{possessive} morphology to the quality nominal, (\ref{ex:strengthposs}), or morphology with broadly ``instrumental'' meaning (e.g., prepositions meaning ``with'' or, in the case of the older IE languages, instrumental case endings, cf.\ Section \ref{sec:CSperiphrasis}). 
+
+\begin{exe}
+    \ex \label{ex:posspred}\begin{xlist}
+        \ex Indra is strength-\textsc{poss} \label{ex:strengthposs}
+        \ex Indra is with strength/strength-\textsc{instr}  \label{ex:strengthinstr}
+    \end{xlist}
+\end{exe}
+
+
+Under this view, the b.\ examples in \tabref{tab:poss} actually instantiate strategy (\ref{ex:strengthposs}), though whether this is only true diachronically or also synchronically is to some extent a matter of analysis that also touches on the problem of root denotation: are PC\is{property concept (PC)} roots in Indo-European adjectival \is{root!adjectival} in the sense of \isi{adnominal}/\isi{stative} (as argued for Proto-Indo-European by, e.g., \citealt{Nussbaum1976}, \citeyear{Nussbaum2021}, \citeyear{Nussbaum2022}), quality-denoting (as argued for PC\is{property concept (PC)} roots in Ulwa by \citealt{KoontzFrancez2010}, \citealt{FrancezKoontz2017}) and hence implicitly nominal (in the sense of ``substantival''), or verbal\footnote{\label{fn:verbalroot}As implicitly assumed in \citetalias{Rix2001}, where most of the reconstructable Indo-European PC\is{property concept (PC)} roots are listed as forming primary, i.e., root-derived verbs,\is{derivation!deradical} e.g., \iwi{PIE}{*\textit{\kinvbreve u̯ei̯t}-} `light up brightly', \citetalias[ 340]{Rix2001};  \iwi{PIE}{*\textit{leu̯k}-} `become bright, light', \citetalias[ 418--419]{Rix2001}; \iwi{PIE}{*\textit{peh\textsubscript{2}g̑}-} `become stiff, fixed', \citetalias[ 461]{Rix2001}; \iwi{PIE}{*\textit{h\textsubscript{1}reu̯dʰ}-} `redden', \citetalias[ 508--509]{Rix2001};  \iwi{PIE}{*\textit{su̯eh\textsubscript{2}d}-} `become tasty, sweet', \citetalias[ 606--607]{Rix2001}; \iwi{PIE}{*\textit{tep}-}  `be warm, hot', \citetalias[ 629--630]{Rix2001}; etc. That PCs\is{property concept (PC)} in Proto-Indo-European (PIE) could be verbal is also explicitly stated by \citet[8]{Balles2009} (``it was obviously possible in PIE to encode ``adjectival'' concepts by primary verbs'')\is{derivation!deradical}  and argued for by Rau (\citeyear{Rau2009}, \citeyear{Rau2013}, \citeyear{Rau2016}, this volume) and \citet{Bozzone2016}, cf.\  Section \ref{sec:CoS}.
+
+In addition to forming primary verbs,\is{derivation!deradical}  PCs\is{property concept (PC)} also share a number of other derivational properties with eventive roots in (P)IE, such as the formation of root noun\is{root!noun} and ``\textit{tómos}-type''\iw{AG}{τόμος} abstracts (Alan Nussbaum, p.c.; see also \citealt{Nussbaum2022} on the properties of ``adjectival roots'' in IE).} in the sense that they behave in the same way as eventive and other types of \isi{stative} roots (see \textsc{Rau}, this volume)?
+
+The case of Ulwa, an endangered Misumalpan language spoken in Nicaragua, is especially relevant in this context. In Ulwa, like in the examples in \tabref{tab:poss}, the same \isi{possessive} morphology, namely a suffix -\textit{ka}, is found on possessed nouns, where it marks a 3sg.\ possessor, (\ref{ex:Ulwa1}), and on PC\is{property concept (PC)} roots both in predicative\is{predicative!usage}, (\ref{ex:Ulwa2}), and in attributive/\isi{adnominal} position, (\ref{ex:Ulwa3}). 
+
+
+\begin{exe}
+\ex Possessive predication of PCs\is{property concept (PC)} in Ulwa (\citealt[200]{KoontzFrancez2010}; \citealt[31]{FrancezKoontz2017})
+    \begin{xlist}
+        \ex \label{ex:Ulwa1} \gll Alberto pan-\textbf{ka}\\
+        Alberto stick-\textsc{3sg.poss}\\
+       \glt `Alberto's stick'
+        \ex \label{ex:Ulwa2} \gll yang as-ki-na minisih-\textbf{ka}.\\
+        \textsc{1sg} shirt-<\textsc{1sg.poss}> dirty-\textsc{3sg.poss}\\
+\glt `My shirt is dirty.'
+\ex \label{ex:Ulwa3} \gll Al adah-\textbf{ka} as tal-ikda.\\
+man short-\textsc{3sg.poss} \textsc{indef}  see-\textsc{1sg.past}\\
+\glt `I saw a short man.' 
+    \end{xlist}
+\end{exe}
+
+The parallel is not exact (the Ulwa marker is an agreement marker, whereas the suffixes in \tabref{tab:poss} are primary\is{derivation!deradical}  categorizing and/or derivational suffixes which  cannot be used in ``\isi{possessive} \isi{genitive}'' contexts such as (\ref{ex:Ulwa1})), but it does not seem trivial that the adjectival equivalents of (\ref{ex:Ulwa2}--\ref{ex:Ulwa3}) in \tabref{tab:poss} use morphology that also forms relational (and very often specifically \isi{possessive}) adjectives. In fact, as \citet{HaninkKoontz} argue based on \citet{MenonPancheva}, there is cross-linguistic evidence that ``categorizers of property concept\is{property concept (PC)} roots are tied up with possession\is{possessive} in the creation of nominal, verbal, and adjectival property concept\is{property concept (PC)} words'' (\citealt[5]{HaninkKoontz}). In these cases, the categorizer lexically categorizes the root and at the same time introduces a \isi{possessive} relation: Possessive categorizers take a property \textit{P} (a PC\is{property concept (PC)} root) and return the set of individuals \textit{x} that are in possession of this property (\citealt[6]{HaninkKoontz}).
+
+ 
+An interesting diachronic problem  arises from this proposal that  remains to be explored, namely how this type of root-derived\is{derivation!deradical} \isi{possessive} categorization is related to possessive morphology that selects already categorized nominal bases, as in column a.\ of \tabref{tab:poss}. At least in the older IE languages, there is ample evidence that the latter can give rise to root-derived\is{derivation!deradical} \isi{possessive} categorizers through a \isi{reanalysis} of the categorized base as an uncategorized root (or a root with a zero categorizer), cf.\  \citet{Grestenberger2020, Grestenberger2021}, \citet{GrestenbergeretalICHL}. We discuss this further in Section \ref{sec:Calanddef}. First, we want to emphasize that the existence of forms like those in \tabref{tab:poss}, that is, \isi{possessive} and PC-related\is{property concept (PC)} adjectival morphology, which can be securely reconstructed for PIE, provides a strong argument against the view that PIE did not have adjectives as a distinct morphosyntactic class, as proposed by \citet{Balles2006} and more recently in a different form by \citet{Alfieri2016}. Balles argues that adjectival/PC\is{property concept (PC)} root-derived nominals,\is{derivation!deradical} especially zero-derived ``root nouns''\is{root!noun} and \textit{i}-stems, were categorially underspecified and could be used both as adjectives (e.g., in attributive modification contexts) and as nouns (e.g., as arguments). But the existence of a productive\is{productivity} process of zero derivation of substantives from adjectives (not just PC\is{property concept (PC)} adjectives) does not mean that the categorial distinction is moot, since the substantivizations are morphosemantically\is{morphosemantics} clearly secondary,\is{derivation!stem-based} i.e., based on the adjectival form and meaning (e.g., Lat.\ \iwi{Latin}{\textit{datum}} `given' (neuter adj.) $\rightarrow$ `what is given, gift', neuter substantive). The existence of denominal \is{denominal!adjective} \isi{possessive} adjectival suffixes in turn suggests that the categorial distinction was both derivationally and syntactically relevant, as Balles herself admits (\citeyear[286]{Balles2006}). That specifically PC\is{property concept (PC)} related adjectival morphology can be reconstructed for the oldest layer of the proto-language (as well as the comparative and superlative suffixes \iwi{PIE}{*-\textit{i̯os}-} and \iwi{PIE}{*-\textit{is-tó}-} for at least the inner Indo-European\footnote{I.e., the branches  that descended from a common ancestor (≈ Late PIE) after the ancestral languages of the Anatolian and Tocharian branches left the family.} stage)  is another strong argument against ``word class indifference''.\footnote{See \citealt{MeierBrügger2014}, \citealt{Rau2014}, \citealt{Pinault2018} on the prehistory of the comparative suffix and its role in the Caland system.\is{Caland!system (CS)}} 
+
+Alfieri, on the other hand, has argued in a series of articles (\citealt{Alfieri2016}, \citeyear{Alfieri2019}, \citeyear{Alfieri2021}; \citealt{AlfieriGasbarra}) that PIE was an adjective-less language by classifying PC\is{property concept (PC)} roots as ``verbal roots of \isi{stative}-\isi{unaccusative} meanings'' (\citealt[159]{Alfieri2016}) or ``verbal root[s] meaning a quality'' (\citeyear[314]{Alfieri2021}). Adjectives based on such roots are hence treated as verbal adjectives\is{verbal adjective} and actually grouped with verbal stem-derived\is{derivation!stem-based}  participial\is{participle} forms, though with a different range of functions than the latter. Alfieri's treatment of these forms is primarily based on his interpretation of the Vedic evidence and acknowledges that the Vedic system differs from the Part-of-Speech (PoS) systems of, for example, Ancient Greek and Latin. But even if there were compelling reasons for privileging the Vedic PoS system over that of the other daughter languages for the purposes of reconstruction, this approach ignores the  cross-linguistic evidence  for a systematic morphosemantic\is{morphosemantics} difference between PC\is{property concept (PC)} roots and other types of CoS-associated roots for which correlates are also found in the older IE languages (see Sections \ref{sec:CoS} and \ref{sec:factinch} for a more detailed discussion) as well as the specifically adjectival morphology associated with the ``Caland system''\is{Caland!system (CS)}  (= PC\is{property concept (PC)} roots and their derivatives in (Proto-)Indo-European, cf.\ Section \ref{sec:Calanddef}) and with (denominal) \is{denominal!adjective} relational adjective formation, all of which can be securely reconstructed for PIE.\footnote{See further \citealt{AcedoMatellan2022} for arguments against the existence of ``adjective-less languages''.} 
+
+
+
+Finally, strategy (\ref{ex:strengthinstr}) has also played an important role in the scholarship on PCs\is{property concept (PC)} in Indo-European in the context of the interpretation of the ``\textit{cvi} construction'', an Old Indic predicative construction\is{predicative!construction} consisting of an indeclinable form of a noun (sometimes described as adverbial in the literature) and a finite form of a copula or light verb, usually \iwi{Sanskrit}{\textit{as}-} `be', \iwi{Sanskrit}{\textit{bhū}-} `become', and \iwi{Sanskrit}{\textit{kr̥}-} `make', with which it is sometimes univerbated  (\citealt{Schindler1980}; \citealt{Balles2000}, \citeyear{Balles2006}, \citeyear{Balles2009}).  The name of the construction, \textit{cvi}, is the label used by the ancient Indian grammarians (e.g., \iai{Pāṇini}, \textit{Aṣṭādhyāyī} 5.4.50). Some examples of this construction are given in \tabref{tab:cvi}.
+
+
+\begin{table}
+\caption{Old Indic \textit{cvi} forms (ex.\ from \citealt[45--46]{Balles2006})}
+\label{tab:cvi}
+ \begin{tabularx}{.75\textwidth}{llll}
+  \lsptoprule
+  \iwi{Sanskrit}{\textit{krūrá}-} & `sore' & \iwi{Sanskrit}{\textit{krūrī́} \textit{kr̥}-} & `make sore' \\
+ \textit{náva}-  \iw{Sanskrit}{\textit{náva}-} & `young, new' & \iwi{Sanskrit}{\textit{navī} \textit{kr̥}-} & `renew, rejuvenate' \\
+  \iwi{Sanskrit}{\textit{phála}-} & `fruit' & \iwi{Sanskrit}{\textit{phalī́} \textit{kr̥}-} & `winnow, clean' 
+ \\
+ \iwi{Sanskrit}{\textit{yúvan}-} & `young' & \iwi{Sanskrit}{\textit{yuvībhū}-} & `become young'\\
+ \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+While Old Indic and the Indo-Aryan languages in general are no strangers to periphrastic\is{periphrasis} constructions consisting of a verbal noun + light verb, the problem of the \textit{cvi} construction lies in the interpretation of the \iwi{Sanskrit}{-\textit{ī}} of the nonfinite part of the construction. The interpretation as an instrumental singular \iwi{PIE}{*-\textit{i-h\textsubscript{1}}} of an adjectival abstract noun, effectively a construction of type (\ref{ex:strengthinstr}), is appealing in light of the cross-linguistic evidence of languages using a \isi{possessive} strategy for lexicalizing property concepts.\is{property concept (PC)} Given that PIE did not have a \textsc{have} lexeme, it was most likely an \textsc{s-possessor} and/or \textsc{s-possessee} language (evidence for both strategies exist in the older IE languages), in which \isi{possessive} predication was expressed through an \isi{intransitive} construction in which either the possessor (\textsc{s-possessor}) or the possessee (\textsc{s-possessee}) was coded as the subject (\citealt{Heine1997}, \citealt{Stassen2009}). With  its reconstructed deinstrumental origin, the \textit{cvi} construction would fit the  \textsc{s-possessor} pattern, specifically the \textsc{comitative-possessive} \is{possessive} type (\citealt{Creissels2023}) also seen in, e.g., Hausa, (\ref{ex:Hausa}), cf.\ the ``\textit{with}-\isi{possessive}'' in \citet[54--57]{Stassen2009}.\footnote{Cf.\ also \citet[53--57]{Heine1997}. The \textsc{s-possessee} strategy with \isi{genitive}- and \isi{dative}-marked possessors also existed in the older IE languages.}
+
+\begin{exe}
+    \ex \label{ex:Hausa}Hausa (Chadic), \citealt[222]{Newman2000} (cit.\ after \citealt[38]{Creissels2023})\\ 
+    \gll  Yarṑ  yanā̀  dà fensìr̃\\
+boy \textsc{3sg.m.icpl} with pencil\\
+\glt `The boy has a pencil.', lit. `The boy is with pencil.' 
+\end{exe}
+
+Although there are solid structural parallels to the \textit{cvi} construction in other IE languages that point towards an inherited strategy of \isi{possessive} predication with instrumental nouns (see Sections \ref{sec:CSperiphrasis} and \ref{sec:factinch}), as well as robust typological parallels,  its diachronic connection to the expression of PCs in Indo-European in general and Old Indic  in particular awaits further elucidation.\footnote{The antiquity of the construction has been called into question because it is practically absent in the oldest Vedic text (the Rigveda) and is not specifically associated with inherited PC\is{property concept (PC)} roots or lexemes (\citealt{Jamison2023}). Rather, it expresses predicative possession \is{possessive} in general, and the  derivational basis can be adjectival or nominal (see \citealt[45--75; 151--157]{Balles2006} for a detailed discussion), as also seen in the examples in \tabref{tab:cvi}. In that sense, the \textit{cvi} construction falls into the general late Old Indic/post-Vedic Sanskrit tendency to increasingly use analytic ``light verb'' constructions to express complex verb meanings, such as the periphrastic\is{periphrasis} \isi{causative}, \isi{perfect}, future, habitual, etc.\ (\citealt{Zehnder2011}; \citealt{Ittzes2015}, \citeyear{Ittzes2020}; \citealt{Lowe2017b}; \citealt{Grieco2023}). Note that the structurally related \textit{gúh\textbf{ā}}\iw{Sanskrit}{\textit{gúhā} \textit{bhū}-} \iw{Sanskrit}{\textit{gúhā} \textit{kr̥}-} \textit{bhū}-/\textit{kr̥}- construction (`become/make hidden/with hiding') is of Rigvedic age, cf.\ further Section \ref{sec:CSperiphrasis}.}
+
+
+With this introductory background in mind, we can now turn to the  question of deadjectival verbs.\is{deadjectival!verb} That is, our focus in the following as well as in the papers in this volume is on the verbal strategy for expressing PCs,\is{property concept (PC)} i.e., the one illustrated in example (\ref{ex:PCvb}) and the hypothetical (\ref{ex:strongs}). However, most of the contributions in this volume are not restricted to the discussion of deadjectival verbs\is{deadjectival!verb} in this strict sense, but also address how such verbs arise diachronically and how they interact with and differ in distribution from the other strategies discussed above. In the next section, we provide a more detailed definition of deadjectival verbs\is{deadjectival!verb} and a discussion of the different types thereof. 
+
+
+\section{Deadjectival verbs cross-linguistically}
+\label{sec:deadj}
+
+\subsection{The name of the game}
+\label{sec:def}
+
+In the previous section, we have focused on deadjectival verbs\is{deadjectival!verb} formed to roots that express ``adjectival meaning'',\is{root!adjectival} i.e., property concepts\is{property concept (PC)} (PCs). This is the definition commonly found in the theoretical literature (e.g., \citealt{HaleKeyser2002}; \citealt{KoontzGarboden2005}, \citeyear{KoontzGarboden2014}; \citealt{Bobaljik2012}; \citealt{BeaversKoontz2020}) and also adopted in some recent Indo-Europeanist literature on the ``Caland system''\is{Caland!system (CS)}  (cf.\ Section \ref{sec:Calanddef}), e.g., \textsc{Rau}, this volume. Some examples are given in (\ref{ex:deadj1}).
+
+
+
+There is a second, less salient use of the term that can be paraphrased as in (\ref{ex:deadj2}) and essentially defines deadjectival verbs\is{deadjectival!verb} primarily via their morphology, that is, as based on an adjectival \emph{stem} whose adjectival categorizing morphology is contained in the derivative. 
+
+
+\begin{exe}
+    \ex Two types of deadjectival verbs \label{ex:twotypes}
+    \begin{xlist}
+        \ex Root-derived verbs\is{derivation!deradical} from PC\is{property concept (PC)} roots \label{ex:deadj1}          
+        \begin{xlist}
+        \ex Latin \label{ex:latdeadj1}
+                   \begin{itemize}
+                       \item \textit{mac-ēre} \iw{Latin}{\textit{macēre}} `be thin' (Pl.), \textit{mac-ēscere} \iw{Latin}{\textit{macēscere}} `become thin' (Pl.+) $\leftarrow$ \iwi{PIE}{*\textit{ma\kinvbreve}-} or \iwi{PIE}{*\textit{meh\textsubscript{2}\kinvbreve}-} `long, thin' vs.\ adj.\ \iwi{Latin}{\textit{macer}}, \textit{mac\textbf{r}-}  (\citealt[51]{Nussbaum1976}; \citetalias[ 478--479]{NIL})
+                   \item  \textit{rub-ēre} \iw{Latin}{\textit{rubēre}} `be red', \textit{rub-ēscere} \iw{Latin}{\textit{rubēscere}} `become red' $\leftarrow$ \iwi{PIE}{*\textit{h\textsubscript{1}reu̯dʰ}-} `red' (\citetalias[ 508--509]{Rix2001}) vs.\ adj.\ \iwi{Latin}{\textit{ruber}}, \textit{rub\textbf{r}}-
+                   \item \textit{tep-ēre} \iw{Latin}{\textit{tepēre}} `be warm' $\leftarrow$ \iwi{PIE}{*\textit{tep}-} `be warm, hot' (\citetalias[ 629--630]{Rix2001}) vs.\ adj.\ \textit{tep\textbf{id}us}\iw{Latin}{\textit{tepidus}}
+                   \end{itemize}
+        \ex Slavic (PSl.)\label{ex:slavdeadj1}
+        \begin{itemize}
+            \item  *\textit{rŭd-ěti sę}, \iw{PSl}{*\textit{rŭděti sę}, *\textit{rŭdi}-} \textit{rŭdi}-\footnote{The citation forms used for Slavic verbs are usually the infinitive and the first person singular, e.g., *\textit{rŭždǫ sę}. For ease of comparison (in particular with Lithuanian, where the citation forms are the infinitive and third person), we use the present stem here instead of the first person form. The past forms are omitted.} `grow red, blush' $\leftarrow$ \iwi{PIE}{*\textit{h\textsubscript{1}reu̯dʰ}-} `red' vs.\ adj.\ *\textit{rŭd\textbf{r}ŭ}\iw{PSl}{*\textit{rŭdrŭ}}
+                   \item  *\textit{top-iti}, \iw{PSl}{*\textit{topiti}, *\textit{topi}-} \textit{topi}- `to heat' $\leftarrow$ \iwi{PIE}{*\textit{tep}-} `be warm, hot' (compare Ved.\ \iwi{Sanskrit}{\textit{tāpáyati}} and Yav.\ \iwi{Avestan}{\textit{tāpaiieiti}}, \citetalias[ 629--630]{Rix2001}) vs.\ adj.\ *\textit{tep\textbf{l}ŭ}\iw{PSl}{*\textit{teplŭ}}
+        \end{itemize}  
+        \ex Hebrew (\citealt[749; 743]{Arad2003}) \label{ex:hebrewdeadj1}
+        \begin{itemize}
+            \item     \iwi{Hebrew}{\textit{xizeq}} `strengthen' $\leftarrow$ \iwi{Hebrew}{$\surd{}$\textit{xzq}} vs.\ adj.\ \iwi{Hebrew}{\textit{xazaq}}
+                  \item  \iwi{Hebrew}{\textit{hišmin}} `grow fat, fatten' $\leftarrow$ \iwi{Hebrew}{$\surd{}$\textit{šmn}} vs.\ adj.\ \iwi{Hebrew}{\textit{šamen}}
+        \end{itemize}
+        \end{xlist}
+        \ex Verbs derived from overtly marked/categorized adjectives \label{ex:deadj2}
+        \begin{xlist}
+        \ex Latin \label{ex:latdeadj2}
+        \begin{itemize}
+            \item   \textit{mac\textbf{r}-ēscere} \iw{Latin}{\textit{macrēscere}} `become thin' (Hor.+) $\leftarrow$ \iwi{Latin}{\textit{macer}}, \textit{mac\textbf{r}-} `thin'
+                   \item \textit{pig\textbf{r}-ēre} \iw{Latin}{\textit{pigrēre}} `to be reluctant' (Acc.) $\leftarrow$ \iwi{Latin}{\textit{piger}}, \textit{pig\textbf{r}-} `torpid, inactive' (\citetalias[ 464]{EDL})
+                    \item \textit{crūd\textbf{ēl}-ēscere} \iw{Latin}{\textit{crūdēlēscere}} `become cruel' (Aug.) $\leftarrow$ \textit{crūd\textbf{ēl}is}\iw{Latin}{\textit{crūdēlis}} `cruel' ($\leftarrow$  \mbox{\iwi{Latin}{\textit{crūdus}}} `raw, bloody, rough, cruel')
+        \end{itemize}   
+        \ex Slavic (OCS) \label{ex:slavdeadj2}    
+        \begin{itemize}
+            \item         \textit{ost\textbf{r}iti}, \iw{OCS}{\textit{ostriti, ostri}-} \textit{ostri}- `sharpen' $\leftarrow$  \textit{ost\textbf{r}ŭ} \iw{OCS}{\textit{ostrŭ}} `sharp' (\citetalias[ 601]{ESJS})
+                  \item \textit{ob-lĭg\textbf{ŭč}iti}, \iw{OCS}{\textit{oblĭgŭčiti, oblĭgŭči}-} \textit{ob-lĭgŭči}- `lighten, make light'  $\leftarrow$  \textit{lĭg\textbf{ŭk}ŭ} `light' \iw{OCS}{\textit{lĭgŭkŭ}} \newline (\citetalias[ 447--448]{ESJS})
+                  \item  \textit{sŭ-tep\textbf{l}iti}, \iw{OCS}{\textit{sŭtepliti, sŭtepli}-} \textit{sŭ-tepli}- `to warm, to heat' $\leftarrow$  \textit{tep\textbf{l}ŭ}\iw{OCS}{\textit{teplŭ}} `warm, hot' (\citetalias[ 955]{ESJS})
+        \end{itemize}
+        \ex Hebrew (\citealt[752, fn.\ 11]{Arad2003}) \label{ex:hebrewdeadj2}
+        \begin{itemize}
+            \item           \textit{hitqamc\textbf{en}}\iw{Hebrew}{\textit{hitqamcen}} `act miserly' $\leftarrow$ \textit{qamc\textbf{an}}\iw{Hebrew}{\textit{qamcan}} `miser' (\iwi{Hebrew}{$\surd{}$\textit{qmc}})
+            \item        \textit{hištaxc\textbf{en}}\iw{Hebrew}{\textit{hištaxcen}} `act arrogantly' $\leftarrow$ \textit{šaxc\textbf{an}}\iw{Hebrew}{\textit{šaxcan}} `arrogant' (\iwi{Hebrew}{$\surd{}$\textit{šxc}})
+        \end{itemize}
+        \end{xlist}
+    \end{xlist}
+\end{exe}
+
+While the verbs in both (\ref{ex:deadj1}) and (\ref{ex:deadj2}) are semantically deadjectival \is{deadjectival!verb} and display meanings expected of deadjectivals (`be X', `become X', `make X'), only the latter ones are \emph{morphologically} adjective-derived and contain the stem-forming morphology of the adjectival base. The difference is especially clear when comparing ``\isi{doublet}s'' like the first of the Latin examples, where the verbal morphology of \textit{mac-ēscere} \iw{Latin}{\textit{macēscere}} in (\ref{ex:latdeadj1}) attaches directly to the root, while \textit{mac-\textbf{r}-ēscere} \iw{Latin}{\textit{macrēscere}}  in (\ref{ex:latdeadj2}) clearly shows the -\textit{r}- of the adjective stem that is kept in the derivative, and the same holds  for \textit{pig\textbf{r}ēre}. \iw{Latin}{\textit{pigrēre}} The \isi{productivity} of the latter strategy of stem-derived formations\is{derivation!stem-based} is confirmed by \textit{crūd\textbf{ēl}ēscere} \iw{Latin}{\textit{crūdēlēscere}} from \textit{crūd\textbf{ēl}is}, \iw{Latin}{\textit{crūdēlis}} which is itself a derivative of the adjective \iwi{Latin}{\textit{crūdus}}.
+
+A similar situation is encountered in the Slavic examples. In (\ref{ex:slavdeadj2}) we see adjectives that are derived from typical Indo-European ``Caland'' roots \is{Caland!root} (\iwi{PIE}{*\textit{h\textsubscript{2}e\kinvbreve}-},\footnote{But see \citet[10]{Nussbaum2021} for potential problems of an analysis of PIE \iwi{PIE}{*\textit{h\textsubscript{2}e\kinvbreve -ro}-} as historical PC\is{property concept (PC)} adjective due to the unusual accent of Lith.\ \iwi{Lith}{\textit{aštrùs}} and AG \textit{ákros},\iw{AG}{ἄκρος} which points to *\textit{h\textsubscript{2}é\kinvbreve -ro}- rather than expected *\textit{h\textsubscript{2}e\kinvbreve -ró}-.} \iwi{PIE}{*\textit{h\textsubscript{1}leng\textsuperscript{u̯h}}-} and \iwi{PIE}{*\textit{tep}-}) by using the associated adjectival suffixes \iwi{PIE}{*-\textit{ro}-} (which is also the source of the Latin -\textit{r}- in the examples above), \iwi{PIE}{*-\textit{u}-} and \iwi{PIE}{*-\textit{lo}-}. Those suffixes surface in the respective derived verbs, i.e., they are clearly derived from the adjective rather than from the root. In this way, we get \textit{sŭtep-\textbf{l}-iti}\iw{OCS}{\textit{sŭtepliti, sŭtepli}-} as opposed to the root-derived\is{derivation!deradical} \isi{causative} *\textit{top-iti} \iw{PSl}{*\textit{topiti}, *\textit{topi}-} in (\ref{ex:slavdeadj1}), or Latin \textit{tep-ēre} \iw{Latin}{\textit{tepēre}} in (\ref{ex:latdeadj1}). Particularly illustrative of this pattern is \textit{oblĭgŭčiti}\iw{OCS}{\textit{oblĭgŭčiti, oblĭgŭči}-}  in (\ref{ex:slavdeadj2}): Old *\textit{u}-adjectives \iw{PIE}{*-\textit{u}-} were regularly extended by the suffix \iwi{PIE}{*-\textit{ko}-} in Slavic. This extension can famously be dropped in derivation (e.g., ChSl.\ \textit{ǫz-iti} \iw{OCS}{\textit{ǫziti}} `to narrow' $\leftarrow$ \iwi{OCS}{\textit{ǫzŭkŭ}} `narrow' < \iwi{PIE}{*\textit{h\textsubscript{2}emg̑ʰ-u}-}) and in doing so behaves like other Caland suffixes\is{Caland!system (CS)}  (cf.\ \citealt[§4.2]{Majer2017} for a detailed discussion with references). However, the -\textit{č}- of \textit{oblĭgŭčiti}\iw{OCS}{\textit{oblĭgŭčiti, oblĭgŭči}-} is the reflex of the palatalized -\textit{k}- from \iwi{OCS}{\textit{lĭgŭkŭ}}, which means that the verb must be derived from the whole synchronic \textit{stem} rather than from the root. Further evidence from the individual IE languages as well as comparative reconstruction suggest that the latter strategy in (\ref{ex:deadj2}) is an innovation in the PC\is{property concept (PC)} context, becoming more and more productive\is{productivity} and replacing the root-derived\is{derivation!deradical} principle in (\ref{ex:deadj1}); see, e.g., \citet{Watkins1971} and \citet{Nussbaum1976} for more examples from various Indo-European branches, and \citet{Majer2017} and \citet{Reiter2023} for (Balto-)Slavic.
+
+The contrast between root- and adjective-derived verbs is not restricted to Indo-European languages. In the  Hebrew examples in (\ref{ex:hebrewdeadj1}), the root-derived\is{derivation!deradical} verbs are created by inserting certain vowel combinations into the root consisting of three consonants (and, in the second example, a prefix),\is{prefixation} the same strategy as is used for the creation of deradical adjectives.\is{derivation!deradical} On the other hand, (\ref{ex:hebrewdeadj2}) shows verbs derived from the adjectives rather than from the root, as the adjective-building suffix \iwi{Hebrew}{-\textit{an}} is retained (albeit with a change of the vowel quality). The ``act like'' semantics are a manifestation of the broader semantics of stem-derived verbs\is{derivation!stem-based} as opposed to root-derived\is{derivation!deradical} ones (see  \citealt[194--195]{Kastner2020} for further examples).
+
+In Indo-European studies, the morphology-oriented use of the term ``deadjectival'' \is{deadjectival!verb} has been the dominant one so far, i.e., it is used almost exclusively for verbs of type (\ref{ex:deadj2}), while (\ref{ex:deadj1}) is usually discussed under the label ``Caland system''\is{Caland!system (CS)}  (cf.\ Section \ref{sec:Calanddef}). Since verbs like those in (\ref{ex:deadj2}) are stem-derived,\is{derivation!stem-based} they are traditionally labeled ``secondary''\is{derivation!stem-based} as opposed to ``primary'' formations\is{derivation!deradical}  that are derived directly from the root (cf.\ above).\footnote{\label{fn:deverbative}Because it is common practice in the  discipline to set up the root and its meaning as verbal wherever possible (cf.\ footnote \ref{fn:verbalroot}), the term ``deverbal'' or ``deverbative''\is{deverbal/deverbative!verb} is sometimes inaccurately equated with ``deradical''\is{derivation!deradical} or ``primary'' in morphological terms. This should be avoided.} As a consequence, primary verbs\is{derivation!deradical}  are usually not labeled ``deadjectival'' \is{deadjectival!verb} (or more broadly ``denominative''\is{denominative!verb}) because they are not deadjectival from a morphological point of view, even if they are semantically. For example, PSl.\ *\textit{rŭděti sę}, \textit{rŭdi-}\iw{PSl}{*\textit{rŭděti sę}, *\textit{rŭdi}-} `grow red, blush' is usually taken as a primary verb\is{derivation!deradical}  in the literature as it is morphologically deradical\is{derivation!deradical} and builds an \textit{i}-present as opposed to morphologically unambiguous deadjectivals \is{deadjectival!verb} that form a different type of present stem (e.g., OCS \textit{o-slaběti}, \textit{o-slaběje-}\iw{OCS}{\textit{oslaběti, oslaběje}-} `become weak' $\leftarrow$ \iwi{OCS}{\textit{slabŭ}} `weak'; cf. \textsc{Villanueva Svensson}, this volume). Consequently, it is not discussed in the literature on deadjectivals \is{deadjectival!verb} (but see \citealt[275]{VillanuevaSvensson2021} for an exception). Of course, when analyzing a verbal form, a clear-cut decision on the primary\is{derivation!deradical}  vs.\ secondary status\is{derivation!stem-based} is sometimes difficult to make (cf., e.g., \textsc{Boldt}, \textsc{Höfler \& Stifter} and \textsc{Sasseville}, this volume, or again \citealt{VillanuevaSvensson2021}) and the analysis might differ depending on whether one takes a synchronic or diachronic viewpoint: As is shown by various contributions in this volume, historical secondary formations\is{derivation!stem-based} can at some point be reanalyzed as primary,\is{derivation!deradical}  and a synchronic (re)association of an originally independent derivate with a nominal formation is possible, too.\footnote{Compare \citet[147--148]{Jasanoff2004}, who calls the distinction between denominative\is{denominative!verb} and deradical\is{derivation!deradical} in the context of Latin \textit{ē}-verbs ``illusory, or at least epiphenomenal'' because historically, the ultimate source of the verbal formation itself is denominative, cf.\ Section \ref{sec:CSperiphrasis}.} This can lead to a situation where a verb is labeled differently across publications (within one branch as well as across different daughter languages of Indo-European\footnote{E.g., PSl.\ *\textit{rŭděti sę}\iw{PSl}{*\textit{rŭděti sę}, *\textit{rŭdi}-} is equated with Latin \iwi{Latin}{\textit{rubēre}}, Old Irish \textit{ruidid}  \iw{OIr}{\textit{ruidid}, ·\textit{ruidi}} `blush' and OHG \iwi{OHG}{\textit{rotēn}} `be reddish, become red', cf. \textsc{Höfler \& Stifter}, this volume.}), which makes a comparison somewhat difficult -- especially when the criteria for classifying a given example as (synchronically or historically) primary\is{derivation!deradical}  or secondary\is{derivation!stem-based} are not made transparent. 
+
+As these examples and the elaborations in Section \ref{sec:lexicalization} show, an equation of ``deadjectival'' \is{deadjectival!verb} with ``secondary''\is{derivation!stem-based} in the morphological sense of (\ref{ex:deadj2}) would exclude an important amount of evidence, especially in the case of the ``Caland''\is{Caland!system (CS)}  phenomenon, as will be further discussed in Section \ref{sec:Calanddef}, and is at odds with the use of the term  in theoretical and typological studies. We therefore use the term ``deadjectival'' \is{deadjectival!verb} in both meanings defined above to encompass both secondary verbs\is{derivation!stem-based} built on overtly marked adjectival stems as well as morphologically primary\is{derivation!deradical}  but semantically deadjectival verbs\is{deadjectival!verb} derived from Property Concept\is{property concept (PC)} roots (cf.\ Section \ref{sec:contr} for further advantages of this use).
+
+Finally, note that in languages with little or no adjectival categorizing morphology like English, the matter of the distinction between (\ref{ex:deadj1}--\ref{ex:deadj2}) becomes a serious theoretical problem: Are there verbs which are morphologically deadjectival,\is{deadjectival!verb} but happen to be derived from adjectives in which the adjectival categorizer is zero? Would we expect such verbs to be semantically distinguishable from genuinely root-derived verbs\is{derivation!deradical} as in (\ref{ex:deadj1})? This also depends on whether we expect verbs of type (\ref{ex:deadj1}) to systematically differ semantically from verbs of type (\ref{ex:deadj2}), as is suggested \textit{inter alia} by the Hebrew examples and the iteratives\is{iterative} discussed in Section \ref{sec:iter}. Further, the problem of root-\is{derivation!deradical} vs.\ stem-based derivation\is{derivation!stem-based} links to the question of why some deadjectival \is{deadjectival!verb} CoS \is{change of state (CoS)} verbs are transparently built on the comparative while most others are not, e.g., Engl.\ \textit{to worsen}, \textit{to lessen}, \textit{to better} vs.\ \textit{to broaden}, \textit{to clean}, etc., a phenomenon that is found in the older IE languages as well.\footnote{Semantic arguments against taking deadjectival degree achievement verbs \is{deadjectival!verb} such as \textit{flatten}, \textit{widen}, \textit{straighten}, etc., from the positive adjective are discussed by \citet[42--45 \& fn.\ 24]{BeaversKoontz2020}, etc.; see also  \citealt[169--207]{Bobaljik2012}; \citealt[46, fn.\ 26]{BeaversKoontz2020};  \citealt[80--90]{Fabregas2023}. On the lack of zero-derived deadjectival verbs\is{deadjectival!verb} see  \citealt{AcedoMatellan2022FSBorer}.} The same question arises for the verbs of type (\ref{ex:deadj2}), which also show overt adjectival (though positive rather than comparative) morphology. We must leave this to future research; in this volume, the contributions by \textsc{Sasseville}, \textsc{Merritt}, \textsc{Iacobini \& De Rosa} and \textsc{Tanza-Kamil} treat the complex relationship between verbs that contain overt adjectival morphology (at least historically) and primary/root-derived verbs.\is{derivation!deradical}   
+
+
+\subsection{Two types of change-of-state verbs}
+\label{sec:CoS}
+
+In discussing deadjectival \is{deadjectival!verb} CoS \is{change of state (CoS)} verbs, we must moreover be careful to distinguish verbs formed from PC\is{property concept (PC)} roots from other types of CoS verbs\is{change of state (CoS)} whose base is not adjectival in one of the two senses defined in Section \ref{sec:def}. \citet[58]{BeaversKoontz2020} observe that ``there is a split between two types of change-of-state\is{change of state (CoS)} verbs in terms of whether the entailment of change is introduced solely by the
+template or an entailment of change is (also) present in the root itself'', a difference that can be paraphrased as that between adjectival \is{root!adjectival} and eventive (in the broad sense) roots. The first (``adjectival'') class that has no entailments of change gives rise to deadjectival \is{deadjectival!verb} CoS \is{change of state (CoS)} verbs, (\ref{ex:deadjCoS}). These correspond to the PC\is{property concept (PC)} states of \citet{Dixon1982} and ``Caland'' adjectives \is{Caland!system (CS)} in the older IE languages (Section \ref{sec:Calanddef}). The second class of CoS \is{change of state (CoS)} verbs is derived from ``states that are the result of some action'' (\citealt[50]{Dixon1982}), (\ref{ex:nondeadjCoS}); cf.\ also \citealt{Rau2013} for a more fine-grained version of this distinction.
+
+\begin{exe}
+\ex   \label{ex:deadjCoS} Deadjectival CoS \is{change of state (CoS)} verbs (\citealt[245]{Levin1993}, after \citealt[58]{BeaversKoontz2020})\\
+awaken, brighten, broaden, cheapen, coarsen, dampen, darken, deepen,
+fatten, flatten, freshen, gladden, harden, hasten, heighten, lengthen, lessen,
+lighten, loosen, moisten, neaten, quicken, ripen, roughen, sharpen, shorten,
+sicken, slacken, smarten, soften, stiffen, straighten, strengthen, sweeten,
+tauten, thicken, tighten, toughen, weaken, widen, ...
+\end{exe}
+
+\begin{exe}
+\ex   \label{ex:nondeadjCoS} Non-deadjectival CoS \is{change of state (CoS)} verbs (\citealt[58]{BeaversKoontz2020})
+\begin{xlist}
+    \ex  Levin's (\citeyear[241]{Levin1993}) \textit{break} verbs: break, chip, crack, crash, crush, fracture,
+rip, shatter, smash, snap, splinter, split, tear
+\ex Levin's cooking verbs (\citealt[243]{Levin1993}): bake, barbecue, blanch, boil, braise, broil, charbroil, charcoal-broil, coddle, cook, crisp, deepfry, fry, grill, hardboil, poach, ...
+\ex Verbs of killing (\citealt[230--233]{Levin1993}): crucify, electrocute, drown, hang, guillotine, ...
+\ex \textit{inter alia}
+\end{xlist}
+\end{exe}
+
+Crucially, these two classes systematically differ with respect to their morphology and semantics  across a wide sample of genetically unrelated languages, as \citet{Beaversetal2021} show: While the verbs in ex.\ (\ref{ex:deadjCoS}) form both basic and derived statives\is{stative} (= primary\is{derivation!deradical}  and \is{derivation!stem-based}secondary/deverbal adjectives,\is{deverbal/deverbative!adjective} in Indo-Europeanist terminology), the verbs in ex.\ (\ref{ex:nondeadjCoS}), or ``result roots'', can only form derived statives\is{stative} which always entail a \is{change of state (CoS)} change of state.\footnote{The ``result \isi{stative}'' category in \tabref{tab:stativesEngl} and \tabref{tab:stativesHebr} conflates different subtypes of (participial)\is{participle} states, e.g., the distinction between target and resultant states of \citet{Kratzer2001}, \citet{Anagnostopoulou2003}, \citet{AnagnostopoulouSamioti}, \citet{Alexiadouetal2015}, etc. What matters for our purposes is that this (composite) category differs systematically from that of the ``basic statives''.\is{stative} For a differing view under which ``statives''\is{stative} (including underived adjectives) and adjectival passives ($\approx$ Kratzer's target states) are grouped together  to the exclusion of ``\isi{resultative}s'' ($\approx$ Kratzer's resultant states) see \citet{Embick2004}.}  This difference is illustrated in \tabref{tab:stativesEngl} for English (cf.\ also \citealt[162--163]{Rau2009} on the same contrast in Vedic Sanskrit and Latin). 
+
+
+
+\begin{table}
+\caption{Basic and derived statives in English}
+\label{tab:stativesEngl}
+ \begin{tabularx}{.9\textwidth}{XXXXX}
+  \lsptoprule
+  Adjectival root \is{root!adjectival} & Basic \isi{stative} & Verb & Result \isi{stative} \\
+  \midrule
+ ${\surd}$\textsc{flat} & \textit{flat} & \textit{flatten} & \textit{flatten-ed}\\
+ ${\surd}$\textsc{red} & \textit{red} & \textit{redden} & \textit{redden-ed}\\
+\midrule
+Result  root & Basic \isi{stative} & Verb & Result \isi{stative}\\
+\midrule
+${\surd}$\textsc{crack} & -- & \textit{crack} & \textit{crack-ed}\\
+${\surd}$\textsc{cook} & -- & \textit{cook} & \textit{cook-ed}\\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+
+The same contrast is found in languages that use the verbal strategy (or a mix of strategies) for statives.\is{stative} In Hebrew, for example, both adjectival and result statives\is{stative} are categorially \emph{verbal}. While simple statives\is{stative} in Hebrew do not entail a change of state,\is{change of state (CoS)} result statives\is{stative} always do, both for adjectival \is{root!adjectival} and for result roots, and they also differ morphologically, cf.\ the examples in \tabref{tab:stativesHebr} (a similar pattern of primary\is{derivation!deradical}  and secondary\is{derivation!stem-based} verbal \isi{stative} formation is discussed by \textsc{Tanza-Kamil}, this volume, for Akkadian). 
+
+
+\begin{table}
+\caption{Basic and derived statives in Hebrew (ex.\ from \citealt[457]{Beaversetal2021})}
+\label{tab:stativesHebr}
+ \begin{tabularx}{\textwidth}{XXXXXX}
+  \lsptoprule
+Root & & Simple stv\is{stative} & Inchoative\is{inchoative} & Causative\is{causative} &  Result stv\\
+\midrule
+Adjectival &  \mbox{\iwi{Hebrew}{$\surd{}$\textit{gdl}}} `large'  & \mbox{\iwi{Hebrew}{\textit{gadol}}} & \mbox{\iwi{Hebrew}{\textit{gadal}}} & \mbox{\iwi{Hebrew}{\textit{higdil}}} & \mbox{\iwi{Hebrew}{\textit{mu-gdal}}}\\
+Result  & \mbox{\iwi{Hebrew}{$\surd${}\textit{švr}}}  `break' & -- & \mbox{\iwi{Hebrew}{\textit{ni-šbar}}} & \mbox{\iwi{Hebrew}{\textit{šavar}}} & \mbox{\iwi{Hebrew}{\textit{šavur}}} \\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+
+
+Given how widespread the morphosemantic\is{morphosemantics} differentiation between adjectival and non-adjectival/result CoS \is{change of state (CoS)} verbs is cross-linguistically, this suggests that the (often informal) distinction between ``verbal'' and ``adjectival'' roots  \is{root!adjectival} found in some of the Indo-Europeanist literature (e.g., \citealt{Nussbaum2022}) is indeed theoretically and typologically valid. In other words, adjectival/PC\is{property concept (PC)} roots have different combinatorial morphological properties than eventive/result roots, and this reflects their underlying semantic difference.  In order to terminologically distinguish between verbs derived from PC\is{property concept (PC)} vs.\ eventive/result roots, we therefore use the terms \emph{fientive}\is{fientive} (Lat.\ \iwi{Latin}{\textit{fieri}} `become') and \emph{factitive}\is{factitive} for, respectively, \isi{intransitive} and \isi{transitive} CoS \is{change of state (CoS)} verbs from PC\is{property concept (PC)} roots and \emph{inchoative}\is{inchoative} and \emph{causative}\is{causative} for \isi{intransitive} vs.\ \isi{transitive} CoS \is{change of state (CoS)} verbs from eventive/result roots from here on (cf.\ \textsc{Villanueva Svensson}, this volume). Note, however, that these two groups can also interact and sometimes even share the same verbal morphology (cf.\ \citealt{Rau2013} \& this volume; \textsc{Sasseville}, this volume; as well as fn.\ \ref{fn:verbalroot} and \tabref{tab:PCCoS}). Moreover, \isi{reanalysis} of secondary adjectives\is{derivation!stem-based} as primary adjectives,\is{derivation!deradical}  lexicalization, etc., can blur the lines between these two classes for individual lexical items, so that ``variation in the interpretation
+of particular adjectival forms among both simple and derived adjectives is actually expected owing to lexical drift or idiosyncratic semantic factors.'' (\citealt[449]{Beaversetal2021}; cf.\ also \citealt[71--73]{BeaversKoontz2020}). For example, the adjective \textit{broken} in (\ref{ex:broken}), also from \citet[449]{Beaversetal2021} does not entail a change of state,\is{change of state (CoS)} which therefore can be denied. This is unexpected given that \textit{broken} is formed from a result root. 
+
+\begin{exe}
+    \ex The window is broken but it never broke. It was manufactured that way. \label{ex:broken}
+\end{exe}
+
+\begin{table}[b]
+\caption{Slavic deadjectivals from former participles (\citealt[128; 138]{Reiter2023}). Participial morphemes are bolded.}
+\label{tab:Slavpart}
+ \begin{tabularx}{\textwidth}{llll}
+  \lsptoprule
+Base verb & Ptcp.\is{participle} $\rightarrow$ adj. & & Deadjectival verb\is{deadjectival!verb}\\
+\midrule
+PSl.\ \iwi{PSl}{*\textit{zelti}}\footnote{cf.\ Lith.\ \iwi{Lith}{\textit{žélti, žẽlia}/\textit{želi}} `green, sprout'. Note, however, that for the first example there might also be an alternative explanation since the PIE root \iwi{PIE}{*\textit{g̑ʰelh\textsubscript{3}}-} means `green, yellow, pale', i.e., it has PC\is{property concept (PC)} semantics. Therefore, the apparent base verb and its ``\isi{participle}'' could also be independent derivations.
+} & OCS \textit{zel\textbf{en}ŭ} \iw{OCS}{\textit{zelenŭ}} `green' & ChSl.\ & (\textit{pro}-)\textit{zel\textbf{en}ěti} (\textit{sę}), \iw{OCS}{(\textit{pro})\textit{zeleněti}  (\textit{sę})}  \\
+& & & -\textit{ěje}- `become green'\\
+ & & Russ.& \textit{zel\textbf{en}ét’} \iw{Russ}{\textit{zelenét’}} `id.'\\
+ & & Russ.& \textit{zel\textbf{en}ít’} \iw{Russ}{\textit{zelenít’}} `make green'\\
+OCS \iwi{OCS}{\textit{črŭviti}} `dye red'  & OCS \textit{črŭv(lj)\textbf{en}ŭ} \iw{OCS}{\textit{črŭv(lj)enŭ}} & Cz. & \textit{červ\textbf{en}ěti} \iw{Cz}{\textit{červeněti}} `become red'\\
+($\leftarrow$ \iwi{OCS}{\textit{črŭvĭ}} `worm') & `red'& Cz.&  \textit{červ\textbf{en}iti} \iw{Cz}{\textit{červeniti}} `paint red'\\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+\largerpage
+\citet[72]{BeaversKoontz2020} suggest that \textit{broken} could have ``undergone lexical drift for some speakers to
+have a specialized meaning like ``not functioning'' or ``not canonical in a way that suggests defects,'' which could be an inherent property rather than one derived through a change''. In other words, new property concept\is{property concept (PC)} lexemes can arise through \isi{reanalysis} or lexical drift, a development that has also been observed in the context of the Caland system \is{Caland!system (CS)} in the older IE languages (e.g., \citealt{Nussbaum1976}, \citeyear{Nussbaum2021}, \citeyear{Nussbaum2022}; \citealt[118--126]{Rau2009}; \citealt{Alfieri2016}). \citet[127--138]{Reiter2023} discusses some examples in Slavic, in which formations that are traditionally explained as historical participles\is{participle} or \isi{resultative} deverbal adjectives\is{deverbal/deverbative!adjective} \is{verbal adjective} function as synchronic adjectives with a PC\is{property concept (PC)} reading that can in turn serve as base for further deadjectival verbs,\is{deadjectival!verb} cf.\ \tabref{tab:Slavpart}. This is also the case for many prototypical PC\is{property concept (PC)} adjectives in English, e.g., \textit{old}, which goes back to a past \isi{participle} of the PGmc.\ verb \iwi{PGmc}{*\textit{alan}-} `grow, bring up'  (\citetalias[ 20]{Kroonen2013}; \citealt[449]{Beaversetal2021}).
+
+
+All in all, these facts suggest that deadjectival verbs\is{deadjectival!verb} need to be distinguished from non-deadjectival CoS \is{change of state (CoS)} or result verbs, from which they differ semantically (PC\is{property concept (PC)} vs.\ result/eventive roots). Morphologically, they are often treated as primary (root-derived)\is{derivation!deradical} in much of the theoretical and Indo-Europeanist literature, but there are also instances in which they appear to contain overt adjectival stem-forming morphology, and in these cases one must carefully distinguish between instances in which the adjectival morphology has been reanalyzed and essentially acts as verbalizing morphology (cf.\ Section \ref{sec:factinch}) and instances which are derivationally transparent and which raise the question why adjectival morphology is contained in the derived verb and what semantic function (if any) it contributes compositionally. 
+
+
+Since the discussion here and in the following focuses largely on CoS \is{change of state (CoS)} contexts, it is important to point out that deadjectival verbs\is{deadjectival!verb} can also be states and activities.\is{activity} \citet{Fabregas2023} distinguishes between the three broad classes of deadjectival verbs\is{deadjectival!verb} given in ex.\ (\ref{ex:Fabregascl}) in his study of derived verbs in Spanish.  
+
+
+\begin{exe}
+    \ex \label{ex:Fabregascl} Three types of A > V derivation (\citealt[63]{Fabregas2023})
+\begin{xlist}
+    \ex Change of state\is{change of state (CoS)} verbalisation, where the adjectival base defines the set of properties used to evaluate the change undergone by an argument (\iwi{Span}{\textit{claro}} `clear' > \iwi{Span}{\textit{aclarar}} `to make clear')
+\ex Activity\is{activity} property verbalisation, where the adjective defines a set of properties exhibited by an argument when performing an event (\mbox{\textit{holgazán}} `lazy'\iw{Span}{\textit{holgazán}} > \iwi{Span}{\textit{holgazanear}} `to act lazily') \label{ex:Fabrb}
+\ex Stative\is{stative} property verbalisation, where the adjective defines the properties exhibited by an argument, and not subject to change or transformation (\iwi{Span}{\textit{transparente}} `transparent' > \iwi{Span}{\textit{transparentar}} ‘to be transparent’)
+\end{xlist} 
+\end{exe}
+
+For reasons of space, we focus on the first class in the following, though see Section \ref{sec:iter} for a brief discussion of derived \isi{activity} verbs as in (\ref{ex:Fabrb}).\footnote{See also \citealt{OltraCastroviejo2014} and \citealt{AcedoGibert2022} on this type.}
+
+
+Having laid out the theoretical foundations of the topic as well as the definition of deadjectival verbs\is{deadjectival!verb} used in this volume, in the next section we move on to discussing the encoding of PCs\is{property concept (PC)} in the Indo-European languages in more detail.
+
+\section{Property Concepts and deadjectival verbs in Indo-European}
+\label{sec:CSIE}
+
+
+\subsection{The ``Caland system''}
+\label{sec:Calanddef}
+
+In the older Indo-European languages, property concepts\is{property concept (PC)} are usually discussed under the label ``Caland system'',\is{Caland!system (CS)}  named after Willem Caland (1859--1932), who first observed the peculiar morphological behavior of primary\is{derivation!deradical}  adjectives and their derivatives in Indo-Iranian (\citealt{Caland1892}, \citeyear{Caland1893}).  Caland noticed that primary adjectives,\is{derivation!deradical}  especially those formed with the Indo-Iranian suffixes \iwi{PIIr}{*-\textit{ra}-}, *\nobreakdash-\textit{ma}-,\iw{PIIr}{*-\textit{ma}-} and \iwi{PIIr}{*-\textit{ant}-}, seemingly ``lost'' their adjectival suffix in comparatives, superlatives, and in compounds,\is{compounding} often replacing it with a suffix \iwi{PIIr}{*-\textit{i}-} otherwise associated with \emph{nominal} stem formation. This replacement pattern is illustrated in \tabref{tab:CS1} with examples from Vedic, Avestan (both Indo-Iranian) and Ancient Greek (AG). Essentially, while comparatives, superlatives, and abstracts from primary\is{derivation!deradical}  (``Caland'')\is{Caland!system (CS)}  adjectives are semantically deadjectival \is{deadjectival!verb} or ``secondary'',\is{derivation!stem-based} they seem to be morphologically root-derived\is{derivation!deradical} or ``primary'' formations. 
+
+\begin{table}
+\caption{The Caland system in Indo-Iranian and Ancient Greek}
+\label{tab:CS1}
+ \begin{tabularx}{\textwidth}{llllll}
+  \lsptoprule
+            & \multicolumn{2}{l}{Positive adj.}  & Comparative & Superlative & Abstract\\
+  \midrule
+  Ved.  &   \textit{tig-má-} \iw{Sanskrit}{\textit{tigmá}-} & `sharp'	 &   \textit{téj-īyaṃs} \iw{Sanskrit}{\textit{téjīyaṃs}}  & 	\textit{téj-iṣṭha}- \iw{Sanskrit}{\textit{téjiṣṭha}-} & \textit{téj-as-} \iw{Sanskrit}{\textit{téjas}-} \\
+& \textit{pr̥th-ú-} \iw{Sanskrit}{\textit{pr̥thú}-} & `broad' & \textit{práth-īyaṃs-} \iw{Sanskrit}{\textit{práthīyaṃs}-} & \textit{práth-iṣṭha-} \iw{Sanskrit}{\textit{práthiṣṭha}-} & \textit{práth-as-} \iw{Sanskrit}{\textit{práthas}-}\\
+OAv. & \textit{ug-ra-} \iw{Avestan}{\textit{ugra}-} & `strong' & \textit{aoj-iiah-} \iw{Avestan}{\textit{aojiiah}-} & \textit{aoj-išta}- \iw{Avestan}{\textit{aojišta}-} & \textit{aoj-ah-} \iw{Avestan}{\textit{aojah}-}\\
+YAv. & \textit{bərəz-ant-} \iw{Avestan}{\textit{bərəzant}-} & `high' & \textit{barəz-iiah-} \iw{Avestan}{\textit{barəziiah}-} & \textit{barəz-išta-} \iw{Avestan}{\textit{barəzišta}-} & \textit{barəz-ah-} \iw{Avestan}{\textit{barəzah}-} \\
+AG & \textit{kūd-rós}, -\textit{nós}\iw{AG}{κῡδρός} \iw{AG}{κῡδνός} & `glorious' & \textit{kūd-íōn} \iw{AG}{κῡδίων} & \textit{kū́d-istos}\iw{AG}{κῡ́διστος} & \textit{kũd-os} \iw{AG}{κῦδoς} \\
+& \textit{krat-ús}\iw{AG}{κρατύς} & `strong' & \textit{kréssōn}\iw{AG}{κρέσσων}  & \textit{krát-istos}\iw{AG}{κράτιστος} & \textit{krát-os}\iw{AG}{κράτος} \\
+& &  & (< \iwi{PG}{*\textit{krét-jōn}}) & & \\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+Subsequent research has shown that this descriptive replacement of the adjectival morphology with \iwi{PIIr}{*-\textit{i}-} in composition, termed ``Caland's Law'',\is{Caland!system (CS)}  is neither confined  to Indo-Iranian nor to the suffixes discussed by Caland (see \citealt{DellOro2015} for an overview of the research history). Building on earlier works by \citet{Wackernagel1897} and \citet{Risch1974}, \citet{Nussbaum1976} showed in his seminal study that the alternating adjective- and abstract-forming suffixes must be conceptualized as forming a complex derivational \emph{system} to roots with ``inherently adjectival semantics'' \is{root!adjectival} (\citealt[6]{Nussbaum1976}). While some of them are more frequent and therefore ``central'' to the system, as the aforementioned \iwi{PIE}{*-\textit{ro}-}, \iwi{PIE}{*-\textit{u}-}, \iwi{PIE}{*-\textit{(e/o)nt}-} and \iwi{PIE}{*-\textit{i}-} (and, added later, simple thematic \iwi{PIE}{*-\textit{o}-}, cf.\ \citealt{Nussbaum2021}, \citeyear{Nussbaum2022}),\footnote{Note that except for \iwi{PIE}{*-\textit{i}-} these are the suffixes illustrated in \tabref{tab:poss}.} others are less frequently used for forming PC\is{property concept (PC)} adjectives and therefore ``marginal'' or ``peripheral'', like \iwi{PIE}{*-\textit{mo}-}, \iwi{PIE}{*-\textit{no}-}, \iwi{PIE}{*-\textit{lo}-} and \iwi{PIE}{*-\textit{to}-} (see \citealt[71--74]{Rau2009}). A combination of suffixes, like \iwi{PIE}{*-\textit{i-no}-} or \iwi{PIE}{*-\textit{u-mo}-}  is possible as well.
+The reason for the synchronic substitution principle is to be found in the derivational base of the respective formations: Since for a number of roots displaying a Caland system\is{Caland!system (CS)}  a root noun\is{root!noun} (that is, a noun built deradically\is{derivation!deradical} with a zero suffix/categorizer) with abstract semantics is either attested or reconstructable, \citet[100--105]{Nussbaum1976} argues that the seemingly primary\is{derivation!deradical}  formations with alternating suffixes are ultimately parallel derivations from such a root noun\is{root!noun} and consequently (historically) \emph{secondary} formations,\is{derivation!stem-based} as outlined in ex.\ (\ref{ex:rootnoun}).  
+
+\begin{exe}
+    \ex Derivation of Caland adjectives from root nouns\is{root!noun} (\citealt[129--130]{Rau2009}) \label{ex:rootnoun}
+    \begin{xlist}
+        \ex root noun\is{root!noun} *\textit{krúh\textsubscript{2}-\O}- \iw{PIE}{*\textit{krúh\textsubscript{2}}-} `gore, raw or bloody flesh' \\
+        $\rightarrow$ adj.\ \iwi{PIE}{*\textit{kruh\textsubscript{2}-ró}-} `bloody, gory'
+        \ex root noun\is{root!noun} *\textit{h\textsubscript{1}rudʰ-\O}- \iw{PIE}{*\textit{h\textsubscript{1}rudʰ}-} `redness'\\
+        $\rightarrow$ adj.\ \iwi{PIE}{*\textit{h\textsubscript{1}rudʰ-ró}-} $\rightarrow$ `red',\\
+        $\rightarrow$ adj.\ *\textit{h\textsubscript{1}re/ou̯dʰ-ó}-\iw{PIE}{*\textit{h\textsubscript{1}re/ou̯dʰ-o}-} `possessing redness' $\rightarrow$ `red'  
+     \end{xlist}
+\end{exe}
+
+The question of whether Caland formations \is{Caland!system (CS)}  should be classified as primary\is{derivation!deradical}  or secondary\is{derivation!stem-based} (called ``\emph{the} basic problem" by Nussbaum himself in \citeyear[101]{Nussbaum1976}) has been a crucial one ever since, as it is rarely possible to decide on the derivational base using morphological criteria. However, while the path described in (\ref{ex:rootnoun}) is most likely the ultimate source of the morphological behavior, Caland systems\is{Caland!system (CS)}  can also develop without attested root nouns.\is{root!noun} This suggests a \isi{reanalysis} of the derivational base as being not a (non-overtly marked) nominal formation, but the root itself, giving way to the deradical derivational\is{derivation!deradical} principle of the system.\footnote{The origin of the Caland substitution rule,\is{Caland!system (CS)}  its connection to the independently observed \iwi{PIE}{*-\textit{o}-} $\rightarrow$ \iwi{PIE}{*-\textit{i}-} replacement rule, and the original function and distribution of the latter are discussed in, e.g., \citealt{Schindler1980}; \citealt{Nussbaum1999}, \citeyear{Nussbaum2022}; \citealt{Rasmussen2002}; \citealt[269--287]{Balles2006}, \citeyear{Balles2009}; \citealt{Pinault2018};  \citealt{Grestenberger2021}. For reasons of space, we do not discuss this rule here.}
+
+Several attempts have been made to trace the diachronic development of PC\is{property concept (PC)} lexicalization even further back in time. Jasanoff (\citeyear{Jasanoff1978}, \citeyear{Jasanoff2004}) discusses the integration and subsequent extension of Indo-European ``\textit{ē}-verbs'' in the Caland system\is{Caland!system (CS)}  (see \tabref{tab:lightverbs} and Sections \ref{sec:CSperiphrasis} and \ref{sec:factinch} below) and the formation of \isi{stative}-\isi{intransitive} verbs more generally, arguing for a nominal, (de-)instrumental origin of the \textit{ē}-suffix (cf.\ \citealt{Grestenberger2023} with refs.). 
+
+As mentioned above, Balles \citeyearpar{Balles2006, Balles2009} has argued that PIE did not have a categorial  noun/adjective distinction and that PCs\is{property concept (PC)} were encoded either as verbal (cf.\ \ref{fn:verbalroot}) or through underspecified PC\is{property concept (PC)} nominals as discussed above in Section \ref{sec:intro}. The Caland system \is{Caland!system (CS)} evolved only after the need to differentiate the adjectival from the abstract reading of these PC\is{property concept (PC)} nominals arose, which according to her  also explains why Caland adjectives ``are semantically primary,\is{derivation!deradical}  but formally secondary,\is{derivation!stem-based} namely derived'' (\citealt[10--11]{Balles2009}). In other words, ``Caland's Law'' \is{Caland!system (CS)} is an epiphenomenon of the emergence of adjectives as a distinct word class, which was only in its beginnings when the Anatolian branch left the family. The \textit{i}-stem of the \textit{cvi}-construction in \tabref{tab:cvi} would then be a relic from the time before this development started. 
+
+While in Balles' analysis PIE could encode adjectival semantics both via a verbal and nominal strategy (\citeyear[271]{Balles2006}) and the CS \is{Caland!system (CS)}  is the result of the emergence of an adjectival word class from the nominal strategy, \citet{Bozzone2016} argues that the CS is a relic of an older \emph{verbal} strategy of lexicalizing  PCs.\is{property concept (PC)} She argues that Caland adjectives \is{Caland!system (CS)}  were originally inflected and behaved syntactically like verbs, based on a comparison with Japanese PCs.\is{property concept (PC)} According to Bozzone, PC-associated\is{property concept (PC)} verbal formations were specifically root aorists\is{root!aorist} with \isi{fientive} semantics, remnants of which can be found in some Vedic aorist participles.\is{participle} These verbs were thus effectively constructions of type (\ref{ex:strongs}) above, which were productive\is{productivity} in pre-PIE but became obsolete in the history of PIE due to a shift from a verb-like adjective class to a noun-like one and correspondingly to differences in adjectival predication. Before this shift, pre-PIE could encode adjectival meanings either through Caland root\is{Caland!root} verbs or via predicative instrumentals\is{predicative!instrumental} of nouns that were \emph{not} part of the CS.\is{Caland!system (CS)} After the shift, Caland roots\is{Caland!root} were able to form both root verbs and root nouns,\is{root!noun} whose predicatively used instrumentals\is{predicative!instrumental} became verbalized and led to the aforementioned \isi{stative} \textit{ē}-verbs. The root verbs, on the other hand, were specifically associated with \isi{perfective} aspect (aorists).\is{root!aorist} This would explain why the competing\is{competition} predicatively used instrumentals\is{predicative!instrumental} became associated with \emph{present} stem formation and would fit the typologically common pattern of encoding \isi{fientive}/CoS \is{change of state (CoS)} semantics as verbal and \isi{stative} semantics as nominal. Finally, the proposed resulting ``switch adjective system'' is, per Bozzone, typical of the last stage of a shift from verb-like to noun-like adjectives. 
+
+Though innovative, both accounts are problematic for several reasons. Balles' account wrongly dismisses the Anatolian evidence for an old (inherited) class of primary\is{derivation!deradical}  adjectives and at the same time overestimates the age of adjectival \textit{i}-stems both in Anatolian and Indo-Iranian, which are likely to be secondary, independent innovations (\citealt[8--10]{Grestenberger2009}, \citeyear[99]{Grestenberger2014}; \citealt[316]{Pinault2018}).
+
+Bozzone, on the other hand, places too much emphasis on Vedic participial\is{participle} formations in her reconstruction of pre-PIE PC\is{property concept (PC)} aorists, many of which are usually analyzed as Caland \emph{adjectives},\is{Caland!system (CS)}  e.g., Ved.\ \textit{br̥h-ánt}- \iw{Sanskrit}{\textit{br̥hánt}-} `high', which may have been originally denominal \is{denominal!adjective} to a root noun\is{root!noun} (cf.\ \tabref{tab:poss} and the discussion there; see also \citealt{Lowe2012}, \citeyear[283--294]{Lowe2015}). Bozzone takes them as fossilized participles\is{participle} from root aorists\is{root!aorist} without providing independent evidence for \emph{finite} forms of such aorists.  
+
+Despite these issues, these accounts provide the most detailed extant proposals for how originally nominal (instrumental) forms came to be integrated into the verbal system in the attested IE languages and thus constitute an important starting point for further studies, even though the internal reconstruction of the prehistory of the Caland system\is{Caland!system (CS)}  must necessarily remain speculative to some extent. One of the main problems that emerges from this work is the nature of primary verb formation\is{derivation!deradical}  of PC\is{property concept (PC)} roots vs.\ non-adjectival CoS \is{change of state (CoS)} roots   (cf.\ Section \ref{sec:CoS}), especially with respect to what types of primary verbs\is{derivation!deradical}  these two classes could form (e.g., presents vs.\ aorists) and to what extent the morphological strategies for forming such verbs overlapped (see \citealt{Rau2009}, \citealt{Rau2013}, this volume).  % 
+
+
+Before we fully turn to the verbal side of the system, it is moreover important to stress that while numerous Caland roots\is{Caland!root} correspond to Dixon's (\citeyear{Dixon1982}) property concepts\is{property concept (PC)} in \tabref{tab:PCs} (anticipated by \citealt{Watkins1971} and \citealt{Nussbaum1976} and subsequently shown by \citealt{Balles2006}, \citeyear{Balles2009} and \citealt{Rau2009}), ``it is not true that a CS \is{Caland!system (CS)}  guarantees an adjectival root\is{root!adjectival} and \textit{vice versa}'' (\citealt[207]{Nussbaum2022}). That is, not every root with a PC\is{property concept (PC)} meaning necessarily forms a Caland system\is{Caland!system (CS)}  (the most prominent example being PIE *\textit{néu̯o}-\iw{PIE}{*\textit{néu̯-o}-} `new') and not every root displaying a Caland system \is{Caland!system (CS)}  necessarily has PC\is{property concept (PC)} meaning from the beginning, e.g., \iwi{PIE}{*\textit{pleh\textsubscript{1}}-} `fill (up)', whose meaning is not prototypically adjectival  but whose derivatives across the family show that a securely reconstructable system has developed over time (see \citealt[208, fn.\ 7]{Nussbaum2022} for a possible path of this development). As already mentioned in Section \ref{sec:CoS}, the nominal as well as the verbal morphology involved is not \emph{exclusively} found in PC/Caland\is{property concept (PC)} roots,\is{Caland!system (CS)}  and consequently, some derivatives from roots that entail a CoS \is{change of state (CoS)} are discussed under the label ``Caland'' in the literature as well (e.g., in \citealt{Rau2009}, \citealt{Rau2009}, \citealt{Rau2013}, this volume; \citealt{Bozzone2016}; \citealt{Majer2017}). 
+
+A frequently quoted example is \iwi{PIE}{*\textit{bʰeu̯dʰ}-} `awake, become alert' where a (possibly) primary\is{derivation!deradical}  \isi{stative} verb next to a *\textit{ro}-adjective \iw{PIE}{*-\textit{ro}-} is attested. \tabref{tab:PCCoS} shows a comparison of the respective derivatives with those of a (canonical) PC\is{property concept (PC)} root in Baltic and Slavic. Pairs like these deserve future work, especially concerning criteria for a potential differentiation of the two types both for specific languages and cross-linguistically.
+
+\begin{table}
+\caption{Shared morphology in CoS vs. PC root derivatives in Baltic and Slavic (ex. from \citealt{Majer2017})}
+\label{tab:PCCoS}
+ \begin{tabularx}{\textwidth}{lllll}
+  \lsptoprule
+  Suffix & & a. CoS \is{change of state (CoS)} root \iwi{PIE}{*\textit{bʰeu̯dʰ}-}& & b. PC\is{property concept (PC)} root \iwi{PIE}{*\textit{h\textsubscript{1}reu̯dʰ}-}\\
+  \midrule
+  \iwi{PIE}{*-\textit{ro}-} & Sl.\ & \iwi{OCS}{\textit{bŭdrŭ}} `alert, vigilant' &  Sl.\ & \iwi{OCS}{\textit{rŭdrŭ}} `red' \\
+    & Lith. & \iwi{Lith}{\textit{budrùs}} `id.' & Lith. & --\\%\footnote{There is no reflex of the *\textit{ro}-adjective attested.}
+   {*-\textit{ē}-} & Sl.\ & \iwi{OCS}{\textit{bŭděti}, \textit{bŭdi}-} `be alert'  & Sl. \ & \textit{rŭděti}, \textit{rŭdi}-\iw{PSl}{*\textit{rŭděti sę}, *\textit{rŭdi}-} `become red' \\
+   & Lith. & \iwi{Lith}{\textit{bud\dotacute{e}ti}, \textit{bùdi}} `id.'%\footnote{An interesting case is that there is a deadjectival verb \textit{bud\textbf{r}\dotacute{e}ti} that clearly shows the adjective morphology of \textit{bud\textbf{r}ùs}, but has an \textit{i}-present, \textit{bùdri}, and a stative meaning `be alert, awake' (\citetalias[s.v. \textit{bud\dotacute{e}ti}]{ALEW}, and \citealt[43]{Majer2017} quoting \citealt[118]{Ostrowski2006}). Cases like this and the one in fn. c deserve future work.}
+   & Lith. & ?\footnote{\citealt[64]{Watkins1971} gives Lith.\ \iwi{Lith}{\textit{rud\dotacute{e}ti}} `become reddish' as cognate (compare also \citealt[745 s.v.\ \iwi{Lith}{\textit{rùdas}}]{Fraenkel1962}), %, glossed with `brauner werden, rosten'). 
+   but according to \citetalias[ s.v.\ \iwi{Lith}{\textit{rūdìs}}]{ALEW} and \citetalias[ s.v.\ \iwi{Lith}{\textit{rūd\dotacute{e}ti}}]{LKZ}, this verb does not show an \textit{i}-present \iw{Lith}{-\textit{i}} but a present in \iwi{Lith}{-\textit{\dotacute{e}ja}}, which is expected of productive\is{productivity} denominatives.\is{denominative!verb} The shape of the root vowel, which is long (i.e., \emph{recte} \textit{r\textbf{ū}d\dotacute{e}ti},\iw{Lith}{\textit{rūd\dotacute{e}ti}} as quoted by \citealt[34]{Majer2017}), and the present point to a synchronic denominative\is{denominative!verb} from \iwi{Lith}{\textit{rūdìs}} (so \citetalias{ALEW}). However, \citetalias[ 508]{Rix2001} gives a first singular \iwi{Lith}{\textit{rūdžiù}}, and \citetalias{LKZ} also indicates a present variant in \iwi{Lith}{-\textit{i}}. Furthermore, Latvian \iwi{Latv}{\textit{rudêt}} shows the historically expected root vowel quantity. Therefore, it is possible that the present in -\textit{\dotacute{e}ja}\iw{Lith}{-\textit{\.eti}, -\textit{\.eja}} is a later formation. See also \citealt[67, with fn.\ 3]{Pakerys2006}.}\\
+   %to which \citetalias{ALEW} notes: "Das lett. Verb \textit{rudêt} hat eine Entsprechung in mod. žem. [modern Žemaitian] \textit{rud\dotacute{e}ti}, die vielleicht nicht überall auf Kürzung neben gewöhnlichem \textit{rūd\dotacute{e}ti} beruht".
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+ In other words, although PC\is{property concept (PC)} and eventive roots seem to be able to diachronically switch class, they need to be carefully separated synchronically in order to make the argument that PCs\is{property concept (PC)} were originally encoded as verbs of a particular morphological class (or classes). 
+
+
+\subsection{Verbal periphrasis in the Caland system} \label{sec:CSperiphrasis}\is{periphrasis}
+
+While the \isi{morphosemantics} of the Caland system\is{Caland!system (CS)}  in the nominal domain are increasingly well understood thanks to \citet{Nussbaum1976} and much subsequent work on various branches of Indo-European (e.g., \citealt{Meiser1993}; \citealt{Nussbaum1999}; \citealt{Balles2006}, \citeyear{Balles2009}; \citealt{Rau2009}; \citealt{DellOro2015}; \citealt{Bozzone2016}; \citealt{Majer2017}, \citeyear{Majer2021}), the verbal domain has received less attention so far. \citet{Watkins1971} was one of the first to point out the close association between Caland adjectives\is{Caland!system (CS)}  and \isi{stative} verbs in (*)-\textit{ē}-, arguing that such verbs were derived from adjectives  via the same substitution principle as in the nominal domain. That is, the verbal suffix -\textit{ē}- does not select the full adjectival stem but the root, with apparent deletion of the adjectival suffix. This analysis was adopted by \citet{Nussbaum1976} and subsequently investigated further, amongst others, by \citet{Jasanoff1978} and (\citeyear{Jasanoff2004}) (see (\ref{ex:latdeadj1}) for some examples). The ultimate source of the suffix is again to be sought in \is{root!noun}root nouns,\footnote{\label{fn:eh1}The alternative account which reconstructs *-\textit{(e)h\textsubscript{1}-} as primary\is{derivation!deradical} verbal stem-forming suffix (\citealt{Hardarson1998}; \citetalias[ 25]{Rix2001}) is problematic for several reasons; cf.\ \citealt{Jasanoff2004}, \citealt[156]{GarciaRamon2014}, \citealt[20--21]{Grestenberger2023}  for discussion and criticism.} but unlike in (\ref{ex:rootnoun}), the derivational base was not the noun stem, but a case form, namely an instrumental in *-\textit{eh\textsubscript{1}}\iw{PIE}{*-\textit{eh\textsubscript{1}} (instr.)} (> -\textit{ē}). Such instrumentals seem to have been able to become the basis for ``decasuative''\is{decasuative} verbal\is{derivation!verbal} derivation\footnote{See \textsc{Pinault} and \textsc{Garnier}, this volume, on decasuative verbs,\is{decasuative} and \citealt{Fortson2020} for an evaluation of decasuative derivation in IE and in general.} using the denominal verbalizing \is{denominal!verb} suffix \iwi{PIE}{*-\textit{i̯e/o}-},\is{*-\textit{i̯e/o}-present} whence the sequence \iwi{PIE}{*-\textit{eh\textsubscript{1}-i̯e/o}-} found in present stem formations across the IE languages (\citealt{Watkins1971}, \citealt{Rasmussen1993}, \citealt{Hardarson1998}, \citealt{Jasanoff2004}, \citealt{Yakubovich2014}; cf.\ fn.\ \ref{fn:eh1}), for example, in the Latin 2\textsuperscript{nd} conjugation presents of the type \textit{clār-\textbf{ē}-re} \iw{Latin}{\textit{clārēre}} `be(come) clear' (\iwi{Latin}{\textit{clārus}} `clear') or \textit{sen-\textbf{ē}-re} \iw{Latin}{\textit{senēre}} `be old' (\iwi{Latin}{\textit{senex}} `old') etc.; cf.\ \tabref{tab:Lat} below. As these examples show, these verbs are synchronically deadjectival \is{deadjectival!verb} rather than built on a root noun\is{root!noun} and use the same Caland replacement pattern  \is{Caland!system (CS)} discussed in Section \ref{sec:Calanddef}.
+
+The second relevant strategy is illustrated in \tabref{tab:lightverbs} and involved periphrastic\is{periphrasis} constructions using finite  light verbs or auxiliaries, similar to the \textit{cvi} constructions in \tabref{tab:cvi}. 
+
+\begin{table}
+\caption{Light verb constructions with the root noun instrumental *\textit{h\textsubscript{1}rudʰ-éh\textsubscript{1}} `with redness' }
+\label{tab:lightverbs}
+ \begin{tabularx}{.9\textwidth}{llll}
+  \lsptoprule
+           Base & Light verb/\textsc{aux}  &  Meaning & Semantic type\\
+  \midrule
+     \iwi{PIE}{*\textit{h\textsubscript{1}rudʰ-éh\textsubscript{1}}} &  \textit{h\textsubscript{1}es}-\iw{PIE}{*\textit{h\textsubscript{1}es}-} `be'  & 	`be red' & \isi{stative}\\ 
+    \iwi{PIE}{*\textit{h\textsubscript{1}rudʰ-éh\textsubscript{1}}} & \textit{bʰuH}-\iw{PIE}{*\textit{bʰuh\textsubscript{x}}-} `become'  & `become red' & \isi{fientive}\\
+   \iwi{PIE}{*\textit{h\textsubscript{1}rudʰ-éh\textsubscript{1}}}  & \textit{dʰeh\textsubscript{1}}-\iw{PIE}{*\textit{dʰeh\textsubscript{1}}-} `put', `make' & `make red' & \isi{factitive}\\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+
+Univerbations of these constructions are found in the individual languages and have given rise to productive\is{productivity} \isi{fientive} and/or \isi{factitive} verb formation types, e.g., the Latin types \textit{rub\textbf{e}-fiō}\iw{Latin}{\textit{rubefiō}} `become red' (< ...  *\textit{bʰuH}-\iw{PIE}{*\textit{bʰuh\textsubscript{x}}-} `become') and \textit{rub\textbf{e}-faciō}\iw{Latin}{\textit{rubefaciō}} `make red, redden' (< ... \iwi{PIE}{*\textit{dʰeh\textsubscript{1}}-} `put, place'), but there are also remnants of the older analytic construction, e.g., Vedic \textit{gúh\textbf{ā}  bhū-/kr̥}-\iw{Sanskrit}{\textit{gúhā} \textit{bhū}-}\iw{Sanskrit}{\textit{gúhā}  \textit{kr̥}-} `become/make hidden/with hiding' (\iwi{Sanskrit}{\textit{gúh}-} `hiding place', \iwi[(instr.sg.)]{Sanskrit}{-\textit{ā}} \textsc{instr.sg}) and Latin analytic \textit{facit ar\textbf{ē}} `make hot/with heat' besides the more common \textit{ār\textbf{ē̆}-faciō}   \iw{Latin}{\textit{ārēfaciō}} (\citealt{Hahn1947}; \citealt[138, fn.\ 18]{Weiss2020}).
+This construction has played a crucial role in the debate on the diachronic integration of PC\is{property concept (PC)} roots into the IE verbal system (e.g., \citealt{Schindler1980}; \citealt{Jasanoff2004}; \citealt{Balles2006}, \citeyear{Balles2009}; \citealt{Bozzone2016}; see also \textsc{Merritt}, this volume). However, since these (univerbated) light verb constructions were arguably  denominative\is{denominative!verb} in origin and thereby morphologically secondary\is{derivation!stem-based} (note here the discrepancy to the synchronic primary status),\is{derivation!deradical}  it remained unclear whether it was possible to derive verbs with primary verbal suffixes from Caland roots\is{Caland!root} in the proto-language. Important evidence for this question was added to the Caland canon \is{Caland!system (CS)} only relatively recently by \citet{Rau2009, Rau2013}, who argues for a systematic association of primary verbs\is{derivation!deradical}  like full-grade thematic presents,\is{thematic!present} nasal-infix formations \is{nasal present} and \isi{iterative}-\isi{causative}s in \iwi{PIE}{*-\textit{éi̯e/o}-} with PC\is{property concept (PC)} roots (see also the discussion of \citealt{Bozzone2016}'s account in Section \ref{sec:Calanddef}). 
+
+Still, some scholars argue that these verbs must be later, parallel innovations of the individual languages and the only strategy of the proto-language to derive verbs from PCs\is{property concept (PC)} was via a nominal instrumental. Given that the  root-based derivational pattern\is{derivation!deradical}  could have been triggered by the \isi{reanalysis} of the derivational base from a nominal with a zero suffix to an uncategorized root as outlined above (Section \ref{sec:Calanddef}), this potential diachronic development could also have given rise to the derivation of primary verbs\is{derivation!deradical}  from Caland roots.\is{Caland!root} Thus, more research into the verbal  correlates of \is{Caland!system (CS)} Caland adjectives/PC\is{property concept (PC)} roots is needed: Although productive\is{productivity} means of deriving deadjectival verbs\is{deadjectival!verb} exist in all older Indo-European languages, these have for the most part not been the subject of systematic study and analysis from the perspective of comparative reconstruction or theoretical linguistics, with the exceptions mentioned above. There are several reasons for this fact: On the one hand, verbal secondary derivation\is{derivation!stem-based} is in general less well studied than nominal derivation or primary verb formation\is{derivation!deradical}  (cf.\ \textsc{Villanueva Svensson}, this volume) and on the other hand, the synchronic \isi{productivity} of various strategies makes it difficult to distinguish forms that are \emph{einzelsprachlich} from inherited strategies. Within the Caland system,\is{Caland!system (CS)}  the morphological ``replacement'' rule of the adjectival stem-forming suffix usually makes it impossible to distinguish primary\is{derivation!deradical}  from secondary formations\is{derivation!stem-based} morphologically, requiring the development of additional diagnostics for establishing derivational directionality that hold cross-linguistically (cf.\ \citealt{Marchand1964}; \citealt{Arad2003}; \citealt{Balteiro2007}; \citealt{Lohmann2017}; \citealt{GrestenbergerKastner2022}) in order to distinguish between synchronic and diachronic patterns of derivation, especially in cases in which erstwhile adjectival morphology has become reanalyzed as verbal stem-forming morphology.
+
+In the next sections, we briefly discuss some patterns with potential claim to antiquity and also address the issue of voice morphology in deadjectival verbs,\is{deadjectival!verb} which has not been studied systematically so far. 
+
+\subsection{Deadjectival verbs, voice, and the factitive-fientive alternation}
+\label{sec:factinch}
+
+As we saw in Section \ref{sec:deadj}, there is a close derivational link between CoS \is{change of state (CoS)} verbs and  \is{derivation!deradical} primary/property concept\is{property concept (PC)} adjectives (\citealt{HaleKeyser1998}, \citeyear{HaleKeyser2002}; \citealt{Harley2005}, \citeyear{Harley2011}; \citealt{KoontzGarboden2005}; \citealt{FrancezKoontz2017}, etc.), and this has also been shown to be the case in the older Indo-European languages (\citealt{Rau2013}; \citealt{Yakubovich2014}; \citealt{Sasseville2021}). This raises the question of the diachronic  relationship between deadjectival \is{deadjectival!verb} CoS \is{change of state (CoS)} verbs and other types of statives\is{stative} and CoS \is{change of state (CoS)} verbs (e.g., of the \isi{causative} alternation, and compare also \tabref{tab:PCCoS}), as well as their interaction with voice marking. Thus, in Ancient Greek  \isi{fientive}s and \isi{factitive}s (recall from Section \ref{sec:CoS}  that these are our terms for \isi{intransitive} vs.\ \isi{transitive} CoS \is{change of state (CoS)} verbs from adjectival roots)\is{root!adjectival} are usually formed from the same verbal stem, but alternate between active endings in the \isi{transitive}-\isi{factitive} and nonactive or ``middle'' endings in the \isi{intransitive}-\isi{fientive} forms, independent of the verbalizer that is used, cf.\ \tabref{tab:alter}.\footnote{The diachrony of these verb classes and in particular the extension of the deadjectival verbalizers \is{deadjectival!verb} -\textit{óe/o}-,\iw{AG}{-όω} -\textit{ū́ne/o}-,\iw{AG}{-ῡ́νω} -\textit{aíne/o}-\iw{AG}{-αίνω} to new adjectival bases through \isi{reanalysis} of the adjectival stem-forming morpheme as part of the verbalizer is discussed in \citealt{Tucker1981,Tucker1990}; \citealt[115--120, 152--155]{Rau2009}; \citealt{VillanuevaSvensson2024}; on the theoretical aspects of this \isi{reanalysis} cf.\ \citealt{Grestenberger2022,Grestenberger2023}.}
+
+
+\begin{table}
+\caption{Alternating deadjectival CoS verbs in Ancient Greek}
+\label{tab:alter}
+ \begin{tabularx}{.95\textwidth}{lll}
+  \lsptoprule 
+  Adj. &  Act. \isi{factitive} &  Nonact.\ \isi{fientive}  \\
+  \midrule
+\textit{leukós}\iw{AG}{λευκός}  & \textit{leukó-ō}\iw{AG}{λευκόω, -όμαι} &  \textit{leukóo-mai} \\
+ `bright, white' &  `make white, whiten'&  `turn white'\\
+\textit{orthós}\iw{AG}{ὀρθός} & \textit{orthó-ō}\iw{AG}{ὀρθόω, -όμαι} & \textit{orthóo-mai}  \\
+`straight' & `set up straight, straighten' & `sit up, become straight'\\
+\textit{kratús}\iw{AG}{κρατύς} &  \textit{kratū́n-ō}\iw{AG}{κρατῡ́νω, -όμαι} &  \textit{kratū́no-mai} \\
+ `strong' &  `make strong, strengthen' & `become strong'\\
+\textit{barús}\iw{AG}{βαρύς} &  \textit{barū́n-ō}\iw{AG}{βαρῡ́νω, -όμαι} & \textit{barū́no-mai} \\
+ `heavy'  & `make heavy, weigh down' & `be(come) heavy'\\
+\textit{thermós}\iw{AG}{θέρμος} &  \textit{thermaín-ō} \iw{AG}{θερμαίνω, -όμαι} & \textit{thermaíno-mai} \\
+`warm, hot'  & `make hot' &  `warm up, become hot'\\
+\textit{leukós}\iw{AG}{λευκός} & \textit{leukaín-ō}\iw{AG}{λευκαίνω, -όμαι} & \textit{leukaíno-mai} \\ 
+ `bright, white' &  `make white, whiten' & `turn white'\\
+ \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+
+
+However, there is a second pattern in which both the \isi{fientive} and the \isi{factitive} alternant are morphologically active and which has not been systematically studied in the older IE languages. There are two variants of this pattern: One in which the \isi{fientive} and the \isi{factitive} alternants share the same stem (also called the ``labile''\is{labile verbs} pattern) and one in which they form different verbal stems. The ``labile''\is{labile verbs} pattern is sometimes discussed under the label  ``unmarked \isi{anticausative}s'' in the literature (e.g., \citealt{Schafer2008}; \citealt{Heidinger2010}; \citealt{Alexiadouetal2015}) because it is part of a broader pattern by which \isi{anticausative}s can be either marked (e.g., by a reflexive or detransitivizing affix or particle) or unmarked with respect to the \isi{transitive}-\isi{causative} alternant. In Modern Greek, the unmarked strategy is in particular associated with deadjectival \is{deadjectival!verb} CoS \is{change of state (CoS)} verbs, as noted by \citet[125]{Alexiadou2004}, who cite \iwi{MG}{\textit{asprizo}} `whiten', \iwi{MG}{\textit{kokinizo}} `redden', \iwi{MG}{\textit{mavrizo}} `blacken', \iwi{MG}{\textit{katharizo}} `clean', \iwi{MG}{\textit{stroggilevo}} `round', \iwi{MG}{\textit{klino}} `close', \iwi{MG}{\textit{anigo}} `open', \iwi{MG}{\textit{plateno}}  `widen', \iwi{MG}{\textit{stegnono}} `dry', \iwi{MG}{\textit{stenevo}} `tighten', \iwi{MG}{\textit{skureno}} `darken', \iwi{MG}{\textit{kathistero}} `delay', \iwi{MG}{\textit{alazo}} `change' and \iwi{MG}{\textit{ksepagono}}  `defreeze' as examples of verbs in which both the \isi{causative} and the \isi{anticausative} variants obligatorily take the active endings, i.e., verbs which do not alternate.\footnote{There is also a class in which the \isi{anticausative} alternant can take either the active or the nonactive endings, that is, it can form both unmarked and marked \isi{anticausative}s. The difference seems to be partially conditioned by the animacy of the subject in the \isi{anticausative} variant, though the degree of spontaneity or completion of the change of state \is{change of state (CoS)} have also been adduced as possible factors. See \citealt{Alexiadou2004}, \citeyear{AlexiadouAnagnostopoulou2013}; \citealt[88--90]{Alexiadouetal2015} for further discussion.} This pattern arose during the Hellenistic period and seems to have begun among non-deadjectival \isi{anticausative}/CoS \is{change of state (CoS)} verbs, judging by the examples discussed by \citet[112--116]{Lavidas2009}, who links the rise of unmarked \isi{anticausative}s to the more general restructuring of the distribution of active vs.\ nonactive morphology that took place in Greek around that time (though the details, especially with respect to the extension to deadjectival verbs,\is{deadjectival!verb} require further elaboration). A similar rise of morphologically active intransitivizations among alternating CoS \is{change of state (CoS)} verbs is discussed by \citet{Gianollo2014} for late Latin. However, it remains unclear  to what extent  such a ``labile''\is{labile verbs} pattern existed in the older IE languages and whether it can be reconstructed for PIE. 
+
+In light of the diachrony of the thematic active endings,  which are formally related to the reconstructed \emph{middle} set of endings and explicitly treated as reanalyzed former middle endings in Jasanoff's ``\isi{*\textit{h\textsubscript{2}e}-conjugation}'' framework (\citealt{Jasanoff1978}, \citeyear{Jasanoff2003}, \citeyear{Jasanoff2004}, \citeyear{Jasanoff2017}, \citeyear{Jasanoff2019}, \citeyear{Jasanoff2023}; cf.\ also \citealt{Watkins1969}; \citealt{Hollifield1977}; \citealt{Villanueva2003}, \citeyear{VillanuevaSvensson2021} on the origin of the thematic conjugation), apparently ``labile''\is{labile verbs} forms in which the active-marked alternant appears in \isi{intransitive} contexts  could also be seen as remnants of a stage in which the \isi{intransitive}-\isi{fientive} alternant took the nonactive endings as well as a different verbal stem formant than the \isi{transitive}-\isi{factitive} alternant (see \citealt{Meiser1993}, \citealt{Luraghi2012} for different versions of this view) -- that is, verbs that failed to undergo the ``formal update'' to the synchronically productive\is{productivity} middle endings. This is, for example, the standard explanation since (at least) \citealt{Watkins1969} for why some \emph{active} thematic aorists\is{thematic!aorist} such as AG \textit{édrakon}\iw{AG}{ἔδρακον} `saw' and \textit{étraphon}\iw{AG}{ἔτραφον} `grew (strong)' have  formally \emph{middle} presents (\textit{dérkomai}\iw{AG}{δέρκομαι} and \textit{tréphomai},\iw{AG}{τρέφω, -ομαι} respectively; see also \citealt{Rau2013}, \citeyear{Rau2016} on this type of development). A ``labile''\is{labile verbs} stage at the PIE level is therefore unlikely. 
+
+The second relevant pattern, in which both the \isi{transitive} and the \isi{intransitive} alternant are formally active, but built from different verbal stems, is better studied, especially in Latin and Hittite. In Latin, the suffix *-\textit{ē}- that is also found in the Ancient Greek passive aorist and a number of other verbal categories across the IE languages (see Section \ref{sec:CSperiphrasis}) gave rise to a subclass of the Latin 2\textsuperscript{nd} conjugation presents in the form of the \isi{stative}(/\isi{fientive}) verbs in \iwi{Latin}{-\textit{ē-re}}  which obligatorily take the active endings. In Old Latin, their \isi{transitive}-\isi{factitive} alternants are active  1\textsuperscript{st} conjugation presents, as illustrated in \tabref{tab:Lat} (later replaced by the \iwi{Latin}{\textit{rubefaciō}}-type, cf.\ Section \ref{sec:CSperiphrasis}). The \iwi{Latin}{-\textit{ē}-}stem was moreover also used as the base for (likewise originally active-marked) \isi{fientive}s in \iwi{Latin}{-\textit{ē-sce-re}}.
+
+
+\begin{table}
+\caption{Deadjectival statives, fientives, and factitives in (Old) Latin (\citealt[47]{Watkins1971})}
+\label{tab:Lat}
+ \begin{tabularx}{.95\textwidth}{llllll}
+  \lsptoprule 
+		Factitive\is{factitive} &  Stative \is{stative} &   Fientive\is{fientive}&  Adjective \\
+  \midrule
+		 \textit{clār-\textbf{ā}-re}  \iw{Latin}{\textit{clārāre}} &  \textit{clār-\textbf{ē}-re}  \iw{Latin}{\textit{clārēre}} &  \textit{clār-\textbf{ē-sce}-re} \iw{Latin}{\textit{clārēscere}} &  \textit{clār-us, -a, -um} \iw{Latin}{\textit{clārus}} \\
+		`make clear' & `be clear' &  `become clear'  & `clear'\\
+	 	\textit{-alb-\textbf{ā}-re} \iw{Latin}{\textit{-albāre}} &  \textit{alb-\textbf{ē}-re} \iw{Latin}{\textit{albēre}} & \textit{alb-\textbf{ē-sce}-re} \iw{Latin}{\textit{albēscere}} & \textit{alb-us, -a, -um} \iw{Latin}{\textit{albus}}\\
+		 `make white' &  `be white' &  `become white' &  `bright, white'\\
+		 \textit{-nigr-\textbf{ā}-re}  \iw{Latin}{\textit{-nigrāre}} & \textit{nigr-\textbf{ē}-re} \iw{Latin}{\textit{nigrēre}} & \textit{nigr-\textbf{ē-sce}-re} \iw{Latin}{\textit{nigrēscere}} &  \textit{niger, -ra, -rum} \iw{Latin}{\textit{niger}} \\
+		 `make black' &  `be black' &  `become black' &  `dark, black'\\
+		\textit{liqu-\textbf{ā}-re} \iw{Latin}{\textit{liquāre}}  &  \textit{liqu-\textbf{ē}-re}  \iw{Latin}{\textit{liquēre}} &  \textit{liqu-\textbf{ē-sce}-re} \iw{Latin}{\textit{liquēscere}} &  \textit{liqu-idus, -a, -um}; \iw{Latin}{\textit{liquidus}} \textit{lī̆qu-ēns} \iw{Latin}{\textit{lī̆quēns}} \\
+	 `make fluid' &  `be fluid'  & `become fluid' &  `fluid, liquid' \\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+The alternation in \tabref{tab:Lat} could be taken to  suggest that \iwi{Latin}{-\textit{ē}-} and its \isi{factitive} ``alternant'' \iwi{Latin}{\textit{-ā}-} are different ``flavors'' of the verbalizer \textit{v} in the sense of \citet{Folli2005, Folli2007};  \citet{Harley2013,Harley2017} associated with \isi{stative} (\textsc{be}) and \isi{fientive} (\textsc{become}) inner aspect (\textit{Aktionsart}) on the one hand, and \isi{factitive}/\isi{agentive} (\textsc{do}) on the other. In other words, the Latin alternation would be the synthetic equivalent of the \emph{analytic} deadjectival \is{deadjectival!verb} \isi{factitive}-\isi{fientive} alternation  discussed in Sections \ref{sec:lexicalization} and \ref{sec:CSperiphrasis}, with which it is also connected etymologically via the ``\isi{stative}'' stem formant *-\textit{ē}-.
+
+
+In Ancient Greek, the cognate suffix -\textit{ē}- (and its allomorph -\textit{thē}-)\iw{AG}{-(θ)η-} is restricted to the \isi{perfective} stem, unlike in Latin. However, the original use in Greek is for the most part that of a \isi{stative}/\isi{fientive} verbal stem-forming suffix (similar to the Latin examples  in \tabref{tab:Lat}) rather than a Voice marker. Furthermore, it obligatorily takes the active set of endings, again like in Latin. Thus *-\textit{ē}- is associated with the formation of ``unmarked \isi{anticausative}s'' both in Latin and in Ancient Greek. In Ancient Greek, however,  it is not specifically associated with PC\is{property concept (PC)} roots/roots that form primary adjectives\is{derivation!deradical}  (though a few such forms are also found), but with CoS \is{change of state (CoS)} verbs more broadly. Examples are given in \tabref{tab:Gkaor}. 
+	
+	
+
+	\begin{table}
+\caption{Homeric CoS \textit{ē}-aorists}
+\label{tab:Gkaor}
+ \begin{tabularx}{.9\textwidth}{ll}
+  \lsptoprule 
+ \textit{e-pág-\textbf{ē}-n}\iw{AG}{ἐπάγην} & `became fixed, coagulated'  \\
+	\textsc{pst}-become.fixed-\textsc{\textbf{v.pfv}-1sg.pst.act} & \\
+	 \textit{e-mán-\textbf{ē}-n}\iw{AG}{ἐμάνην} & `went mad, became enraged'\\
+	\textsc{pst}-rage-\textsc{\textbf{v.pfv}-1sg.pst.act} & \\
+\textit{e-ág-\textbf{ē}-n}\iw{AG}{ἐάγην} & `broke' (intr.)\\
+ \textsc{pst}-break-\textsc{\textbf{v.pfv}-1sg.pst.act} & \\
+ \textit{e-tárp-\textbf{ē}-n}  \iw{AG}{ἐτάρπην} & `enjoyed, delighted in'\\
+ \textsc{pst}-enjoy-\textsc{\textbf{v.pfv}-1sg.pst.act} & \\
+ \textit{e-phán-\textbf{ē}-n} \iw{AG}{ἐφάνην} & `appeared' \\
+\textsc{pst}-appear-\textsc{\textbf{v.pfv}-1sg.pst.act} & \\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+Crucially, the \isi{transitive} \isi{factitive}/\isi{causative} alternants corresponding to these \isi{fientive}/\isi{inchoative} aorists use different stem formants (and the active endings) both in the \isi{imperfective} (present) and the \isi{perfective} (aorist) stem, cf.\ \tabref{tab:Gkaor2}. 
+
+
+	\begin{table}
+\caption{Ancient Greek intransitive CoS \textit{ē}-aorists and their transitive presents \& aorists; stem formant = \textbf{bold}}
+\label{tab:Gkaor2}
+ \begin{tabularx}{\textwidth}{lllll}
+  \lsptoprule 
+ Intr.\ aor. &  Meaning & Tr. pres. & Tr. aor & Meaning\\
+ \midrule
+ \textit{e-ág-\textbf{ē}-n}\iw{AG}{ἐάγην}  & `broke' & \textit{ág-\textbf{nū}-mi} \iw{AG}{ἄγνῡμι} & \textit{é-ak-\textbf{s}-a} \iw{AG}{ἔαξα} & `break/broke'  \\
+\textit{e-tárp-\textbf{ē}-n} \iw{AG}{ἐτάρπην} & `enjoyed ' & \textit{térp-ō} \iw{AG}{τέρπω, -ομαι} & \textit{é-terp-\textbf{s}-a}  \iw{AG}{ἔτερψα} & `cause(d) joy'\\ 
+\textit{e-tráph-\textbf{ē}-n} \iw{AG}{ἐτράφην} & `grew up ' & \textit{tréph-ō} \iw{AG}{τρέφω, -ομαι}  & \textit{é-trep-\textbf{s}-a} \iw{AG}{ἔτρεψα} & `cause(d) to grow' \\
+\textit{e-pág-\textbf{ē}-n}\iw{AG}{ἐπάγην} & `became fixed'  & \textit{pḗg\textbf{-nū}-mi}\iw{AG}{πήγνῡμι, -μαι}  & \textit{é-pēk-\textbf{s}-a}\iw{AG}{ἔπηξα} & `fix/ed'\\
+\textit{e-rrág-\textbf{ē}-n}\iw{AG}{ἐρράγην} & `break' & \textit{rhḗg-\textbf{nū}-mi}\iw{AG}{ῥήγνυμι, -μαι}  & \textit{e-rrḗk-\textbf{s}-a}\iw{AG}{ἔρρηξα} & `break/broke' \\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+
+The same pattern -- the \isi{intransitive}-\isi{fientive} and the \isi{transitive}-\isi{factitive} are formed from different stems, but both take the active endings -- is found in Hittite, suggesting that this pattern is indeed of some antiquity (see \textsc{Sasseville}, this volume). \tabref{tab:Hitt} gives some examples from Hittite, in which the \isi{fientive} is formed with the verbal stem formant -\textit{ēšš}-,\iw{Hitt}{-\textit{ešš}-} which has been etymologically linked to Latin statives\is{stative} in \iwi{Latin}{\textit{-ē-re}} and their associated \isi{fientive}s in \iwi{Latin}{-\textit{ē-sce-re}} at least since \citealt{Watkins1971}. The corresponding \isi{factitive} uses a nasal suffix \iwi{Hitt}{-\textit{nu}-} that has been historically linked to nasal infix-presents \is{nasal present} from adjectival \textit{u}-stems \iw{Hitt}{-\textit{u}-} (\citealt{Koch1973}, \citeyear{Koch1980}; \citealt[482--487]{Sasseville2021}, this volume). Synchronically, however, these are formed to adjectives with adjectival stem formants other than \iwi{Hitt}{-\textit{u}-} as well, as \tabref{tab:Hitt} shows. 
+
+
+	\begin{table}
+\caption{Hittite deadjectival fientives \& factitives (\citealt[112--113]{Rau2009})}
+\label{tab:Hitt}
+ \begin{tabularx}{\textwidth}{lllll}
+  \lsptoprule 
+  Adj. & & Fientive\is{fientive}  & Factitive\is{factitive} & \\
+  \midrule
+  \textit{palḫi}-\iw{Hitt}{\textit{palḫi-}/\textit{palḫai}-} & `broad' & \textit{palḫ-\textbf{ēšš}-zi} \iw{Hitt}{\textit{palḫēšš}-} & \textit{palḫ-(a)\textbf{nu}-zi} \iw{Hitt}{\textit{palḫ(a)nu}-} & `broaden' \\
+  \iwi{Hitt}{\textit{daluki}-} & `long' & \textit{daluk-\textbf{ēšš}-zi} \iw{Hitt}{\textit{dalukēšš}-} & \textit{daluk-\textbf{nu}-zi} \iw{Hitt}{\textit{daluknu}-} & `lengthen'\\
+  \iwi{Hitt}{\textit{daššu}-} & `strong' &   \textit{daššau̯-\textbf{ēšš}-zi} \iw{Hitt}{\textit{daššau̯ēšš}-} & \textit{daš(ša)-\textbf{nu}-zi} \iw{Hitt}{\textit{daš(ša)nu}-} & `strengthen'\\
+  \iwi{Hitt}{\textit{parkui}-} & `pure' & \textit{parku-\textbf{ēšš}-zi} \iw{Hitt}{\textit{parkuēšš}-} & \textit{parku-\textbf{nu}-zi} \iw{Hitt}{\textit{parkunu}-} & `become pure/purify'\\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+Crucially, both the \isi{fientive} and the \isi{factitive} stem take the active \iw{Hitt}{-\textit{-mi}} \is{\textit{mi}-conjugation} \textit{mi}-endings.\footnote{The deadjectival \is{deadjectival!verb} \isi{factitive} \textit{nu}-stems \iw{Hitt}{-\textit{nu}-} take the \isi{\textit{ḫi}-conjugation} endings\iw{Hitt}{-\textit{ḫi}} in the Luwic branch of Anatolian, which \citet[486]{Sasseville2021} takes to be the original conjugation based on the parallel with the \isi{factitive} -\textit{aḫḫ}-type, \iw{Hitt}{-\textit{aḫḫ}-} for which \isi{\textit{ḫi}-conjugation} endings are reconstructed for Proto-Anatolian. He argues that this is due to both types being derived by \isi{conversion}, but this is difficult to accept at least for the  \textit{nu}-stems, which are not instances of \isi{conversion} in the usual sense since there is an overt verbal stem formant, -\textit{n(u)}-. \iw{Hitt}{-\textit{nu}-} Moreover, it is not clear why \isi{conversion} should automatically lead to \isi{\textit{ḫi}-conjugation} endings. See also \textsc{Sasseville}, this volume, for further discussion of \textit{nu}-\isi{causative}s and \isi{factitive}s in Anatolian.} Together with the Latin and Ancient Greek evidence discussed above, this suggests that at least certain classes of \isi{stative} and \isi{fientive} deadjectival \is{deadjectival!verb} CoS \is{change of state (CoS)} verbs originally took the active *\isi{\textit{mi}-conjugation} endings and were hence ``unmarked \isi{anticausative}s'' in the sense of \citet{Schafer2008}, as argued by \citet{Grestenberger2023} based primarily on the Ancient Greek facts. Since there is a wealth of evidence that suggests that \isi{intransitive} CoS verbs\is{change of state (CoS)} from result/eventive roots were originally associated with the \isi{*\textit{h\textsubscript{2}e}-conjugation} or ``\isi{proto-middle}'' endings (e.g., the ``\isi{stative}-\isi{intransitive}'' aorists of \citealt{Jasanoff2003}, the \isi{intransitive} nasal stems discussed by \citealt{Gorbachov2007} and \textsc{Rau}, this volume, the simple thematic presents \is{thematic!present} of \citealt{Rau2013}, \citeyear{Rau2016}, among others), this could point to an original situation in which deadjectival \is{deadjectival!verb} \isi{stative} and CoS \is{change of state (CoS)} verbs canonically took the active (*\isi{\textit{mi}-conjugation}) endings, whereas CoS \is{change of state (CoS)} verbs from result/eventive roots took the (proto-)middle (\isi{*\textit{h\textsubscript{2}e}-conjugation}) endings, a distribution that was subsequently given up or restructured in the attested daughter languages. This restructuring resulted in the mix of strategies that we see in the attested languages as well as in the final, ``hybrid'' type which uses both different stems and an alternation in voice marking, as we see especially often in Indo-Iranian pairs of full grade thematic middle \isi{fientive}s/\isi{inchoative}s besides active nasal infix or *-\textit{ei̯e/o}-\isi{factitive}s/\isi{causative}s \iw{PIE}{*-\textit{éi̯e/o}-} (\citealt{Rau2009}, \citeyear{Rau2013}, \citeyear{Rau2016}), cf.\ \tabref{tab:stemalt}.
+
+
+
+	\begin{table}
+\caption{Middle-marked intransitive, active-marked transitive CoS verbs with concomitant stem change in Vedic (\citealt[358--359]{Rau2016})}
+\label{tab:stemalt}
+ \begin{tabularx}{\textwidth}{llll}
+  \lsptoprule 
+ \multicolumn{2}{l}{Intr. middle (full grade thematic)} & \multicolumn{2}{l}{Tr. active (nasal infix)}\\
+ \midrule
+  \textit{jáv{a}-\textbf{te}} \iw{Sanskrit}{\textit{jáv{a}te}}  & `speed' & \textit{junā́-\textbf{ti}} \iw{Sanskrit}{\textit{junā́ti}} &  ‘make speed’\\
+\textit{śóbha-\textbf{te}} \iw{Sanskrit}{\textit{śóbhate}} & `appear beautiful' & \textit{śumbhá-\textbf{ti}} \iw{Sanskrit}{\textit{śumbháti}} & `make beautiful'\\
+\textit{páva-\textbf{te}} \iw{Sanskrit}{\textit{pávate}} & `become pure, purify oneself' & \textit{punā́-\textbf{ti}} \iw{Sanskrit}{\textit{punā́ti}} & `purify'\\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+Rau (\citeyear{Rau2016}, this volume) argues that the pattern in \tabref{tab:stemalt} can be reconstructed for alternating CoS \is{change of state (CoS)} verbs from Caland and non-Caland (eventive) roots\is{Caland!root} at least for the inner Indo-European stage and that its further development, especially in terms of the voice marking of the alternants, is particularly relevant for understanding the development of \isi{factitive}/\isi{causative} alternation verbs in Indo-Iranian and Ancient Greek. Taken together, these case studies suggest that the interaction of voice marking and stem formation in deadjectival \is{deadjectival!verb} and result CoS \is{change of state (CoS)} verbs in Indo-European deserves further study. 
+
+Another deadjectival\is{deadjectival!verb} \isi{factitive} class that has recently garnered attention is the ``\isi{\textit{nēwaḫḫi}-type}'', named after a class of Hittite \isi{factitive}s to adjectival bases \is{deadjectival!verb} formed with a stem formant \iwi{Hitt}{-\textit{aḫḫ}-} < \iwi{PIE}{*-\textit{eh\textsubscript{2}}-} and the \isi{\textit{ḫi}-conjugation} endings (\citealt[139--141]{Jasanoff2003}; \citealt[175--176]{Hoffner2008}; \citealt{Sasseville2015}, \citeyear{Sasseville2021}), cf.\ \tabref{tab:newahhi}. Formal comparanda of this type have been identified in Ancient Greek (\citealt{Rau2009myc}) and Baltic (\citealt[140--141]{Jasanoff2003}, \citeyear[200--201]{Jasanoff2017BSl}; \citealt{VillanuevaSvensson2020}), which, however, diverge semantically: While the Anatolian \iwi{Hitt}{-\textit{aḫḫ}-}verbs are \isi{factitive}s, the Baltic comparanda are iteratives\is{iterative} (the Greek evidence is too scarce to be conclusive). 
+
+	\begin{table}
+\caption{Hittite deadjectival \textit{nēwaḫḫi}-factitives (\citealt[176]{Hoffner2008})}
+\label{tab:newahhi}
+ \begin{tabularx}{.95\textwidth}{llll}
+  \lsptoprule 
+  Adjective & &  Factitive\is{factitive}  & \\
+  \midrule
+  \iwi{Hitt}{\textit{ḫappinant}-} & `rich' & \textit{ḫappin-aḫḫ}-  \iw{Hitt}{\textit{ḫappinaḫḫ}-} & `make rich' \\
+  \iwi{Hitt}{\textit{ikuna}-} & `cold' & \textit{ikun-aḫḫ}- \iw{Hitt}{\textit{ikunaḫḫ}-} & `make cold'\\
+ \textit{nakki}-\iw{Hitt}{\textit{nakkī}-} & `important' &   \textit{nakkiy-aḫḫ}- \iw{Hitt}{\textit{nakkiyaḫḫ}-} & `regard/treat as important' \\
+  \iwi{Hitt}{\textit{nēwa}-} & `new' & \textit{nēw-aḫḫ}- \iw{Hitt}{\textit{nēwaḫḫ}-}\is{\textit{nēwaḫḫi}-type} & `make new'\\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+
+The  verbal stem formant \iwi{PIE}{*-\textit{eh\textsubscript{2}}-} has been identified with the abstract- and collective-forming \emph{nominal} suffix \iwi{PIE}{*-\textit{eh\textsubscript{2}}-} (\citealt{Sasseville2015, Sasseville2021}, followed by, e.g., \citealt{VillanuevaSvensson2020}), suggesting a derivational chain as in (\ref{ex:neueh2}), in which a deadjectival verb\is{deadjectival!verb} `renew' is derived from a deadjectival abstract noun \is{deadjectival!noun} `newness' via zero derivation or ``\isi{conversion}'', as argued by Sasseville (primarily based on Lycian, where this pattern is productive).\is{productivity}  
+
+\begin{exe}
+    \ex \iwi{PIE}{*\textit{néu̯-o}-} `new' $\rightarrow$\\
+    \iwi{PIE}{*\textit{néu̯-eh\textsubscript{2}}- `newness, news'} $\rightarrow$\\
+    *\textit{neu̯-eh\textsubscript{2}-\O}-\iw{PIE}{*\textit{néu̯-e(-)h\textsubscript{2}}- ‘to make new’} `make new/with newness', 3sg.\ *\textit{neu̯-eh\textsubscript{2}-\O-e(i)} `makes new' \label{ex:neueh2}
+\end{exe}
+
+A formal parallel for deriving deadjectival \is{deadjectival!verb} \isi{factitive}s from a nominal rather than adjectival surface form comes from English, cf.\ \textit{long} -- \textit{length-en}, \textit{strong} -- \textit{strength-en}, though with overt verbalizing morphology. This type of derivation would then have given rise to the Hittite and Baltic forms of this type, in which \iwi{Hitt}{\textit{-aḫḫ}-}/*-\textit{ā}- is synchronically a verbal stem formant and the formal and semantic basis of this class are PC\is{property concept (PC)} adjectives of various stem types (Hittite) or verbal adjectives\is{verbal adjective} ($\approx$ ``result \isi{stative}s'' from non-deadjectival roots, as in \tabref{tab:stativesEngl}) in Baltic.\footnote{Though synchronically the type is ``deverbative'',\is{deverbal/deverbative!verb} cf.\ Villanueva Svensson (\citeyear[392--395]{VillanuevaSvensson2020}, this volume).} However, this depends on whether one accepts that \isi{conversion} was a productive\is{productivity} verbal derivational\is{derivation!verbal} process in PIE\footnote{Adjectives in English do not participate in \isi{conversion}, e.g., *\textit{a}/*\textit{to white/flat/smart} vs.\ \textit{a}/\textit{to hammer/table/walk}, cf.\ \citealt[371--378]{Borer2013}. \citet{AcedoMatellan2022FSBorer} argues that this is because they are structurally complex, consisting of a preposition and a noun. If this turns out to be a systematic gap cross-linguistically, this would speak against the \isi{conversion} account of  \citet{VillanuevaSvensson2021}. However, it is not yet clear to what extent Borer's observation holds cross-linguistically or (if it does) why such a complex structure should be compatible with overt but not with zero verbalizers (assuming that that is what \isi{conversion} is; see \citealt[47--52]{GrestenbergerKastner2022} for further arguments).} (so also \citealt{VillanuevaSvensson2021}) and requires further explanation of the semantic discrepancy (\isi{factitive} vs.\ \isi{iterative}) and the reason for the association of this type with \isi{*\textit{h\textsubscript{2}e}-conjugation} endings (for a novel proposal concerning the latter point see \textsc{Pinault}, this volume).\footnote{\citet[146]{Jasanoff2003} tentatively proposes that the \isi{factitive} value of the type in Hittite is due to secondary transitivization\is{transitive} -- the formation of an oppositional active \isi{factitive} to an older \isi{intransitive} \isi{fientive} with \isi{*\textit{h\textsubscript{2}e}-conjugation} endings. However, middle-marked \isi{fientive} \textit{aḫḫ}-verbs \iw{Hitt}{-\textit{aḫḫ}-} are rare in Hittite, and the proposal has not been taken up further.}
+
+\subsection{Deadjectival activity verbs and iterativity}
+\label{sec:iter}
+
+Although deadjectival\is{deadjectival!verb} \isi{factitive}-\isi{fientive} alternation verbs have received most of the attention in the Indo-Europeanist literature on deadjectival verb\is{deadjectival!verb} formation so far, there are also other verb classes that seem to be semantically and/or morphologically associated with adjectival stems. One class was already briefly mentioned in Section \ref{sec:CoS}, namely deadjectival \isi{activity} verbs \is{deadjectival!verb} like Sp.\ \iwi{Span}{\textit{holgazanear}} `to act lazily' (\iwi{Span}{\textit{holgazán}} `lazy') or Hebr.\ \iwi{Hebrew}{\textit{hištaxcen}}  `to act arrogantly' (\iwi{Hebrew}{\textit{šaxcan}}  `arrogant'), in which the base adjective seems to act as a modifier describing a property of the surface subject. These exist in the older IE languages as well, but have not received much attention so far. \citet{Marescotti2024} discusses this class in Ancient Greek  under the label ``quality verbs'', with examples such as \textit{stōmúllō}\iw{AG}{στωμύλλω} `be talkative, chatter' (\textit{stōmúl-os} \iw{AG}{στωμύλος} `talkative') and \textit{aióllō}\iw{AG}{αἰόλλω} `shift rapidly back and forth' (\textit{aiól-os} \iw{AG}{αἰόλος} `quick, nimble'). In Latin, examples include \iwi{Latin}{\textit{grātor}} `rejoice' (\textit{grāt-us} \iw{Latin}{\textit{grātus}} `pleasant, agreeable') and \iwi{Latin}{\textit{misereor}} `feel pity for' (\iwi{Latin}{\textit{miser}} `wretched, pitiful'), though with a slightly different semantic relationship between the base and the derived verb.  This class tends to be derived from morphologically complex adjectives and shares semantic and morphological similarities with denominal verbs\is{denominal!verb} from animate agent-like bases (``pseudo-agent verbs'') such as AG \textit{basileú-ō}\iw{AG}{βασιλεύω} `be king, rule over' (\textit{basileús}),\iw{AG}{βασιλεύς} \textit{tektaín-omai}\iw{AG}{τεκταίνομαι} `be a carpenter, work as a carpenter' (\textit{téktōn} `carpenter')\iw{AG}{τέκτων} and Latin \iwi{Latin}{\textit{ancillor}} `serve as a maid' (\iwi{Latin}{\textit{ancilla}} `maid, female servant'), \iwi{Latin}{\textit{interpretor}} `explain, interpret' (\iwi{Latin}{\textit{interpres}, -\textit{pret}-}) `intermediary'), \iwi{Latin}{\textit{philosophor}} `act like a philosopher, be philosophical'  (\iwi{Latin}{\textit{philosophus}} `philosopher'), etc.,\footnote{See for example \citet[666--674]{Flobert1975}, who treats both the deadjectival \is{deadjectival!verb} and the denominal verbs\is{denominal!verb} of this types as  ``predicative'' verbs. On ``pseudo-agent verbs'' see also \citealt[137--139]{Xu2007}; \citealt[163--168]{Bleotu2019}; \citealt{MarescottiGrestenberger2025}.} including the ambiguity between a state and an \isi{activity} reading.
+
+A related class we want to briefly discuss here consists of verbs that are usually classified as iteratives\is{iterative} or pluractionals\is{pluractional} and describe a plurality of events. Specifically, these verbs are treated as event-internal pluractionals,\is{pluractional} in which a plurality of subevents is grouped into a  single event (e.g., \citealt{Tovena2008}; \citealt{Tovena2010}; \citealt{Greenberg2010}). Because they are synchronically derived from (non-PC) roots or verbal stems,  they are  usually called ``deverbal'' or ``deverbative'',\is{deverbal/deverbative!verb} though morphologically they are often root-derived\is{derivation!deradical} (cf.\ fn. \ref{fn:verbalroot} and \ref{fn:deverbative} above). However, from the point of view of their derivational morphemes, such iteratives\is{iterative} (used here as a cover term) often seem to be associated with  \emph{adjectival} morphology at least diachronically, specifically with ``verbal adjectives''\is{verbal adjective} from eventive roots rather than PC\is{property concept (PC)} roots.\footnote{Though \citet{Rau2009, Rau2013} also discusses iteratives\is{iterative} that are associated with the Caland system.\is{Caland!system (CS)}}  This pattern is attested in Latin, for example, which has a 
+ synchronically deverbal\is{deverbal/deverbative!verb}   class of verbs that forms  ``repetitive verbs''   using a suffix \iwi{Latin}{-\textit{tā}-}. The \iwi{Latin}{-\textit{t}-} is generally agreed to be identical to the \isi{perfective} passive participial\is{participle} suffix  at least synchronically (\citealt[424]{Weiss2020}),\footnote{Diachronically, the situation is less clear -- this class may have originated in  denominal verbs\is{denominal!verb} based on abstract nouns to \textit{s}-\isi{desiderative}s, cf.\ \citealt[18 \& fn.\ 49]{Nussbaum2021spes} (for an opposing view cf.\ \citealt{DeVaan2012}). The repetitives of the type \textit{ag-it-ā-re} \iw{Latin}{\textit{agitāre}} (< *\textit{ag-et}-) `shake, agitate' (\textit{ag-ere} \iw{Latin}{\textit{agere}} `drive'), which are not based on the synchronic participial stem,\is{participle} on the other hand, seem to be derived from agent(ive) nouns of the type \iwi{Latin}{\textit{eques}, \textit{equit}-} `horserider', whence \textit{equit-āre} \iw{Latin}{\textit{equitāre}} `to be a rider, to ride' (see \citealt[260--263]{Nussbaum2017} on the functions of nouns in \iwi{PIE}{*-\textit{(e)t}-}). In that case, this class of repetitives would be derivationally similar to the ``\isi{activity} verbalizations'' discussed in the main text above. Cf.\ also  \citealt[424--425]{Weiss2020} for a recent discussion of the origin of the Latin repetitives and frequentatives.} \iwi{Latin}{-\textit{ā}-} marks conjugation class I, cf.\ ex.\ a.\ in \tabref{tab:Latfrequ}. This class forms event-internal pluractionals,\is{pluractional} whereas the ``frequentatives'' in \iwi{Latin}{-\textit{it-ā}-} in ex.\ b., which are also based on what seems to be the participial\is{participle} -\textit{t}-stem (cf.\ \iwi{Latin}{-\textit{t-us}}), form multiple-event pluractionals.\is{pluractional}
+
+
+	\begin{table}
+\caption{Latin repetitives and frequentatives}
+\label{tab:Latfrequ}
+ \begin{tabularx}{0.7\textwidth}{llll}
+  \lsptoprule 
+	\multicolumn{4}{l}{a. Latin repetitives}  \\
+    \midrule
+ \textit{cap-e-re} \iw{Latin}{\textit{capere}} & `seize' & \textit{cap-\textbf{t}-ā-re} \iw{Latin}{\textit{captāre}} & `capture'  \\
+ \textit{hab-ē-re}  \iw{Latin}{\textit{habēre}} & `have' & \textit{habi-\textbf{t}-ā-re} \iw{Latin}{\textit{habitāre}} &  `inhabit' \\
+ \midrule
+	\multicolumn{4}{l}{b.  Latin frequentatives} \\
+    \midrule
+ \textit{ag-e-re}  \iw{Latin}{\textit{agere}} & `do' & \textit{ac-\textbf{t-it}-ā-re} \iw{Latin}{\textit{actitāre}} & `do repeatedly'\\
+ \textit{can-e-re} \iw{Latin}{\textit{canere}} & `sing' & \textit{can-\textbf{t-it}-ā-re} \iw{Latin}{\textit{cantitāre}} & `sing repeatedly'\\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+
+
+
+
+A second pertinent example is found in Germanic, for example in Old High German  (OHG), which has a class of synchronically deverbal\is{deverbal/deverbative!verb}  iteratives\is{iterative} in \iwi{OHG}{-\textit{ar}-}. These  inflect as weak class II verbs independently of the conjugational class of the base, cf.\ \tabref{tab:OHG}. 
+
+	\begin{table}
+\caption{OHG -\textit{ar}-iteratives}
+\label{tab:OHG}
+ \begin{tabularx}{.8\textwidth}{llll}
+  \lsptoprule 
+  Base & & Iterative\is{iterative} & \\
+  \midrule
+	\textit{wach-ēn} \iw{OHG}{\textit{wachēn}} & `be awake' & \textit{wach-\textbf{ar}-ōn} \iw{OHG}{\textit{wacharōn}} & `to stand guard'\\
+	\textit{wīg-an} 	\iw{OHG}{\textit{wīgan}} & `fight' & \textit{weig-\textbf{ar}-ōn} \iw{OHG}{\textit{weigarōn}} & `refuse, be obstinate'\\
+	\textit{gang-an} 	\iw{OHG}{\textit{gangan}}  & `go' & \textit{gang-\textbf{ar}-ōn} \iw{OHG}{\textit{gangarōn}} & `walk around'\\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+The handbooks locate the source of the \iwi{OHG}{-\textit{ar}-}suffix in adjectival \textit{r}-stems such as \textit{wach-ar} \iw{OHG}{\textit{wachar}} `awake', \textit{weig-ar} \iw{OHG}{\textit{weigar}} `obstinate', etc.\ (e.g., \citealt[92--95]{Wilmanns1896}), which are usually formed to result roots, though comparatives in \iwi{OHG}{-\textit{(e)r}-} may also have played a role. 
+
+The Baltic continuants of the ``\isi{\textit{nēwaḫḫi}-type}'' have already been mentioned in this context in the previous section (Section \ref{sec:factinch}). In Baltic, this class forms deverbal\is{deverbal/deverbative!verb} iteratives\is{iterative} using a suffix \iwi{PB}{*-\textit{ā}-}. The diachronic derivational basis of these stems seems to consist of verbal adjectives\is{verbal adjective} in  \iwi{PIE}{*-\textit{to}-} (cognate with the Latin -\textit{t}-participles)\is{participle} and \iwi{PIE}{*-\textit{o}-}. This is implied by the root \textit{o}-grade and the remnants of adjectival morphology in the iteratives\is{iterative} while the origin of the \iwi{PB}{*-\textit{ā}-}verbalizer is debated (cf.\ Section \ref{sec:factinch}). \tabref{tab:Lith} shows some examples from Lithuanian.
+
+	\begin{table}
+\caption{Lithuanian iteratives (citation form = 1\textsc{sg})}
+\label{tab:Lith}
+ \begin{tabularx}{\textwidth}{llllll}
+  \lsptoprule 
+		\multicolumn{2}{l}{Iterative\is{iterative}} & \multicolumn{2}{l}{Base verb}  & \multicolumn{2}{l}{Verbal adjective\is{verbal adjective}} \\
+        \midrule
+		\textit{\textbf{glóst}-au} \iw{Lith}{\textit{glóstau}} & `stroke' & \textit{glód\v{z}-iu} \iw{Lith}{\textit{glód\v{z}iu}} & `smooth, polish' & \textit{\textbf{glós-t-}as} \iw{Lith}{\textit{glóstas}} & `smooth'\\
+		\textit{\textbf{laik}-aũ}\iw{Lith}{\textit{laikýti, laĩko, laĩk\.e}, 1sg. prs. \textit{laikaũ}} & `hold' & \textit{liek-mì} \iw{Lith}{\textit{liekmì}} & `remain' & \textit{-\textbf{laik}-as} \iw{Lith}{\textit{-laikas}} & `remaining'\\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+
+
+What these \isi{iterative} verb classes have in common is that 1) they inflect according to the synchronically productive\is{productivity} inflectional class for forming denominal verbs\is{denominal!verb} (e.g., the first conjugation in Latin), independent of the inflectional class of the base, 2) they are atelic \isi{iterative}/pluractional\is{pluractional} verbs, and 3) their derivational morphology can plausibly be linked to that of root-derived\is{derivation!deradical} verbal adjectives\is{verbal adjective} at least diachronically. Unlike deadjectival verbs\is{deadjectival!verb} from property concept\is{property concept (PC)} or ``adjectival'' roots, which usually form degree achievement verbs of the \isi{factitive}-\isi{fientive} alternation (Section \ref{sec:factinch}), these verbs are formed to adjectives from  eventive roots which are not typically gradable or scalar. The derived \isi{iterative} verbs themselves are atelic \isi{activity} verbs rather than achievements (cf.\ also \citealt{Tovena2008}; \citealt{Tovena2010}; \citealt{GrestenbergerKallulli} on pluractionality\is{pluractional} and the semantics of ``verbal diminutives''). 
+
+As this brief survey shows, different types of adjectives give rise to different types of deadjectival verbs,\is{deadjectival!verb} and this is reflected both in the morphology and the semantics of the resulting verb classes. However, more work is needed to explain why verbal adjectives\is{verbal adjective} become the input to verbal derivation\is{derivation!verbal} in the first place, how iterativity\is{iterative} arises compositionally from such derived verbs, and how they are connected to other types of deadjectival \isi{activity} verbs.\is{deadjectival!verb}
+
+
+\subsection{Summary}
+
+In this section, we have briefly summarized the current state-of-the-art on the Caland system,\is{Caland!system (CS)}  the lexicalization of PCs\is{property concept (PC)} in the older Indo-European languages, and the debate around the nature and origin of the CS. We have also provided a survey of different types of periphrastic\is{periphrasis} and synthetic verb forms associated with deadjectival verb\is{deadjectival!verb} formation in these languages, focusing on the \isi{factitive}-\isi{fientive} alternation and the formation of different types of statives.\is{stative} This discussion is far from exhaustive, and we refer to the articles in this volume for a more in-depth discussion -- for individual branches in particular the contributions in part I. 
+
+In the next section, we provide a brief outline the structure of the volume and summarize the contributions.
+
+\section{Contributions}
+\label{sec:contr}
+
+Because of the intentionally broad definition of ``deadjectival''\is{derivation!deadjectival}   we have proposed in Section \ref{sec:def} and the ``categorial instability'' that is cross-linguistically observable with respect to the lexicalization of PCs,\is{property concept (PC)} the contributions collected in this volume cover not only the \isi{factitive}-\isi{fientive} alternation, but also deadjectival verbs\is{deadjectival!verb} in which the semantic derivational basis appears to diverge from the morphological basis, as in the famous case of the  ``\isi{\textit{nēwaḫḫi}-type}'' (cf.\ Section \ref{sec:factinch} and the contribution by \textsc{Pinault}). This volume is therefore also intended to connect to the existing literature on denominal verb\is{denominal!verb} formation in Indo-European more generally, which usually treats verbal derivation\is{derivation!verbal} from both adjectival and substantival nominal bases (e.g., \citealt{Tucker1988}, \citeyear{Tucker1990}; \citealt{Insler1997}), as for instance in the contributions by \textsc{Merritt} and \textsc{Pinault},  as well as to more recent work on \isi{factitive}-\isi{fientive} alternations related to the Caland system \is{Caland!system (CS)}  and the discussion concerning the potential deadjectival origin\is{deadjectival!verb} of the PIE \textit{u}-presents and simple thematic presents \is{thematic!present} (\citealt{VillanuevaSvensson2021}; \citealt{Jasanoff2023}). 
+
+
+The contributions  are divided into three parts: Part I contains contributions that aim to fill empirical gaps in  languages or subbranches of Indo-European in which deadjectival verbs\is{deadjectival!verb} are understudied, namely \textsc{Boldt} for Old Norse, \textsc{H\"ofler} \& \textsc{Stifter} for Celtic, \textsc{Sasseville}  for Anatolian, and \textsc{Villanueva Svensson} for Balto-Slavic.
+
+In {``To be or to become, that is the question: The \isi{morphosemantics} of the weak verbs formed to color adjectives in Old West Norse''}, Ramón \textsc{Boldt} discusses the morphology and semantics of the verbal derivatives\is{derivation!verbal} of eight Basic Color Terms (BCTs) \is{Basic Color Term (BCT)} in Old West Norse, thus filling a gap in the literature on Old Norse verbal derivation.\is{derivation!verbal} His examination of the derived weak verbs shows that they  display the semantics expected of deadjectival formations,\is{deadjectival!verb} namely \isi{factitive} and \isi{fientive}/\isi{anticausative} meanings. However, in some cases the translations offered by the dictionaries lead to unclear or even contradictory readings both concerning their sense and the mapping between morphology and semantics. Therefore, the verbs in question require a new philological analysis of the source texts. \textsc{Boldt} argues for determining the semantics as precisely as possible for these problematic cases in order to identify the original semantics of the different verb classes and their diachronic development. He also discusses their associated stem formation types. 
+
+Stefan \textsc{Höfler} and  David \textsc{Stifter}'s article ``Caland verbs in Celtic'' discusses deadjectival verbs\is{deadjectival!verb} in an Indo-European branch that has not yet been the subject of a comprehensive treatment within Caland-related studies,\is{Caland!system (CS)}  especially regarding verbal derivation.\is{derivation!verbal} The authors show that at least 20 verbal stems associated with the Caland system can be found in Celtic. While half of them have identifiable  cognates in other branches and are therefore likely to be inherited, the other half lack extra-Celtic cognates. However, within those probable inner-Celtic formations, based on the evidence of Old Irish and Middle Welsh the authors identify verb types that are clearly related to the Caland system,\is{Caland!system (CS)}  such as nasal-infix presents \is{nasal present} and \isi{iterative}-\isi{causative}s as well as a \isi{stative} and a simple thematic present.\is{thematic!present} They conclude that this evidence speaks in favor of a mild \isi{productivity} of the root-deriving principle of the Caland system\is{Caland!system (CS)} in Proto-Celtic.
+
+David \textsc{Sasseville} discusses the development of the denominal/deadjectival \is{denominal!verb} \is{deadjectival!verb} morpheme \iwi{Hitt}{-\textit{nu}-} in the Anatolian branch in his contribution ``The relationship between \textit{u}-adjectives and \textit{nu}-\isi{causative}s in Anatolian''. The Anatolian evidence points to a similar derivational pattern as in Old Indic and Ancient Greek, namely the \isi{reanalysis} of \textit{n}-infixed verbs derived from \textit{u}-adjectives as containing a \textit{nu}-\emph{suffix}. Though it can be shown that the infixation strategy precedes \isi{suffixation}, synchronically the forms are often ambiguous regarding their derivational base, i.e., they could be analyzed as being deadjectival\is{deadjectival!verb} or as derived from a root verb (a verb with a zero verbalizer). As \textsc{Sasseville} argues, this situation can lead to yet another process of \isi{reanalysis}, namely one that gives rise to a ``\textit{u}-extension'' of roots. While previous research has focused mainly on Hittite, the addition of data from  other Anatolian languages  provides new insights into the the diachronic interaction of root verbs, \textit{u}-adjectives and \textit{nu}-formations, and demonstrates that the loss of the adjective is not a requirement for a \isi{reanalysis} of the \textit{u}-extension type. Thus, some verbs in Luwian, Lycian and Palaic can be explained as derived from precisely such \textit{u}-extended roots. 
+
+In ``Balto-Slavic denominatives from an Indo-European perspective: An update'', Miguel \textsc{Villanueva Svensson} provides a timely survey of denominative verb\is{denominative!verb} formation in Balto-Slavic, an urgent desideratum both from the perspective of Indo-European and of Balto-Slavic studies. As the author himself states, treatments of this topic are either missing completely or are present only in a short and often outdated way in the literature. This paper serves as an overview that will pave the way towards further research on secondary verb formation\is{derivation!stem-based} in Balto-Slavic. Specifically, \textsc{Villanueva Svensson} argues that despite being notoriously innovative in some regards, the verbal system of Balto-Slavic provides valuable insights into the reconstruction of denominative verb\is{denominative!verb} formation in Indo-European. By surveying the different morphological means (i.e., suffixes) attested in Baltic and Slavic, he first identifies the inherited as well as innovated strategies for deriving verbs from nominal bases and then connects them to formations in different branches of the family such as Vedic, Ancient  Greek, and, in the case of the \textit{nu}-\isi{factitive}s, Anatolian (cf.\ the immediately preceding chapter by \textsc{Sasseville}). 
+
+The contributions in part II focus on the reconstruction of derivational patterns of deadjectival verbs\is{deadjectival!verb} and property concept\is{property concept (PC)} roots in Proto-Indo-European and their development into the attested languages. 
+
+Romain \textsc{Garnier} discusses\is{delocatival} {``Delocatival adjectives surfacing as participles''}\is{participle} in a contribution that addresses the difficult question of categorial affiliation of several participial\is{participle} and adjectival PIE suffixes containing the morpheme \iwi{PIE}{*-\textit{en}-}, which he argues  emerged as delocatival formations\is{delocatival} based on root nouns.\is{root!noun} This paper thus contributes to understanding how nominal and adjectival suffixes can become integrated into the verbal system and eventually be reanalyzed\is{reanalysis} as verb forms. 
+
+Andrew \textsc{Merritt}'s paper {``De-adjectival and De-``adjectival'': Greek \iwi{AG}{κρύπτω} `cover' and Proto-Germanic \iwi{PGmc}{*\textit{χreuðaną}} `deck, equip, adorn'''}  deals with questions of internal derivation and complex derivational chains in the domain of deadjectival verb\is{deadjectival!verb} formation. \textsc{Merritt} shows that within such chains, originally secondary formations\is{derivation!stem-based} such as *-\textit{i̯e/o}-presents \is{*-\textit{i̯e/o}-present} from adjectives could be reanalyzed\is{reanalysis} as primary verb formations\is{derivation!deradical}  (and even lead to the creation of new roots), which in turn gave rise to new (verbal) adjectives \is{verbal adjective} functioning as derivational bases for new secondary formations.\is{derivation!stem-based} Decasuative\is{decasuative} light verb periphrases\is{periphrasis} with \iwi{PIE}{*\textit{dʰeh\textsubscript{1}}-} and *\textit{bʰuH}-\iw{PIE}{*\textit{bʰuh\textsubscript{x}}-} to adjectival formations can also serve as bases for the creation of new roots and adjectives. Understanding the diachrony of the Caland system\is{Caland!system (CS)}  thus provides a tool for linking different synchronic reflexes of various branches (Greek, Tocharian, Germanic, Balto-Slavic) to a derivational ``bigger picture''. 
+
+In ``Reassessing the emergence of the PIE *-\textit{eh\textsubscript{2}}-\isi{factitive} present type'', Georges-Jean \textsc{Pinault} addresses a verbal class that has only recently become the focus of attention in the context of the question whether \isi{conversion} (the transformation of a nominal stem into a verbal stem, and vice versa, without overt affixation) played a role in verbal derivation\is{derivation!verbal} in Proto-Indo-European or in specific daughter branches thereof, such as Anatolian. By questioning the exact nature of this process within Proto-Indo-European, the paper discusses three examples for which \isi{conversion} has been proposed and suggests alternative explanations, partially based on inner-IE derivational processes that are already known, but also by introducing a novel analysis of the \isi{\textit{nēwaḫḫi}-type}, namely as a reanalyzed \isi{dative} singular case form of abstract nouns used in predicative function.\is{predicative!function} Contrary to previous explanations of this enigmatic verbal stem class, this approach explains the persistent \textit{ḫi}-inflection\is{\textit{ḫi}-conjugation} of this type in Anatolian. 
+
+
+Jeremy \textsc{Rau}'s article ``A late Nuclear Proto-Indo-European verbal type: Intransitive\is{intransitive} thematic nasal-infix \is{nasal present} present actives''  identifies a new verbal derivational\is{derivation!verbal} class in ``late Nuclear PIE'' (the ancestor of the remaining IE languages after Anatolian, Tocharian, and Italo-Celtic branched off), namely thematic nasal-infix presents \is{nasal present} to state-oriented roots. Rau argues that at least some of these presents are ``deadjectival''\is{deadjectival!verb} in the sense of being derived from Caland-associated\is{Caland!system (CS)}  property concept\is{property concept (PC)} roots, and often associated with the \isi{causative} alternation (or \isi{factitive}-\isi{fientive} alternation) synchronically. He further identifies this \isi{intransitive} state-oriented type with the ``Northern IE''\is{Northern Indo-European} \isi{intransitive}/\isi{anticausative} \isi{*\textit{h\textsubscript{2}e}-conjugation} \isi{nasal present}s of \citet{Gorbachov2007}. This is a significant finding that pushes back the date of reconstruction for this class and at the same time clarifies further aspects of primary verbal\is{derivation!verbal} derivatives\is{derivation!deradical}  to Indo-European PC/Caland\is{property concept (PC)} roots and state-oriented roots more generally.\is{Caland!system (CS)} 
+
+
+
+
+
+
+Part III concludes with two contributions that address deadjectival verb\is{deadjectival!verb} formation from a quantitative diachronic perspective (\textsc{Iacobini} \& \textsc{De Rosa}) and a theoretical perspective (\textsc{Tanza-Kamil}), thus situating the Caland phenomenon \is{Caland!system (CS)} in the broader empirical landscape. 
+
+In their article ``Diachronic trends in the formation of Italian deadjectival verbs'', Claudio \textsc{Iacobini} and Maria Pina \textsc{De Rosa} report the result of a diachronic corpus study on the morphological expression of deadjectival verbs\is{deadjectival!verb} in Italian, based on a dataset of ca.\ 900 verbs from the 13th to the 20th century. The authors identify three main verb formation processes (\isi{suffixation}, \isi{conversion}, \isi{parasynthesis}), whose \isi{productivity} varies diachronically, with \isi{suffixation} becoming the dominant mode of forming deadjectival verbs\is{deadjectival!verb} in the history of Italian. They provide a detailed analysis of the different strategies and their distribution according to adjective type (e.g., simplex vs.\ morphologically complex) as well as aspectual-semantic class, confirming that the majority of deadjectival verbs\is{deadjectival!verb} are change-of-state verbs.\is{change of state (CoS)} This study therefore provides an important quantitative argument in favor of treating deadjectival/``Caland-associated''\is{Caland!system (CS)}  verbs\is{deadjectival!verb} as the regular expression (and diachronic source) of the \isi{factitive}-\isi{fientive} alternation, as argued in several other articles in this volume for the older IE languages.
+
+In ``Deriving the semantics of the Akkadian \isi{stative}: Perspectives from the adjectival stem'', Iris \textsc{Tanza-Kamil} discusses the semantics of the Akkadian \isi{stative}, a deadjectival construction \is{deadjectival!verb} based on verbal adjectives\is{verbal adjective} that express a resultant state from (different types of) CoS roots,\is{change of state (CoS)} but also from \isi{unergative}, \isi{unaccusative}, and \isi{transitive} eventive roots. These are called\is{derivation!deradical}  primary statives,\is{stative} besides which the author identifies ``secondary statives''\is{stative} derived from nominal and adjectival stems.\is{derivation!stem-based} She argues that all statives\is{stative} are verbal in terms of their category and \isi{resultative} in terms of their semantics. This article provides an important typological and theoretical addition to the other contributions in the volume and adduces crucial evidence from a category that is otherwise underrepresented in the discussion of deadjectival verbs,\is{deadjectival!verb} namely verbal adjectives\is{verbal adjective} as the input to deadjectival verb\is{deadjectival!verb} formation.
+
+
+\section{Conclusion}
+
+In this introductory chapter, we have outlined current research avenues in deadjectival verb\is{deadjectival!verb} formation from the perspective of theoretical linguistics, linguistic typology, and historical Indo-European linguistics. We have discussed the cross-linguistic lexicalization patterns of PCs,\is{property concept (PC)} the connection between PCs\is{property concept (PC)} and \isi{possessive} predication, the nature of lexical categorizers associated with PC\is{property concept (PC)} roots, and different types of change-of-state verbs.\is{change of state (CoS)} We have also provided a working definition of deadjectival verbs\is{deadjectival!verb} that will hopefully be useful for future investigations of these verb classes. 
+
+Our main focus rested on the introduction to and state-of-the-art of research on the ``Caland system'',\is{Caland!system (CS)}  that is, the lexicalization and derivational patterns associated with PC\is{property concept (PC)} roots in (Proto-)Indo-European, followed by a survey of the various verbal derivational\is{derivation!verbal} patterns in the older IE languages. We have pointed out desiderata as well, such as a stronger engagement with the theoretical and typological literature on PCs\is{property concept (PC)} cross-linguistically, the need to better understand the difference between root-\is{derivation!deradical} and stem-based\is{derivation!stem-based} deadjectival verb\is{deadjectival!verb} formation, the role of different types of adjectival morphology in verbal derivation,\is{derivation!verbal} and the interaction of deadjectival verb\is{deadjectival!verb} formation with various voice and argument structure alternations. Together with the articles collected in this volume, we thus hope that this introduction will serve as a starting point for further work on deadjectival verb\is{deadjectival!verb} formation, the lexicalization of property concepts,\is{property concept (PC)} and the various ways in which adjectival and verbal morphology interact.  
+
+
+
+\section*{Acknowledgements}
+
+We wish to thank  Víctor Acedo-Matellán, Antonio Fábregas, Hannes Fellner, Alan Nussbaum, Georges-Jean Pinault and Jeremy Rau for their comments and suggestions on this chapter.  Laura Grestenberger acknowledges funding by the Austrian Science Fund, grant FWF V850-G ``Verbal categories and categorizers in diachrony'' (\textit{Die Diachronie verbaler Kategorien und Kategorisierer}). 
+
+\section*{Abbreviations}
+\begin{tabularx}{.5\textwidth}{@{}lQ@{}}
+Act. & Active\\
+Adj. & Adjective\\
+AG & Ancient Greek\\
+ChSl. & Church Slavic\\
+CoS & change of state\\
+CS & Caland system\\
+Cz. & Czech\\
+Fact. & Factitive\\
+Hitt. & Hittite\\
+IE & Indo-European\\
+Intr. & Intransitive\\
+Lat. & Latin\\
+Lith. & Lithuanian\\
+MG & Modern Greek\\
+\end{tabularx}%
+\begin{tabularx}{.5\textwidth}{@{}lQ@{}}
+Nonact. & Nonactive\\
+OAv. & Old Avestan\\
+OCS & Old Church Slavonic\\
+OHG & Old High German\\
+PC & Property concept\\
+PGmc. & Proto-Germanic\\
+PIE & Proto-Indo-European\\
+PoS & Part of speech\\
+PSl. & Proto-Slavic\\
+Russ. & Russian\\
+Sg. & Singular\\
+Sl. & Slavic\\
+Tr. & Transitive\\
+Ved. & Vedic\\
+YAv. & Young Avestan\\
+\end{tabularx}
+
+
+
+
+
+\sloppy
+\printbibliography[heading=subbibliography,notkeyword=this]
+\end{document}
+

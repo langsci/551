@@ -1,0 +1,122 @@
+\documentclass[output=book,collection
+            %,colorlinks, citecolor=brown
+             %,draft 
+            %,draftmode
+		  ]{langscibook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{localmetadata.tex}
+\input{localpackages.tex}
+\input{localhyphenation.tex}
+\input{localcommands.tex}
+\addbibresource{localbibliography.bib}
+
+%Paul
+% \usepackage{imakeidx}
+
+%define index:
+% \makeindex[name=wan, title=Form index]
+% \makeindex[name=sbj, title=Subject index]
+
+%custom command:
+    %#1: index name
+    %#2: language for subindex
+    %first #3: index entry
+    %second #3: text printed
+%\newcommand{\iw}[3]{\index[#1]{{#2}!\textit{#3}}\textit{#3}}
+
+
+% \makeindex %bis hier
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Frontmatter                      %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \includeonly{chapters/abc}
+\begin{document}
+
+% k̑ \emph{k̑} \textbf{k̑}  XX  ȷ́ \emph{ȷ́} \textbf{ȷ́} XX l̴ \emph{l̴} \textbf{l̴} XX ő \emph{ő} \textbf{ő} XX ȯ́  \emph{ȯ́} \textbf{ȯ́} XX ȯ̃  \emph{ȯ̃} \textbf{ȯ̃}
+
+% ā̆ \emph{ā̆} \textbf{ā̆}
+
+% ā̆ \emph{ā̆} \textbf{ā̆ }
+
+% ī́ \emph{ī́} \textbf{ī́}
+
+% ī̆ \emph{ī̆} \textbf{ī̆}
+
+% ū́ \emph{ū́} \textbf{ū́}
+
+% ū ̆ \emph{ū ̆} \textbf{ū ̆}
+
+% ū̃ \emph{ū̃} \textbf{ū̃}
+
+% ᾱ́ ᾰ́ ῐ́ ῡ́ 
+
+% \emph{ā̆́}
+
+\maketitle
+\frontmatter
+% %% uncomment if you have preface and/or acknowledgements
+
+\currentpdfbookmark{Contents}{name} % adds a PDF bookmark
+
+{\sloppy\tableofcontents}
+
+%% sections without authors
+\include{chapters/preface}
+%\include{chapters/acknowledgments}
+
+
+\mainmatter
+
+
+% \include{indextest}
+%
+\renewcommand{\lsChapterFooterSize}{\footnotesize}
+ \includepaper{chapters/introduction}
+%
+%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%             Chapters                         %%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+
+\part{Deadjectival verbs in the older Indo-European languages}
+
+
+\includepaper{chapters/Boldt}
+
+\includepaper{chapters/HoeflerStifter}
+\includepaper{chapters/Sasseville}
+\includepaper{chapters/VillanuevaSvensson}
+
+
+
+\part{Derivational patterns and comparative reconstruction}
+
+
+
+\includepaper{chapters/Garnier}
+\includepaper{chapters/Merritt}
+\includepaper{chapters/Pinault}
+\includepaper{chapters/Rau}
+
+
+
+\part{Beyond Caland: Typological and theoretical perspectives}
+
+\includepaper{chapters/IacobiniDeRosa}
+\includepaper{chapters/Tanza-Kamil}
+%
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Backmatter                       %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{localseealso.tex}
+\input{backmatter.tex}
+
+\end{document}

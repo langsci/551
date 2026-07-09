@@ -1,0 +1,151 @@
+% \newcommand*{\orcid}{}
+
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\makeatother
+
+\newcommand{\togglepaper}[1][0]{
+   \bibliography{../localbibliography}
+   \papernote{\scriptsize\normalfont
+     \theauthor.
+     \titleTemp.
+     To appear in:
+    Laura Grestenberger, Viktoria Reiter \& Melanie Malzahn (eds.).
+    \emph{Deadjectival verb formation in Indo-European and beyond}.
+     Berlin: Language Science Press. [preliminary page numbering]
+   }
+   \pagenumbering{roman}
+   \setcounter{chapter}{#1}
+   \addtocounter{chapter}{-1}
+}
+
+\newbool{bookcompile}
+\booltrue{bookcompile}
+\newcommand{\bookorchapter}[2]{\ifbool{bookcompile}{#1}{#2}}
+
+%Sonderzeichen
+%idg palatales k
+\newcommand{\kinvbreve}{k\raisebox{0.6ex}{\hspace{-0.05em}\char"0311}}
+
+\newcommand{\jac}{%
+  \textit{\char"0237}% italic dotless j (ȷ)
+  \hspace{-0.01em}% fine-tune horizontal spacing
+  \raisebox{0.01ex}{\char"0301}% raised combining acute
+}
+
+%Baltic circumflex l
+\newcommand\ltilded{%
+\hspace{-0.2em}%
+  \stackon[-1.5pt]{l}{\smash{\kern0.2em\~{}}}%
+  \hspace{-0.2em}%
+}
+
+%Slav. wedge+ double acute
+\newcommand{\HighH}[1]{%
+    \stackon[-1.2ex]{#1}{\kern0.1em\H{}\kern-0.1em}%
+}
+
+%Lith dot tilde VICKY diese b.-sl. Sonderzeichen BRINGEN MICH UM!!
+\newcommand{\tildedot}[1]{%
+    \ensurestackMath{%
+        \stackon[-0.27ex]{% Tilde layer 
+            \stackon[-0.15ex]{% Dot layer 
+                #1%
+            }{\hspace{0.1em}\cdot\hspace{-0.13em}}%
+        }{\hspace{0.1em}\text{\~{}}\hspace{-0.13em}%
+    }%
+}}
+
+%Lith dot acute
+\newcommand{\dotacute}[1]{%
+    \ensurestackMath{%
+        \stackon[-1.1ex]{% acute layer 
+            \stackon[-0.15ex]{% Dot layer 
+                #1%
+            }{\hspace{0.1em}\cdot\hspace{-0.12em}}%
+        }{\hspace{0.1em}\text{\'{}}\hspace{-0.12em}%
+    }%
+}}
+
+
+
+% \setlength{\emergencystretch}{2pt} 
+
+ \pgfplotsset{compat=1.18}
+
+
+\defcitealias{AbB_1}{AbB 1}
+\defcitealias{AbB_7}{AbB 7}
+\defcitealias{ABL_1}{ABL 1}
+\defcitealias{Vries1977}{AEW}
+\defcitealias{ALEW}{ALEW}
+\defcitealias{AnGr}{AnGr}
+\defcitealias{ARM_1}{ARM 1}
+\defcitealias{BT}{BT}
+\defcitealias{black_concise_2000}{CDA}
+\defcitealias{CHD}{CHD}
+\defcitealias{CT28}{CT 28}
+\defcitealias{CT34}{CT 34}
+\defcitealias{CT39}{CT 39}
+\defcitealias{Cleasby1874}{CV}
+\defcitealias{Beekes2010}{EDG}
+\defcitealias{eDiAna}{eDiAna}
+\defcitealias{eDIL}{eDIL}
+\defcitealias{EDL}{EDL}
+\defcitealias{Kroonen2013}{EDPG}
+\defcitealias{ESJS}{ESJS}
+\defcitealias{EVP}{EVP}
+\defcitealias{EWA1988}{EWA}
+\defcitealias{EWAI}{EWAia I}
+\defcitealias{EWAII}{EWAia II}
+\defcitealias{EWGP}{EWGP}
+\defcitealias{GDLI1961}{GDLI}
+\defcitealias{GPC}{GPC}
+\defcitealias{GRADIT1999}{GRADIT}
+\defcitealias{HW}{HW}
+\defcitealias{IEW}{IEW}
+\defcitealias{KAH_2}{KAH 2}
+\defcitealias{KAR_1}{KAR 1}
+\defcitealias{KAR_2}{KAR 2}
+\defcitealias{KEWA}{KEWA}
+\defcitealias{Labat_TDP}{Labat TDP}
+\defcitealias{lambert_BWL}{Lambert BWL}
+\defcitealias{LEIA}{LEIA}
+\defcitealias{Rix2001}{LIV\textsuperscript{2}}
+\defcitealias{LIVaddenda}{LIV\textsuperscript{2} {A}ddenda}
+\defcitealias{LKG1971}{LKG}
+\defcitealias{LKZ}{LKŽ}
+\defcitealias{LP}{LP}
+\defcitealias{MhdGr}{MhdGr}
+\defcitealias{MLLVG1959}{MLLVG}
+\defcitealias{NIL}{NIL}
+\defcitealias{OgnS}{OgnS}
+\defcitealias{ONP}{ONP}
+\defcitealias{RIMA_2}{RIMA 2}
+\defcitealias{TIM_2}{TIM 2}
+\defcitealias{WAP}{WAP}
+\defcitealias{YOS_2}{YOS 2}
+
+
+
+
+
+
+\newindex{wan}{wdx}{wnd}{Form index}
+\newcommand{\iw}[2]{\index[wan]{#1!{#2}\xspace}}
+\newcommand{\iwi}[3][]{\index[wan]{#2!{#3}\xspace#1}{#3}}
+\newcommand{\iwit}[3][]{\rule{0pt}{0pt}#1\index[wan]{#2!{#3}}{#3}}
+
+
+\newindex{van}{vdx}{vnd}{Form index}
+\newindex{ban}{bdx}{bnd}{Book index}
+
+% \newcommand{\iw}[3][]{\index[wan]{#2!\textit{#3}}}
+
+
+% \providecommand{\iwi}[3][]{\iw{#3}\textit{#3}}
+
+
+\newcommand{\indexnote}[1]{{\footnotesize\sffamily\raggedright\normalfont\color{gray}#1}}
