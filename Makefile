@@ -4,13 +4,22 @@ main.snd:
 	sed -i 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' main.sdx # ordering of references to footnotes
 	sed -i 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' main.adx
 	sed -i 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' main.ldx
-	sed -i 's/.*\(Office\|Team\|Bureau\|Organisation\|Organization\|Embassy\|Association\|Commission\|committee\|government).*//' main.adx
+	sed -i 's/.*\(Office\|Team\|Bureau\|Organisation\|Organization\|Embassy\|Association\|Commission\|committee\|government\).*//' main.adx
 	sed -i 's/\\MakeCapital//' main.adx
-# 	fixindex
-	makeindex -o main.and main.adx
+# 	sed -i 's/ =.*|/|/' main.adx
+# 	sed -i 's/.* =//' main.adx
 # 	grep -o  ", [^0-9, \\]*," main.and
+	grep = main.adx > main.bdx # copy all works from name index to book index
+	sed -i 's/ =.*|/|/' main.bdx # remove name part form works in book index
+	grep -v = main.adx > tmp # extract all non-books from name index and
+	mv tmp main.adx                     # overwrite the name index with non-book entries only
+	python3 fixindex.py
+	makeindex -o main.and main.adx
+	makeindex -o main.bnd main.bdx
 	makeindex -o main.lnd main.ldx
-	makeindex -o main.snd main.sdx 
+	makeindex -o main.snd main.sdx
+	sed -i -f wordindex.sed main.wdx
+	makeindex -o main.wnd main.wdx
 	echo "check for doublets in name index"
 # 	grep -o  ", [^0-9 \\}]*," main.and|sed "s/, //" | sed "s/,\$//"
 	xelatex main 
@@ -18,7 +27,6 @@ main.snd:
 
 cover: FORCE
 	convert main.pdf\[0\] -quality 100 -background white -alpha remove -bordercolor "#999999" -border 2  cover.png
-	convert cover.png -crop 486x486+0+0 +repage cover_insta.png
 	display cover.png
 
 openreview: openreview.pdf
@@ -123,7 +131,7 @@ README.md:
 	echo `grep title localmetadata.tex|sed "s/\\\\\title{\(.*\)}/\# \1/"` > README.md
 	echo '## Publication Info' >> README.md
 	echo -n '- Authors: ' >> README.md
-	echo `grep author localmetadata.tex|sed "s/%.*//"|sed "s/\\\\\author{\(.*\)}/\1/"` >> README.md
+	echo `grep author localmetadata.tex|sed "s/\\\\\author{\(.*\)}/\1/"` >> README.md
 	echo "- Publication Date: not yet published" >> README.md
 	echo -n "- Series: " >> README.md
 	echo `grep "lsSeries}" localmetadata.tex|sed "s/.*lsSeries}{\(.*\)}/\1/"` >> README.md
@@ -135,9 +143,7 @@ README.md:
 	echo "All data, code and documentation in this repository is published under the [Creative Commons Attribution 4.0 Licence](http://creativecommons.org/licenses/by/4.0/) (CC BY 4.0)." >> README.md
 
 	
-supersede:
-	convert cover.png -fill white -colorize 60%  -pointsize 64 -draw "gravity center fill red rotate -45  text 0,12 'superseded' "  superseded.png; display superseded.png
-
+supersede: convert cover.png -fill white -colorize 60%  -pointsize 64 -draw "gravity center fill red rotate -45  text 0,12 'superseded' "  superseded.png; display superseded.png
 
 
 wikicite: 
@@ -155,17 +161,3 @@ wikicite:
 	echo "}}" >>wiki
 	echo " </ref>" >>wiki
 	more wiki
-
-compress:
-	gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=compressed.pdf main.pdf
-
-overleafgithub:
-	git checkout main
-	mv Makefile Makefile.tmp
-	cp -r  ../6*/* .
-	mv Makefile.tmp Makefile
-	rm -f zenodo*
-	rm -rf *aux *png *lg *nd *xml *bbl *toc *log *dx chapters/*aux chapters/*g chapters/*d chapters/*dx *bcf *bak* origs*
-	git add *
-	git commit -am 'copy from Overleaf'
-	git push
